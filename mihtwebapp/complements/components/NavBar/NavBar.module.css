@@ -1,0 +1,33 @@
+.NavBarContainer{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: black;
+    padding: 7px;
+    box-shadow: 7px 1px 21px white;
+}
+.LogoContainer{
+    position: relative;
+    display: block;
+    width: 40px;
+    height: 40px;
+}
+.MenuButtom{
+    color: darkgoldenrod;
+    background-color: darkred;
+    border: 1px solid white;
+    padding: 3.5px 7px;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px black;
+    box-shadow: 2px 2px 2px transparent;
+    border-radius: 7px;
+    margin: auto;
+}
+
+.MenuButtom:hover{
+    color: darkred;
+    background-color: white;
+    border: 1px solid darkgoldenrod;
+    text-shadow: 1px 1px 1px darkred;
+    box-shadow: 2px 2px 2px darkgoldenrod;
+    transition: 70ms;
+}
