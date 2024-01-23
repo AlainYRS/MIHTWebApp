@@ -15,10 +15,9 @@ export default function Home() {
       <div className={styles.MainDish}>
         <Image src="/media/HotTacosMenus.jpg" fill alt="Hot Tacos"/>
       </div>
-      <iframe className={styles.PowerBI} 
-        title="MI Hot Tacos" width="1140" height="541.25" src="https://app.powerbi.com/reportEmbed?reportId=7a839e09-45d5-4fad-b197-66cf982b72d6&autoAuth=true&ctid=a0e6fe34-4c2b-4ada-ba92-0f478afc1cb0" allowFullScreen={true}>
+      <iframe className={styles.PowerBI}
+        title="Report Section" width="600" height="373.5" src="https://app.powerbi.com/view?r=eyJrIjoiZDkyOWI3MjQtNDJjMC00NDdlLWIxZWUtNDM2ZmU0NzcyMmRjIiwidCI6ImEwZTZmZTM0LTRjMmItNGFkYS1iYTkyLTBmNDc4YWZjMWNiMCJ9" allowFullScreen={true}>
       </iframe>
-
     </main>
   );
 }
