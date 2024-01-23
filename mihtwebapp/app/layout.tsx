@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   title: "Hot Tacos",
   description: "Developed by Alain Y Rivera S",
   manifest: '/manifest.json',
-  icons: { apple: '/manifest/icon-192x192.png' },
+  icons: { apple: '/Icons/HTIcons/icon-384x384.png' },
 };
 
 export default function RootLayout({
