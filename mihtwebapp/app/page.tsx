@@ -23,13 +23,14 @@ export default function Home() {
       </div> */}
       <SliderCardComp
         ImgSeconds={1} // Seconds for each image previos to be changed for the next one
-        classNames={""}
-        width={350}
-        height={350}
         DispGalleries={{
           display: true,
           position: 'bottom',
         }}
+        classNames={""}
+        styles={""}
+        width={350}
+        height={350}
         galleries={[
           {
             images:[
@@ -51,7 +52,7 @@ export default function Home() {
               '/media/Catrina.png',
             ],
             title: "Platillos Hot Tacos",
-            shortdesc: "Platillos Hot Tacos",
+            shortdesc: "Platillos de Hot Tacos",
             url:'https://order.tbdine.com/pickup/28824/menu',
           }
         ]}

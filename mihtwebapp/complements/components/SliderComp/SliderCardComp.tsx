@@ -88,11 +88,11 @@ function SliderCardComp(props:ISlideGallery) {
                     {props.galleries.length>1 && !props.DispGalleries.display && 
                         <Image className={styles.MoreGalleries} src={'/Icons/AddIcon.png'} width={50} height={50} alt="MoreGalleryes"
                             onClick={()=>setShowGal(!ShowGal)}
-                            />
+                        />
                     }
                     <Image className={styles.SlideImage} src={props.galleries[GalCounter].images[ImgCounter]} fill alt="SliderComp"
                         onClick={() => setImgCounter(ImgCounter >= TotImgs - 1 ? 0 : ImgCounter + 1)}
-                        />
+                    />
                     {TotImgs>1 &&
                         <a className={styles.NxtImgSlideCard}
                             onClick={() => setImgCounter(ImgCounter >= TotImgs - 1 ? 0 : ImgCounter + 1)}
