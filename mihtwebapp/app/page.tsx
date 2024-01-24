@@ -2,8 +2,8 @@ import Image from "next/image";
 import NavBar from "@/complements/components/NavBar/NavBar";
 import styles from "./main.module.css";
 import Menu from "@/complements/components/Menu/Menu";
-import Footer from '@/complements/components/FooterComp/FooterComp'
-
+import Footer from '@/complements/components/FooterComp/FooterComp';
+import SliderCardComp from '@/complements/components/SliderComp/SliderCardComp';
 
 export default function Home() {
   // const mapaEstaticoUrl = "https://maps.app.goo.gl/fw18xgWNgxTyMctC8";
@@ -14,13 +14,49 @@ export default function Home() {
       <div className={styles.HeaderLogo}>
         <Image src="/media/Hot Tacos Banner.jpg" fill alt="Hot Tacos"/>
       </div>
+
       <NavBar/>
       <h1 className={styles.HeadParagraph1} >Hot Tacos & Restaurant</h1>
       <h2 className={styles.HeadParagraph2} >Authentic Mexican Restaurant in Leamington</h2>
       <h3 className={styles.HeadParagraph3} ><a target="_blank" rel="noopener noreferrer" className={styles.MenuButtom} href="https://www.google.com/maps/dir//Hot+Tacos+Mexican+Restaurant/@42.0529949,-82.6816491,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x883ac1874678d4cf:0xd04e2ab656c80fa2!2m2!1d-82.5992483!2d42.0530244?entry=ttu"><u>16 Talbot Street E, Leamington ON, N8H 1L2</u></a> -   <a target="_blank" rel="noopener noreferrer" className={styles.MenuButtom} href="tel:+1-519-3291615" ><u className={styles.PhoneLink}>519 329 1615</u></a></h3>
-      <div className={styles.MainDish}>
+      {/* <div className={styles.MainDish}>
         <Image src="/media/HotTacosMenus.jpg" fill alt="Hot Tacos"/>
-      </div>
+      </div> */}
+      <SliderCardComp
+        ImgSeconds={1} // Seconds for each image previos to be changed for the next one
+        classNames={""}
+        width={350}
+        height={350}
+        DispGalleries={{
+          display: false,
+          position: 'right',
+        }}
+        galleries={[
+          {
+            images:[
+              '/media/AlPastor.jpg',
+              '/media/Ceviche.jpg',
+              '/media/HotTacosMenus.jpg',
+              '/media/Molcajete.jpg',
+              '/media/PapasHotTacos.jpg',
+              '/media/ParrilladaMixta.jpg',
+              '/media/PechugaAsada.jpg',
+              '/media/PozolePuerco.jpg',
+              '/media/Promo3.jpg',
+              '/media/Pulpo.jpg',
+              '/media/QueMeVes.jpg',
+              '/media/Quesabirrias.jpg',
+              '/media/RibEye.jpg',
+              '/media/Sopes.jpg',
+              '/media/Torta.jpg',
+              '/media/Catrina.png',
+            ],
+            // title: "Molcajete",
+            // shortdesc: "Molcajete",
+            // url:'/media/IMG1.png',
+          }
+        ]}
+      />
       <div className={styles.secciones}></div>
       <Menu />
       {/* <div className={styles.MI}>
