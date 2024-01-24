@@ -1,0 +1,32 @@
+.Menu{
+    width: 100%;
+    padding: 1rem;
+}
+.Sections{
+    width: 100%;
+    height: max-content;
+    position: relative;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    overflow-x: auto;
+    padding: 1rem;
+}
+.MenuElements{
+    position: relative;
+    display: flex;
+    flex-flow: row wrap;
+    border: 1px solid green;
+    width: 100%;
+    margin: auto;
+}
+.SectionLink{
+    padding: 3.5px 14px;
+    border: 1px solid rgb(var(--htred));
+    border-radius: 14px;
+    background-color: rgb(var(--htyellow));
+    color: white;
+    margin: 0 1rem;
+    white-space: nowrap;
+}
+

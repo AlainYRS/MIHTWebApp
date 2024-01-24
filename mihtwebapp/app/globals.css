@@ -63,3 +63,30 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+
+/* Estilos para navegadores webkit (Chrome, Safari) */
+/* Barra de desplazamiento */
+::-webkit-scrollbar {
+  height: 7px;
+}
+
+/* Manija (thumb) de la barra de desplazamiento */
+::-webkit-scrollbar-thumb {
+  background-color: white;
+  border-radius: 7px;
+}
+
+/* Manija (thumb) de la barra de desplazamiento */
+body {
+  scrollbar-width: thin; /* Firefox */
+  scrollbar-color: white rgb(var(--htred));
+  overflow-x: scroll;
+  scrollbar-color: white rgb(var(--htred));
+}
+
+/* Manija (thumb) de la barra de desplazamiento */
+body::-webkit-scrollbar-thumb {
+  border: 2px solid rgb(var(--htred));
+  background-color: white;
+  border-radius: 7px;
+}

@@ -1,7 +1,7 @@
 import Image from "next/image";
 import NavBar from "@/complements/components/NavBar/NavBar";
 import styles from "./main.module.css";
-import MenuItem from "@/complements/components/MenuItem/MenuItem"
+import Menu from "@/complements/components/Menu/Menu"
 
 export default function Home() {
   return (
@@ -16,17 +16,13 @@ export default function Home() {
       <div className={styles.MainDish}>
         <Image src="/media/HotTacosMenus.jpg" fill alt="Hot Tacos"/>
       </div>
+      <div className={styles.secciones}></div>
+      <Menu />
       {/* <div className={styles.MI}>
         <iframe className={styles.PowerBI}
           title="Report Section" width="600" height="373.5" src="https://app.powerbi.com/view?r=eyJrIjoiZDkyOWI3MjQtNDJjMC00NDdlLWIxZWUtNDM2ZmU0NzcyMmRjIiwidCI6ImEwZTZmZTM0LTRjMmItNGFkYS1iYTkyLTBmNDc4YWZjMWNiMCJ9" allowFullScreen={true}>
         </iframe>
       </div> */}
-      <MenuItem 
-        Title="Hot Nachos with Asada or Chicken"
-        Price={22}
-        Description="Hot tortilla chips covered with Mozzarella cheese, yellow cheese, grilled beef or chicken, jalapeños, and pico de gallo."
-        ImagePath="/media/Hot Tacos.jpg"
-      />
     </main>
   );
 }
