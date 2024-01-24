@@ -1,16 +1,31 @@
 .Menu{
     width: 100%;
-    padding: 1rem;
+}
+.MenuSectionsContainer{
+    position: sticky;
+    top: calc(3.5rem - 1px);
+    z-index: 1;
+    background-color: black;
 }
 .Sections{
-    width: 100%;
+    width: 80%;
+    margin: auto;
     height: max-content;
-    position: relative;
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
     overflow-x: auto;
     padding: 0.7rem;
+    border: 1px solid rgba(255,255,255,0.35);
+    border-radius: 14px 14px 7px 7px;
+}
+.SectionLink:hover{
+    color: darkred;
+    background-color: white;
+    border: 1px solid darkgoldenrod;
+    text-shadow: 1px 1px 1px darkred;
+    box-shadow: 2px 2px 2px darkgoldenrod;
+    transition: 70ms;
 }
 .MenuElements{
     position: relative;

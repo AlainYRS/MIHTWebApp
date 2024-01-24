@@ -5,18 +5,20 @@ import MenuItem from "../MenuItem/MenuItem";
 export default function Menu(){
     return(
         <div className={styles.Menu}>
-            <div className={styles.Sections}>
-                <a className={styles.SectionLink} href="#">Appetizers</a>
-                <a className={styles.SectionLink} href="#">Snacks</a>
-                <a className={styles.SectionLink} href="#">From Mexican Cuisine</a>
-                <a className={styles.SectionLink} href="#">From the Grill</a>
-                <a className={styles.SectionLink} href="#">From the Pot</a>
-                <a className={styles.SectionLink} href="#">From the Sea</a>
-                <a className={styles.SectionLink} href="#">Tacos & Quesadillas</a>
-                <a className={styles.SectionLink} href="#">Extra Sides</a>
-                <a className={styles.SectionLink} href="#">Desserts</a>
-                <a className={styles.SectionLink} href="#">Drinks</a>
-                <a className={styles.SectionLink} href="#">Specials</a>
+            <div className={styles.MenuSectionsContainer}>
+                <div className={styles.Sections}>
+                    <a className={styles.SectionLink} href="#">Appetizers</a>
+                    <a className={styles.SectionLink} href="#">Snacks</a>
+                    <a className={styles.SectionLink} href="#">From Mexican Cuisine</a>
+                    <a className={styles.SectionLink} href="#">From the Grill</a>
+                    <a className={styles.SectionLink} href="#">From the Pot</a>
+                    <a className={styles.SectionLink} href="#">From the Sea</a>
+                    <a className={styles.SectionLink} href="#">Tacos & Quesadillas</a>
+                    <a className={styles.SectionLink} href="#">Extra Sides</a>
+                    <a className={styles.SectionLink} href="#">Desserts</a>
+                    <a className={styles.SectionLink} href="#">Drinks</a>
+                    <a className={styles.SectionLink} href="#">Specials</a>
+                </div>
             </div>
             <div className={styles.MenuElements}>
                 <MenuItem 

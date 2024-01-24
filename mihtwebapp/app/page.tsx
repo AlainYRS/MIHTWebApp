@@ -74,6 +74,9 @@ export default function Home() {
           </tr>
         </tbody>
       </table>
+      <div className={styles.Catrina}>
+        <Image src="/media/Catrina.png" fill alt="Hot Tacos"/>
+      </div>
 {/* 
       <iframe
         width="600"   // Ancho del iframe

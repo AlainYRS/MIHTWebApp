@@ -1,6 +1,7 @@
 .NavBarContainer{
     position: sticky;
-    top: 0px;
+    top: -1px;
+    height: 3.5rem;
     display: flex;
     justify-content: space-evenly;
     background-color: black;
