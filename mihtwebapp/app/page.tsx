@@ -7,7 +7,7 @@ import SliderCardComp from '@/complements/components/SliderComp/SliderCardComp';
 
 export default function Home() {
   // const mapaEstaticoUrl = "https://maps.app.goo.gl/fw18xgWNgxTyMctC8";
-  const mapaEstaticoUrl = `https://maps.googleapis.com/maps/api/staticmap?center=42.05327130119621,-82.59920537477937&zoom=13&size=600x450&key=${process.env.NEXT_PUBLIC_AYRS_API_Key}`;
+  // const mapaEstaticoUrl = `https://maps.googleapis.com/maps/api/staticmap?center=42.05327130119621,-82.59920537477937&zoom=13&size=600x450&key=${process.env.NEXT_PUBLIC_AYRS_API_Key}`;
 
   return (
     <main>
@@ -16,9 +16,8 @@ export default function Home() {
       </div>
 
       <NavBar/>
-      <h1 className={styles.HeadParagraph1} >Hot Tacos & Restaurant</h1>
-      <h2 className={styles.HeadParagraph2} >Authentic Mexican Restaurant in Leamington</h2>
-      <h3 className={styles.HeadParagraph3} ><a target="_blank" rel="noopener noreferrer" className={styles.MenuButtom} href="https://www.google.com/maps/dir//Hot+Tacos+Mexican+Restaurant/@42.0529949,-82.6816491,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x883ac1874678d4cf:0xd04e2ab656c80fa2!2m2!1d-82.5992483!2d42.0530244?entry=ttu"><u>16 Talbot Street E, Leamington ON, N8H 1L2</u></a> -   <a target="_blank" rel="noopener noreferrer" className={styles.MenuButtom} href="tel:+1-519-3291615" ><u className={styles.PhoneLink}>519 329 1615</u></a></h3>
+      {/* <h1 className={styles.HeadParagraph1} >Hot Tacos & Restaurant</h1> */}
+      <h2 className={styles.HeadParagraph2} >Authentic Mexican Restaurant at Leamington</h2>
       {/* <div className={styles.MainDish}>
         <Image src="/media/HotTacosMenus.jpg" fill alt="Hot Tacos"/>
       </div> */}
@@ -28,8 +27,8 @@ export default function Home() {
         width={350}
         height={350}
         DispGalleries={{
-          display: false,
-          position: 'right',
+          display: true,
+          position: 'bottom',
         }}
         galleries={[
           {
@@ -51,12 +50,13 @@ export default function Home() {
               '/media/Torta.jpg',
               '/media/Catrina.png',
             ],
-            // title: "Molcajete",
-            // shortdesc: "Molcajete",
-            // url:'/media/IMG1.png',
+            title: "Platillos Hot Tacos",
+            shortdesc: "Platillos Hot Tacos",
+            url:'https://order.tbdine.com/pickup/28824/menu',
           }
         ]}
       />
+      <h3 className={styles.HeadParagraph3} ><a target="_blank" rel="noopener noreferrer" className={styles.MenuButtom} href="https://www.google.com/maps/dir//Hot+Tacos+Mexican+Restaurant/@42.0529949,-82.6816491,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x883ac1874678d4cf:0xd04e2ab656c80fa2!2m2!1d-82.5992483!2d42.0530244?entry=ttu"><u>16 Talbot Street E, Leamington ON, N8H 1L2</u></a> -   <a target="_blank" rel="noopener noreferrer" className={styles.MenuButtom} href="tel:+1-519-3291615" ><u className={styles.PhoneLink}>519 329 1615</u></a></h3>
       <div className={styles.secciones}></div>
       <Menu />
       {/* <div className={styles.MI}>
@@ -121,7 +121,6 @@ export default function Home() {
         src={mapaEstaticoUrl}  // Sustituye con la URL de tu mapa estático
         aria-hidden="false"
       ></iframe> */}
- 
       <Footer 
           author= {'Alain Y. Rivera S.'}
           copyright= {'Alain Rivera'}
@@ -129,9 +128,6 @@ export default function Home() {
           version= {'1.0.0'}
           company={'Hot Tacos & Restaurant Inc.'}
       />
-
-      
-
     </main>
   );
 }
