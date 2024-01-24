@@ -18,11 +18,11 @@ export default function Home() {
       </div>
       <div className={styles.secciones}></div>
       <Menu />
-      {/* <div className={styles.MI}>
+      <div className={styles.MI}>
         <iframe className={styles.PowerBI}
           title="Report Section" width="600" height="373.5" src="https://app.powerbi.com/view?r=eyJrIjoiZDkyOWI3MjQtNDJjMC00NDdlLWIxZWUtNDM2ZmU0NzcyMmRjIiwidCI6ImEwZTZmZTM0LTRjMmItNGFkYS1iYTkyLTBmNDc4YWZjMWNiMCJ9" allowFullScreen={true}>
         </iframe>
-      </div> */}
+      </div>
     </main>
   );
 }
