@@ -13,9 +13,9 @@ export default function MenuItem(props:iMenuItem){
     return(
         <div className={styles.MIDiv} id={props.Title}>
             <h1 className={styles.MITitle}>{props.Title}</h1>
+            <h2 className={styles.MIPrice}>CA ${props.Price}</h2>
             <p className={styles.MIDescription}>{props.Description}</p>
             <br/>
-            <h2 className={styles.MIPrice}>CA ${props.Price}</h2>
             {props.ImagePath && 
                 <div className={styles.MIZoom}>
                     <div className={styles.MIImg}>

@@ -19,21 +19,6 @@
     border: 1px solid rgba(255,255,255,0.35);
     border-radius: 14px 14px 7px 7px;
 }
-.SectionLink:hover{
-    color: darkred;
-    background-color: white;
-    border: 1px solid darkgoldenrod;
-    text-shadow: 1px 1px 1px darkred;
-    box-shadow: 2px 2px 2px darkgoldenrod;
-    transition: 70ms;
-}
-.MenuElements{
-    position: relative;
-    display: flex;
-    flex-flow: row wrap;
-    width: 100%;
-    margin: auto;
-}
 .SectionLink{
     padding: 3.5px 14px;
     border: 1px solid rgb(var(--htred));
@@ -42,5 +27,32 @@
     color: white;
     margin: 0 0.35rem;
     white-space: nowrap;
+}
+.SectionLink:hover{
+    color: darkred;
+    background-color: white;
+    border: 1px solid darkgoldenrod;
+    text-shadow: 1px 1px 1px darkred;
+    box-shadow: 2px 2px 2px darkgoldenrod;
+    transition: 70ms;
+}
+.SectionMenu{
+    position: relative;
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+    justify-content: space-evenly;
+}
+.SectionMenuTitle{
+    font-size: 3rem;
+    padding: 1rem;
+    font-style: italic;
+}
+.MenuElements{
+    position: relative;
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+    margin: auto;
 }
 
