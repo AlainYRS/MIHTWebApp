@@ -68,26 +68,26 @@ body {
 /* Barra de desplazamiento */
 ::-webkit-scrollbar {
   height: 7px;
+  width: 7px;
 }
 
 /* Manija (thumb) de la barra de desplazamiento */
 ::-webkit-scrollbar-thumb {
-  background-color: white;
+  background-color: black;
   border-radius: 7px;
 }
 
 /* Manija (thumb) de la barra de desplazamiento */
 body {
   scrollbar-width: thin; /* Firefox */
-  scrollbar-color: white rgb(var(--htred));
   overflow-x: scroll;
-  scrollbar-color: white rgb(var(--htred));
+  scrollbar-color: rgb(var(--htred));
 }
 
 /* Manija (thumb) de la barra de desplazamiento */
 body::-webkit-scrollbar-thumb {
-  border: 2px solid rgb(var(--htred));
-  background-color: white;
+  border: 1px solid rgb(var(--htyellow),0.35);
+  background-color: rgba(var(--htred),0.35);
   border-radius: 7px;
 }
 

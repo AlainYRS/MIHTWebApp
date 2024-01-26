@@ -1,17 +1,55 @@
+'use client';
+
 import Image from "next/image";
 import NavBar from "@/complements/components/NavBar/NavBar";
-import styles from "./main.module.css";
+import styles from "./page.module.css";
 import Menu from "@/complements/components/Menu/Menu";
 import Footer from '@/complements/components/FooterComp/FooterComp';
 import SliderCardComp from '@/complements/components/SliderComp/SliderCardComp';
+import React, { useEffect } from 'react';
+import { handleScroll, handleMouseMovement } from './pageFunctions';
 
 export default function Home() {
   // const mapaEstaticoUrl = "https://maps.app.goo.gl/fw18xgWNgxTyMctC8";
   // const mapaEstaticoUrl = `https://maps.googleapis.com/maps/api/staticmap?center=42.05327130119621,-82.59920537477937&zoom=13&size=600x450&key=${process.env.NEXT_PUBLIC_AYRS_API_Key}`;
 
+  window.addEventListener('scroll', function() {
+    const catrina = document.getElementById('catrina');
+    const Logo = document.getElementById('HeaderLogo');
+    const headerHeight = Logo?.offsetHeight;
+    const scrollPosition = window.scrollY;
+    console.log('headerHeight', headerHeight);
+    console.log('scrollPosition', scrollPosition);
+  
+      if(headerHeight && catrina){
+        if (scrollPosition > headerHeight) {
+          // Si el usuario ha desplazado más allá de la altura del encabezado
+          catrina.style.width = '70px' // Ajusta el ancho
+          catrina.style.height = '70px' // Ajusta la altura
+        } else if (scrollPosition <= headerHeight && catrina){
+          // Si el usuario está en la parte superior de la página
+          catrina.style.width = '210px' // Ajusta el ancho
+          catrina.style.height = '210px' // Ajusta la altura
+        }
+      }
+    }
+  );
+
+  useEffect(() => {
+    // Agrega el listener de evento al montar el componente
+    window.addEventListener('scroll', handleScroll);
+    window.addEventListener('mousemove', handleMouseMovement);
+  
+    // Limpia el listener de evento al desmontar el componente
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener('mousemove', handleMouseMovement);
+    };
+  }, []); // El segundo argumento de useEffect ([]) indica que este efecto se ejecutará solo una vez al montar el componente
+  
   return (
     <main className={styles.Main}>
-      <div className={styles.HeaderLogo}>
+      <div className={styles.HeaderLogo} id="HeaderLogo">
         <Image src="/media/Hot Tacos Banner.jpg" fill alt="Hot Tacos"/>
       </div>
 
@@ -107,9 +145,9 @@ export default function Home() {
           </tr>
         </tbody>
       </table>
-      <div className={styles.Catrina}>
+      <a className={styles.Catrina} id="catrina">
         <Image src="/media/Catrina.png" fill alt="Hot Tacos"/>
-      </div>
+      </a>
 {/* 
       <iframe
         width="600"   // Ancho del iframe

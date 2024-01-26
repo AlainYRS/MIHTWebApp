@@ -1,3 +1,11 @@
+.Main{
+    position: relative;
+    display: block;
+    overflow: hidden;
+    width: calc(100vw - 7px);
+    margin: auto;
+    padding: 0px;
+}
 .HeaderLogo{
     position: relative;
     display: block;
@@ -12,8 +20,9 @@
     height: 210px;
     z-index: 3;
     top: 0px;
-    right: -35px;
+    right: 0px;
     border-bottom: 1px solid white;
+    transition: 700ms;
 }
 .HeadParagraph2{
     font-size: 2.1rem;
