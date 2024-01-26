@@ -140,7 +140,7 @@ export default function Menu(){
                     <MenuItem 
                         Title="Enchiladas Suizas"
                         Price={19}
-                        Description="Suaves tortillas bañadas de salsa de jitomate gratinadas con queso y adornadas con cebolla, crema."
+                        Description="Suaves tortillas rellenas de pollo, bañadas de salsa de jitomate gratinadas con queso y adornadas con cebolla, crema."
                         // ImagePath=""
                     />
                     <MenuItem 

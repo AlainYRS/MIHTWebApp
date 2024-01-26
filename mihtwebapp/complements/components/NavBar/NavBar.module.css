@@ -6,7 +6,7 @@
     justify-content: space-evenly;
     background-color: black;
     box-shadow: 7px 1px 21px white;
-    z-index: 1;
+    z-index: 2;
 }
 .LogoContainer{
     position: relative;
@@ -34,3 +34,18 @@
     box-shadow: 2px 2px 2px darkgoldenrod;
     transition: 70ms;
 }
+
+/* Grupo para dispositivos iPhone 5 a iPhone 12 Max en orientación vertical */
+@media only screen and (max-device-width: 428px) and (orientation: portrait) {
+
+    
+  }
+  
+  /* Grupo para dispositivos iPad y otros dispositivos en orientación vertical */
+  @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+    /* Estilos para dispositivos iPad y otros dispositivos en orientación vertical */
+    /* Aquí puedes mostrar el menú en orientación horizontal */
+    .menu {
+      display: block; /* Por ejemplo, cambiar a block para mostrar el menú */
+    }
+  }

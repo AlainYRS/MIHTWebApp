@@ -20,6 +20,7 @@
 .MIDescription{
     text-align: left;
     height: 9rem;
+    font-size: fit-content;
     overflow-y: auto;
 }
 .MIZoom{

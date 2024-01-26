@@ -10,17 +10,13 @@ export default function Home() {
   // const mapaEstaticoUrl = `https://maps.googleapis.com/maps/api/staticmap?center=42.05327130119621,-82.59920537477937&zoom=13&size=600x450&key=${process.env.NEXT_PUBLIC_AYRS_API_Key}`;
 
   return (
-    <main>
+    <main className={styles.Main}>
       <div className={styles.HeaderLogo}>
         <Image src="/media/Hot Tacos Banner.jpg" fill alt="Hot Tacos"/>
       </div>
 
       <NavBar/>
-      {/* <h1 className={styles.HeadParagraph1} >Hot Tacos & Restaurant</h1> */}
       <h2 className={styles.HeadParagraph2} >Authentic Mexican Restaurant at Leamington</h2>
-      {/* <div className={styles.MainDish}>
-        <Image src="/media/HotTacosMenus.jpg" fill alt="Hot Tacos"/>
-      </div> */}
       <SliderCardComp
         ImgSeconds={1} // Seconds for each image previos to be changed for the next one
         DispGalleries={{
