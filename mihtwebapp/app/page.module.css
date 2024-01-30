@@ -3,96 +3,98 @@
     width: calc(100vw - 7px);
     display: grid;
     grid-template-rows: repeat(8, auto);
-    grid-template-columns: repeat(7, calc(1/7));
+    grid-template-columns: 1fr;
     grid-template-areas: 
-        'Header     Header      Header     Header       Header      Header      Header'
-        'Navbar     Navbar      Navbar     Navbar       Navbar      Navbar      Navbar'
-        'Slider     Slider      Slider     Slider       Slider      Slider      Slider'
-        'Squedule   Squedule    Squedule   Squedule     Squedule    Squedule    Squedule'
-        'Menu       Menu        Menu       Menu         Menu        Menu        Menu'
-        'PowerBi    PowerBi     PowerBi    PowerBi      PowerBi     PowerBi     PowerBi'
-        'Map        Map         Map        Map          Map         Map         Map'
-        'Footer     Footer      Footer     Footer       Footer      Footer      Footer'
+    'Header'
+    'Navbar'
+    'Slider'
+    'Schedule'
+    'Menu'
+    'PowerBi'
+    'Map'
+    'Footer'
     ;
 }
 #GridCont1{
     grid-area: 'Header';
-    border: 1px solid red;
 }
 #GridCont2{
-    grid-area: 'NavBar';
-    border: 1px solid white;
+    grid-area: 'Navbar';
+    position: sticky;
+    top: 0px;
+    z-index: 2;
 }
 #GridCont3{
     grid-area: 'Slider';
     width: max-content;
     margin: auto;
-    border: 1px solid blue;
 }
 #GridCont4{
-    grid-area: 'Squedule';
-    border: 1px solid green;
+    grid-area: 'Schedule';
+    width: max-content;
+    margin: auto;
 }
 #GridCont5{
     grid-area: 'Menu';
-    border: 1px solid yellow;
 }
 #GridCont6{
     grid-area: 'PowerBI';
-    border: 1px solid brown;
 }
 #GridCont7{
     grid-area: 'Map';
-    border: 1px solid purple;
 }
 #GridCont8{
     grid-area: 'Footer';
-    border: 1px solid pink;
 }
 .HeaderLogo{
     position: relative;
     display: block;
-    width: 90%;
-    height: 140px;
+    width: 93vw;
+    height: 14vw;
     z-index: 1;
 }
 .Catrina{
     position: fixed;
     display: block;
-    width: 210px;
-    height: 210px;
+    width: 14vw;
+    height: 14vw;
     z-index: 3;
     top: 0px;
     right: 0px;
-    border-bottom: 1px solid white;
+    border-bottom: 1px solid whitesmoke;
     transition: 700ms;
+    opacity: 1;
 }
 .HeadParagraph2{
-    font-size: 2.1rem;
+    font-size: 1.4rem;
     color: white;
     display: block;
     text-align: center;
+    width: calc(100vw - 7px);
 }
 .HeadParagraph3{
     color: white;
     display: block;
     text-align: center;
+    width: calc(100vw - 7px);
 }
 .MI{
     border: 2px solid red;
-    width: 100%;
+    width: calc(100vw - 7px);
     height: 700px;
     margin: 1rem auto;
     border-radius: 7px;
     overflow: hidden;
 }
 .PowerBI{
-    width: 100%;
+    width: calc(100vw - 7px);
     height: calc(100%);
 }
 .PhoneLink{
     color: rgba(var(--htyellow),0.7);
 }
+
+
 .BusinessHours{
     margin: auto;
     border-radius: 7px;
@@ -120,16 +122,16 @@
 /* Grupo para dispositivos iPhone 5 a iPhone 12 Max en orientación vertical */
 @media only screen and (max-device-width: 428px) and (orientation: portrait) {
     .HeaderLogo{
-        width: 100%;
+        width: calc(100vw - 7px);
         height: 70px;
     }
     .Catrina{
-        width: 70px;
-        height: 70px;
+        width: 7vw;
+        height: 7vw;
         right: 100px;
     }
     .HeadParagraph2{
-        font-size: 1.4rem;
+        font-size: 1rem;
     }
     .HeadParagraph3{
         font-size: 0.7rem;
