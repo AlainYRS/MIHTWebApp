@@ -73,7 +73,7 @@ body {
 
 /* Manija (thumb) de la barra de desplazamiento */
 ::-webkit-scrollbar-thumb {
-  background-color: black;
+  background-color: white;
   border-radius: 7px;
 }
 

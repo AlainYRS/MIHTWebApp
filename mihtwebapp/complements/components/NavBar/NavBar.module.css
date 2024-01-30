@@ -1,6 +1,6 @@
 .NavBarContainer{
     width: calc(100vw - 7px);
-    height: 7vw;
+    height: 5vw;
     display: flex;
     justify-content: space-evenly;
     background-color: black;

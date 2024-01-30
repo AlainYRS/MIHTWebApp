@@ -23,8 +23,8 @@ export default function Home() {
         if(headerHeight && catrina){
           if (scrollPosition > headerHeight) {
             // Si el usuario ha desplazado más allá de la altura del encabezado
-            catrina.style.width = '7vw' // Ajusta el ancho
-            catrina.style.height = '7vw' // Ajusta la altura
+            catrina.style.width = '5vw' // Ajusta el ancho
+            catrina.style.height = '5vw' // Ajusta la altura
             catrina.style.opacity = '0.7';
           } else if (scrollPosition <= headerHeight && catrina){
             // Si el usuario está en la parte superior de la página
@@ -83,21 +83,118 @@ export default function Home() {
             {
               images:[
                 '/media/AlPastor.jpg',
+              ],
+              title: "Platillos Hot Tacos",
+              shortdesc: "Platillos de Hot Tacos",
+              url:'https://order.tbdine.com/pickup/28824/menu',
+            },
+            {
+              images:[
                 '/media/Ceviche.jpg',
+              ],
+              title: "Platillos Hot Tacos",
+              shortdesc: "Platillos de Hot Tacos",
+              url:'https://order.tbdine.com/pickup/28824/menu',
+            },
+            {
+              images:[
                 '/media/HotTacosMenus.jpg',
+              ],
+              title: "Platillos Hot Tacos",
+              shortdesc: "Platillos de Hot Tacos",
+              url:'https://order.tbdine.com/pickup/28824/menu',
+            },
+            {
+              images:[
                 '/media/Molcajete.jpg',
+              ],
+              title: "Platillos Hot Tacos",
+              shortdesc: "Platillos de Hot Tacos",
+              url:'https://order.tbdine.com/pickup/28824/menu',
+            },
+            {
+              images:[
                 '/media/PapasHotTacos.jpg',
+              ],
+              title: "Platillos Hot Tacos",
+              shortdesc: "Platillos de Hot Tacos",
+              url:'https://order.tbdine.com/pickup/28824/menu',
+            },
+            {
+              images:[
                 '/media/ParrilladaMixta.jpg',
+              ],
+              title: "Platillos Hot Tacos",
+              shortdesc: "Platillos de Hot Tacos",
+              url:'https://order.tbdine.com/pickup/28824/menu',
+            },
+            {
+              images:[
                 '/media/PechugaAsada.jpg',
+              ],
+              title: "Platillos Hot Tacos",
+              shortdesc: "Platillos de Hot Tacos",
+              url:'https://order.tbdine.com/pickup/28824/menu',
+            },
+            {
+              images:[
                 '/media/PozolePuerco.jpg',
+              ],
+              title: "Platillos Hot Tacos",
+              shortdesc: "Platillos de Hot Tacos",
+              url:'https://order.tbdine.com/pickup/28824/menu',
+            },
+            {
+              images:[
                 '/media/Promo3.jpg',
+              ],
+              title: "Platillos Hot Tacos",
+              shortdesc: "Platillos de Hot Tacos",
+              url:'https://order.tbdine.com/pickup/28824/menu',
+            },
+            {
+              images:[
                 '/media/Pulpo.jpg',
+              ],
+              title: "Platillos Hot Tacos",
+              shortdesc: "Platillos de Hot Tacos",
+              url:'https://order.tbdine.com/pickup/28824/menu',
+            },
+            {
+              images:[
                 '/media/QueMeVes.jpg',
+              ],
+              title: "Platillos Hot Tacos",
+              shortdesc: "Platillos de Hot Tacos",
+              url:'https://order.tbdine.com/pickup/28824/menu',
+            },
+            {
+              images:[
                 '/media/Quesabirrias.jpg',
+              ],
+              title: "Platillos Hot Tacos",
+              shortdesc: "Platillos de Hot Tacos",
+              url:'https://order.tbdine.com/pickup/28824/menu',
+            },
+            {
+              images:[
                 '/media/RibEye.jpg',
+              ],
+              title: "Platillos Hot Tacos",
+              shortdesc: "Platillos de Hot Tacos",
+              url:'https://order.tbdine.com/pickup/28824/menu',
+            },
+            {
+              images:[
                 '/media/Sopes.jpg',
+              ],
+              title: "Platillos Hot Tacos",
+              shortdesc: "Platillos de Hot Tacos",
+              url:'https://order.tbdine.com/pickup/28824/menu',
+            },
+            {
+              images:[
                 '/media/Torta.jpg',
-                '/media/Catrina.png',
               ],
               title: "Platillos Hot Tacos",
               shortdesc: "Platillos de Hot Tacos",

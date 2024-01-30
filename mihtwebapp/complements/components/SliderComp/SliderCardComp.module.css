@@ -14,8 +14,8 @@
     position: relative;
     overflow: hidden;
     border-radius: 7px;
-    min-width: 70px;
-    min-height: 70px;
+    min-width: clamp(70px,7vw,70%);
+    min-height: clamp(70px,7vw,70%);
     cursor: pointer;
     grid-area: slider;
 }
@@ -83,7 +83,7 @@
     flex-wrap: nowrap;
     background-color: transparent;
     border-radius: 3.5px;
-    gap:3px;
+    gap:3.5px;
     overflow: auto;
 }
 .GalleriesContainer > .SlideImage{
