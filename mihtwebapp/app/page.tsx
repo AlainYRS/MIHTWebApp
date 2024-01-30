@@ -13,25 +13,28 @@ export default function Home() {
   // const mapaEstaticoUrl = "https://maps.app.goo.gl/fw18xgWNgxTyMctC8";
   // const mapaEstaticoUrl = `https://maps.googleapis.com/maps/api/staticmap?center=42.05327130119621,-82.59920537477937&zoom=13&size=600x450&key=${process.env.NEXT_PUBLIC_AYRS_API_Key}`;
 
-  window.addEventListener('scroll', function() {
-    const catrina = document.getElementById('catrina');
-    const Logo = document.getElementById('HeaderLogo');
-    const headerHeight = Logo?.offsetHeight;
-    const scrollPosition = window.scrollY;
-  
-      if(headerHeight && catrina){
-        if (scrollPosition > headerHeight) {
-          // Si el usuario ha desplazado más allá de la altura del encabezado
-          catrina.style.width = '70px' // Ajusta el ancho
-          catrina.style.height = '70px' // Ajusta la altura
-        } else if (scrollPosition <= headerHeight && catrina){
-          // Si el usuario está en la parte superior de la página
-          catrina.style.width = '210px' // Ajusta el ancho
-          catrina.style.height = '210px' // Ajusta la altura
+  if (typeof window !== 'undefined') {
+    window.addEventListener('scroll', function() {
+      const catrina = document.getElementById('catrina');
+      const Logo = document.getElementById('HeaderLogo');
+      const headerHeight = Logo?.offsetHeight;
+      const scrollPosition = window.scrollY;
+    
+        if(headerHeight && catrina){
+          if (scrollPosition > headerHeight) {
+            // Si el usuario ha desplazado más allá de la altura del encabezado
+            catrina.style.width = '70px' // Ajusta el ancho
+            catrina.style.height = '70px' // Ajusta la altura
+          } else if (scrollPosition <= headerHeight && catrina){
+            // Si el usuario está en la parte superior de la página
+            catrina.style.width = '210px' // Ajusta el ancho
+            catrina.style.height = '210px' // Ajusta la altura
+          }
         }
       }
-    }
-  );
+    );
+  }
+
 
   useEffect(() => {
     // Agrega el listener de evento al montar el componente
