@@ -9,7 +9,8 @@
     ;
     margin: auto;
     overflow: hidden;
-}.SliderCardLink{
+}
+.SliderCardLink{
     position: relative;
     overflow: hidden;
     border-radius: 7px;

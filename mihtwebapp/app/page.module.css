@@ -1,16 +1,59 @@
+
 .Main{
-    position: relative;
-    display: block;
-    overflow: hidden;
     width: calc(100vw - 7px);
+    display: grid;
+    grid-template-rows: repeat(8, auto);
+    grid-template-columns: repeat(7, calc(1/7));
+    grid-template-areas: 
+        'Header     Header      Header     Header       Header      Header      Header'
+        'Navbar     Navbar      Navbar     Navbar       Navbar      Navbar      Navbar'
+        'Slider     Slider      Slider     Slider       Slider      Slider      Slider'
+        'Squedule   Squedule    Squedule   Squedule     Squedule    Squedule    Squedule'
+        'Menu       Menu        Menu       Menu         Menu        Menu        Menu'
+        'PowerBi    PowerBi     PowerBi    PowerBi      PowerBi     PowerBi     PowerBi'
+        'Map        Map         Map        Map          Map         Map         Map'
+        'Footer     Footer      Footer     Footer       Footer      Footer      Footer'
+    ;
+}
+#GridCont1{
+    grid-area: 'Header';
+    border: 1px solid red;
+}
+#GridCont2{
+    grid-area: 'NavBar';
+    border: 1px solid white;
+}
+#GridCont3{
+    grid-area: 'Slider';
+    width: max-content;
     margin: auto;
-    padding: 0px;
+    border: 1px solid blue;
+}
+#GridCont4{
+    grid-area: 'Squedule';
+    border: 1px solid green;
+}
+#GridCont5{
+    grid-area: 'Menu';
+    border: 1px solid yellow;
+}
+#GridCont6{
+    grid-area: 'PowerBI';
+    border: 1px solid brown;
+}
+#GridCont7{
+    grid-area: 'Map';
+    border: 1px solid purple;
+}
+#GridCont8{
+    grid-area: 'Footer';
+    border: 1px solid pink;
 }
 .HeaderLogo{
     position: relative;
     display: block;
     width: 90%;
-    height: 210px;
+    height: 140px;
     z-index: 1;
 }
 .Catrina{
@@ -31,7 +74,6 @@
     text-align: center;
 }
 .HeadParagraph3{
-    font-size: 1.4rem;
     color: white;
     display: block;
     text-align: center;

@@ -57,6 +57,7 @@ interface ISlideGallery{
     ImgSeconds: number,
     DispGalleries: IDisplay,
     classNames?: string,
+    GalleryID?: string,
     styles?: any,
     width:number,
     height:number,
@@ -71,7 +72,7 @@ function SliderCardComp(props:ISlideGallery) {
    
     return (
         <>
-            <div className={(styles.SlidCardContainer)}
+            <div className={(styles.SlidCardContainer, props.classNames)} id={(props.GalleryID)}
                 style={{
                     width:(props.DispGalleries.position == 'top' || props.DispGalleries.position =='bottom') ? props.width : props.width*1.3+14,
                     height:(props.DispGalleries.position == 'top' || props.DispGalleries.position =='bottom') ? props.height*1.3+14 : props.height,
