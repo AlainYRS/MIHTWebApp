@@ -17,34 +17,42 @@
 }
 #GridCont1{
     grid-area: 'Header';
+    border: 1px solid red;
 }
 #GridCont2{
     grid-area: 'Navbar';
     position: sticky;
     top: 0px;
     z-index: 2;
+    border: 1px solid green;
 }
 #GridCont3{
     grid-area: 'Slider';
     width: max-content;
     margin: auto;
+    border: 1px solid yellow;
 }
 #GridCont4{
     grid-area: 'Schedule';
     width: max-content;
     margin: auto;
+    border: 1px solid pink;
 }
 #GridCont5{
     grid-area: 'Menu';
+    border: 1px solid purple;
 }
 #GridCont6{
     grid-area: 'PowerBI';
+    border: 1px solid white;
 }
 #GridCont7{
     grid-area: 'Map';
+    border: 1px solid blue;
 }
 #GridCont8{
     grid-area: 'Footer';
+    border: 1px solid orange;
 }
 .HeaderLogo{
     position: relative;
