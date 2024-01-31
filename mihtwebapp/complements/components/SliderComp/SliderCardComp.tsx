@@ -69,10 +69,10 @@ function SliderCardComp(props:ISlideGallery) {
     const [GalCounter, setGalCounter] = useState<number>(0)
     const [TotImgs, setTotImgs] = useState<number>(props.galleries[GalCounter].images.length)
     const [ShowGal, setShowGal] = useState<boolean>()
-   
+
     return (
         <>
-            <div className={(styles.SlidCardContainer, props.classNames)} id={(props.GalleryID)}
+            <div className={styles.SlidCardContainer} id={(props.GalleryID)}
                 style={{
                     width:(props.DispGalleries.position == 'top' || props.DispGalleries.position =='bottom') ? props.width : props.width*1.3+14,
                     height:(props.DispGalleries.position == 'top' || props.DispGalleries.position =='bottom') ? props.height*1.3+14 : props.height,
@@ -104,17 +104,24 @@ function SliderCardComp(props:ISlideGallery) {
                     <div className={styles.GalleriesContainer}
                         style={{
                             flexFlow:(props.DispGalleries.position == 'top' || props.DispGalleries.position =='bottom') ? 'row' : 'column',
-                            width:(props.DispGalleries.position == 'top' || props.DispGalleries.position =='bottom') ? props.width : props.width*.3 ,
-                            height:(props.DispGalleries.position == 'top' || props.DispGalleries.position =='bottom') ? props.height*.3 : props.height,
+                            width:(props.DispGalleries.position == 'top' || props.DispGalleries.position =='bottom') ? props.width : props.width/3 ,
+                            height:(props.DispGalleries.position == 'top' || props.DispGalleries.position =='bottom') ? props.height/3 : props.height,
                             gridArea: props.DispGalleries.position,
                             position: (!props.DispGalleries.display && props.galleries.length>1) ? 'absolute': 'relative',
                             zIndex: (!props.DispGalleries.display && props.galleries.length>1) ? 3: 0
                         }}>
                         {props.galleries.map((Gallery, i)=>{
                             return(
-                                <>
-                                    <Image className={styles.SlideImage} onClick={() => {setGalCounter(i), setTotImgs(Gallery.images.length), setImgCounter(0), setShowGal(false)}} src={Gallery.images[0]} width={props.width/3} height={props.height/3} alt="SliderComp" />
-                                </>
+                                <div className={styles.SlideImage1} key={i} 
+                                    style={{width:(props.width/3.5), height:(props.height/3.5)}}
+                                    >
+                                    <Image 
+                                        onClick={() => {setGalCounter(i), setTotImgs(Gallery.images.length), setImgCounter(0), setShowGal(false)}} 
+                                        src={Gallery.images[0]} 
+                                        fill
+                                        alt="SliderComp" 
+                                    />
+                                </div>
                             )
                         })}
                     </div>

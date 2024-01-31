@@ -72,7 +72,7 @@ export default function Home() {
           ImgSeconds={1} // Seconds for each image previos to be changed for the next one
           DispGalleries={{
             display: true,
-            position: 'bottom',
+            position: 'right',
           }}
           classNames={"styles.MainGallery"}
           GalleryID=""

@@ -16,8 +16,14 @@
     border-radius: 7px;
     min-width: clamp(70px,7vw,70%);
     min-height: clamp(70px,7vw,70%);
+    border: 3.5px solid transparent;
     cursor: pointer;
     grid-area: slider;
+}
+.MiniGalleryContainer{
+    position: relative;
+    display: block;
+    overflow: auto;
 }
 .CardTitle, .CardDescription,.CardUrl{
     color:white;
@@ -78,16 +84,21 @@
     color: transparent;
 }
 .GalleriesContainer{
-    padding: 3.5px;
     display: flex;
+    margin: auto;
     flex-wrap: nowrap;
     background-color: transparent;
     border-radius: 3.5px;
-    gap:3.5px;
+    border: 3.5px solid transparent;
+    gap: 3.5px;
     overflow: auto;
 }
-.GalleriesContainer > .SlideImage{
-    border-radius: 3.5px;
+.SlideImage1{
+    flex: 0 0 auto;
+    position: relative;
+    display: block;
+    border-radius: 7px;
+    overflow: hidden;
 }
 .MoreGalleries{
     position: absolute;
