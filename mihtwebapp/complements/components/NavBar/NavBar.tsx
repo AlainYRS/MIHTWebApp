@@ -6,7 +6,7 @@ export default function NavMenu(){
     return (
         <nav className={styles.NavBarContainer}>
             <div className={styles.LogoContainer}>
-                <Image src="/Icons/HTIcons/icon-144x144.png" fill alt="Hot Tacos Logo"/>
+                <Image src="/Icons/HTIcons/icon-144x144.png" fill sizes='(max-width: 768px) 100vw, (max-width: 1200px) 100vw, 800px' priority alt="Hot Tacos Logo"/>
             </div>
             <a target="_blank" rel="noopener noreferrer" className={styles.MenuButtom} href="https://order.tbdine.com/pickup/28824/menu" >Hacer pedido</a>
             <a target="_blank" rel="noopener noreferrer" className={styles.MenuButtom} href="tel:+1-519-329-1615" >Pedido Telefónico</a>

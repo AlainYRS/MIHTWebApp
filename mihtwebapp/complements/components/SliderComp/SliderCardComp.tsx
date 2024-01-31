@@ -87,11 +87,11 @@ function SliderCardComp(props:ISlideGallery) {
                         >«</a>
                     }
                     {props.galleries.length>1 && !props.DispGalleries.display && 
-                        <Image className={styles.MoreGalleries} src={'/Icons/AddIcon.png'} width={50} height={50} alt="MoreGalleryes"
+                        <Image className={styles.MoreGalleries} src={'/Icons/AddIcon.png'} width={50} height={50} style={{objectFit: 'contain'}} sizes='(max-width: 768px) 7vw, (max-width: 1200px) 7vw, 80px' alt="MoreGalleryes"
                             onClick={()=>setShowGal(!ShowGal)}
                         />
                     }
-                    <Image className={styles.SlideImage} src={props.galleries[GalCounter].images[ImgCounter]} fill alt="SliderComp"
+                    <Image className={styles.SlideImage} src={props.galleries[GalCounter].images[ImgCounter]} fill style={{objectFit: 'contain'}} sizes='(max-width: 768px) 70vw, (max-width: 1200px) 70vw, 800px' alt="SliderComp"
                         onClick={() => setImgCounter(ImgCounter >= TotImgs - 1 ? 0 : ImgCounter + 1)}
                     />
                     {TotImgs>1 &&
@@ -119,6 +119,8 @@ function SliderCardComp(props:ISlideGallery) {
                                         onClick={() => {setGalCounter(i), setTotImgs(Gallery.images.length), setImgCounter(0), setShowGal(false)}} 
                                         src={Gallery.images[0]} 
                                         fill
+                                        style={{objectFit: 'contain'}}
+                                        sizes='(max-width: 768px) 70vw, (max-width: 1200px) 70vw, 800px'
                                         alt="SliderComp" 
                                     />
                                 </div>

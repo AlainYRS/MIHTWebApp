@@ -1,7 +1,7 @@
 export const handleScroll = () => {
-  console.log('Se hizo scroll');
+  // console.log('Se hizo scroll');
   const scrollY = window.scrollY;
-  console.log('Valor de desplazamiento vertical:', scrollY);
+  // console.log('Valor de desplazamiento vertical:', scrollY);
   // Aquí puedes colocar la lógica que deseas ejecutar cuando ocurra el evento de desplazamiento (scroll)
 };
 export const handleMouseMovement = (event: MouseEvent) => {

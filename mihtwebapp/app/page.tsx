@@ -52,10 +52,10 @@ export default function Home() {
     <main className={styles.Main}>
       <div id={styles.GridCont1}>
         <div className={styles.HeaderLogo} id="HeaderLogo">
-          <Image src="/media/Hot Tacos Banner.jpg" fill alt="Hot Tacos"/>
+          <Image src="/media/Hot Tacos Banner.jpg" fill priority sizes='(max-width: 768px) 14vw, (max-width: 1200px) 14vw, 800px' alt="Hot Tacos"/>
         </div>
         <a className={styles.Catrina} id="catrina">
-          <Image src="/media/Catrina.png" fill alt="Hot Tacos"/>
+          <Image src="/media/Catrina.png" fill sizes='(max-width: 768px) 14vw, (max-width: 1200px) 14vw, 800px' alt="Hot Tacos"/>
         </a>
         <h2 className={styles.HeadParagraph2} >Authentic Mexican Restaurant</h2>
         <h3 className={styles.HeadParagraph3} ><a target="_blank" rel="noopener noreferrer" className={styles.MenuButtom} href="https://www.google.com/maps/dir//Hot+Tacos+Mexican+Restaurant/@42.0529949,-82.6816491,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x883ac1874678d4cf:0xd04e2ab656c80fa2!2m2!1d-82.5992483!2d42.0530244?entry=ttu"><u>16 Talbot Street E, Leamington ON, N8H 1L2</u></a> -   <a target="_blank" rel="noopener noreferrer" className={styles.MenuButtom} href="tel:+1-519-3291615" ><u className={styles.PhoneLink}>519 329 1615</u></a></h3>
@@ -82,7 +82,7 @@ export default function Home() {
               images:[
                 '/media/AlPastor.jpg',
               ],
-              title: "AlPastor",
+              title: "Al Pastor",
               shortdesc: "Platillos de Hot Tacos",
               url:'https://order.tbdine.com/pickup/28824/menu',
             },
@@ -90,7 +90,7 @@ export default function Home() {
               images:[
                 '/media/Ceviche.jpg',
               ],
-              title: "Platillos Hot Tacos",
+              title: "Ceviche",
               shortdesc: "Platillos de Hot Tacos",
               url:'https://order.tbdine.com/pickup/28824/menu',
             },
@@ -98,7 +98,7 @@ export default function Home() {
               images:[
                 '/media/HotTacosMenus.jpg',
               ],
-              title: "Platillos Hot Tacos",
+              title: "Platillos de Hot Tacos",
               shortdesc: "Platillos de Hot Tacos",
               url:'https://order.tbdine.com/pickup/28824/menu',
             },
@@ -106,7 +106,7 @@ export default function Home() {
               images:[
                 '/media/Molcajete.jpg',
               ],
-              title: "Platillos Hot Tacos",
+              title: "Molcajete",
               shortdesc: "Platillos de Hot Tacos",
               url:'https://order.tbdine.com/pickup/28824/menu',
             },
@@ -114,7 +114,7 @@ export default function Home() {
               images:[
                 '/media/PapasHotTacos.jpg',
               ],
-              title: "Platillos Hot Tacos",
+              title: "Papas Hot Tacos",
               shortdesc: "Platillos de Hot Tacos",
               url:'https://order.tbdine.com/pickup/28824/menu',
             },
@@ -122,7 +122,7 @@ export default function Home() {
               images:[
                 '/media/ParrilladaMixta.jpg',
               ],
-              title: "Platillos Hot Tacos",
+              title: "Parrillada Mixta",
               shortdesc: "Platillos de Hot Tacos",
               url:'https://order.tbdine.com/pickup/28824/menu',
             },
@@ -130,7 +130,7 @@ export default function Home() {
               images:[
                 '/media/PechugaAsada.jpg',
               ],
-              title: "Platillos Hot Tacos",
+              title: "Pechuga Asada",
               shortdesc: "Platillos de Hot Tacos",
               url:'https://order.tbdine.com/pickup/28824/menu',
             },
@@ -138,7 +138,7 @@ export default function Home() {
               images:[
                 '/media/PozolePuerco.jpg',
               ],
-              title: "Platillos Hot Tacos",
+              title: "Pozole de Puerco",
               shortdesc: "Platillos de Hot Tacos",
               url:'https://order.tbdine.com/pickup/28824/menu',
             },
@@ -146,7 +146,7 @@ export default function Home() {
               images:[
                 '/media/Promo3.jpg',
               ],
-              title: "Platillos Hot Tacos",
+              title: "Promoción",
               shortdesc: "Platillos de Hot Tacos",
               url:'https://order.tbdine.com/pickup/28824/menu',
             },
@@ -154,7 +154,7 @@ export default function Home() {
               images:[
                 '/media/Pulpo.jpg',
               ],
-              title: "Platillos Hot Tacos",
+              title: "Pulpo",
               shortdesc: "Platillos de Hot Tacos",
               url:'https://order.tbdine.com/pickup/28824/menu',
             },
@@ -162,7 +162,7 @@ export default function Home() {
               images:[
                 '/media/QueMeVes.jpg',
               ],
-              title: "Platillos Hot Tacos",
+              title: "Que Me Ves",
               shortdesc: "Platillos de Hot Tacos",
               url:'https://order.tbdine.com/pickup/28824/menu',
             },
@@ -170,7 +170,7 @@ export default function Home() {
               images:[
                 '/media/Quesabirrias.jpg',
               ],
-              title: "Platillos Hot Tacos",
+              title: "Quesabirrias",
               shortdesc: "Platillos de Hot Tacos",
               url:'https://order.tbdine.com/pickup/28824/menu',
             },
@@ -178,7 +178,7 @@ export default function Home() {
               images:[
                 '/media/RibEye.jpg',
               ],
-              title: "Platillos Hot Tacos",
+              title: "Rib Eye",
               shortdesc: "Platillos de Hot Tacos",
               url:'https://order.tbdine.com/pickup/28824/menu',
             },
@@ -186,7 +186,7 @@ export default function Home() {
               images:[
                 '/media/Sopes.jpg',
               ],
-              title: "Platillos Hot Tacos",
+              title: "Sopes",
               shortdesc: "Platillos de Hot Tacos",
               url:'https://order.tbdine.com/pickup/28824/menu',
             },
@@ -194,7 +194,7 @@ export default function Home() {
               images:[
                 '/media/Torta.jpg',
               ],
-              title: "Platillos Hot Tacos",
+              title: "Torta",
               shortdesc: "Platillos de Hot Tacos",
               url:'https://order.tbdine.com/pickup/28824/menu',
             }
