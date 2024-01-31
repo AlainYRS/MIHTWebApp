@@ -1,74 +1,41 @@
 {
-    "theme_color": "#070A35",
-    "background_color": "#000000",
-    "display": "fullscreen",
-    "scope": "/",
-    "start_url": "/",
     "name": "Mi Hot Tacos WebApp",
     "short_name": "MIHTWebApp",
-    "description": " Progressive Web Applications developed by Alain Y Rivera S for Hot Tacos Restaurant Management Information",
+    "description": "Progressive Web Application desarrollada por Alain Y Rivera S para la gestión de información del restaurante Hot Tacos",
+    "theme_color": "#070A35",
+    "background_color": "#000000",
+    "display_override": ["fullscreen", "minimal-ui"],
+    "display": "fullscreen",
     "orientation": "landscape",
+    "start_url": "/",
+    "scope": "/",
+    "id": "/",
     "icons": [
-        {
-            "src": "/Icons/HTIcons/icon-48x48.png",
-            "sizes": "48x48",
-            "type": "image/png"
-        },
-        {
-            "src": "/Icons/HTIcons/icon-72x72.png",
-            "sizes": "72x72",
-            "type": "image/png"
-        },
-        {
-            "src": "/Icons/HTIcons/icon-96x96.png",
-            "sizes": "96x96",
-            "type": "image/png"
-        },
-        {
-            "src": "/Icons/HTIcons/icon-128x128.png",
-            "sizes": "128x128",
-            "type": "image/png"
-        },
-        {
-            "src": "/Icons/HTIcons/icon-144x144.png",
-            "sizes": "144x144",
-            "type": "image/png"
-        },
-        {
-            "src": "/Icons/HTIcons/icon-152x152.png",
-            "sizes": "152x152",
-            "type": "image/png"
-        },
-        {
-            "src": "/Icons/HTIcons/icon-192x192.png",
-            "sizes": "192x192",
-            "type": "image/png"
-        },
-        {
-            "src": "/Icons/HTIcons/icon-384x384.png",
-            "sizes": "384x384",
-            "type": "image/png"
-        },
-        {
-            "src": "/Icons/HTIcons/icon-512x512.png",
-            "sizes": "512x512",
-            "type": "image/png"
-        }
+      { "src": "/Icons/HTIcons/icon-48x48.png", "sizes": "48x48" },
+      { "src": "/Icons/HTIcons/icon-72x72.png", "sizes": "72x72" },
+      { "src": "/Icons/HTIcons/icon-96x96.png", "sizes": "96x96" },
+      { "src": "/Icons/HTIcons/icon-128x128.png", "sizes": "128x128" },
+      { "src": "/Icons/HTIcons/icon-144x144.png", "sizes": "144x144" },
+      { "src": "/Icons/HTIcons/icon-152x152.png", "sizes": "152x152" },
+      { "src": "/Icons/HTIcons/icon-192x192.png", "sizes": "192x192" },
+      { "src": "/Icons/HTIcons/icon-284x284.png", "sizes": "284x284" },
+      { "src": "/Icons/HTIcons/icon-512x512.png", "sizes": "512x512" }
     ],
-    "screenshots" : [
-        {
-            "src": "/manifest/Screenshot2.jpg",
-            "sizes": "700x700",
-            "type": "image/jpg",
-            "form_factor": "wide",
-            "label": "Whide Homescreen App"
-        },
-        {
-            "src": "/manifest/Screenshot3.jpg",
-            "sizes": "1200x600",
-            "type": "image/jpg",
-            "form_factor": "narrow",
-            "label": "Narrow Homescreen App"
-        }
+    "screenshots": [
+      {
+        "src": "/manifest/Screenshot1.jpg",
+        "sizes": "593x593",
+        "type": "image/jpeg",
+        "label": "Hot Tacos Restaurant",
+        "form_factor": "wide"
+      },
+      {
+        "src": "/manifest/Screenshot2.png",
+        "sizes": "3000x3000",
+        "type": "image/png",
+        "label": "Hot Tacos Catrina",
+        "form_factor": "wide"
+      }
     ]
-}
+  }
+  
