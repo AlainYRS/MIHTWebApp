@@ -56,3 +56,29 @@
     margin: auto;
 }
 
+@media only screen and (max-device-width: 428px) and (orientation: portrait) {
+    .Menu{
+        width: 100vw;
+    }
+    .Sections{
+        width: 100vw;
+        border-left: none;
+        border-right: none;
+        border-top: none;
+        border-radius: 0px;
+    }
+    .SectionLink{
+        border-radius: 3.5px;
+        margin: 0 0.14rem;
+    }
+    .SectionMenu{
+        width: 100vw;
+    }
+    .SectionMenuTitle{
+        font-size: 1.4rem;
+        padding: 0.7rem;
+    }
+    .MenuElements{
+        width: 100vw;
+    }
+}

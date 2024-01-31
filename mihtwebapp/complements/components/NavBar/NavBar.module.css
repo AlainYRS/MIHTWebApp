@@ -36,9 +36,29 @@
 
 /* Grupo para dispositivos iPhone 5 a iPhone 12 Max en orientación vertical */
 @media only screen and (max-device-width: 428px) and (orientation: portrait) {
-
-    
+  .NavBarContainer{
+      width: 100vw;
+      height: 7vw;
+      font-size: 0.7rem;
   }
+  .LogoContainer{
+      display: none;
+  }
+  .MenuButtom{
+      border: 1px solid white;
+      border-radius: 7px;
+      margin: auto;
+      padding: 3px;
+  }
+  .MenuButtom:hover{
+      color: darkred;
+      background-color: white;
+      border: 1px solid darkgoldenrod;
+      text-shadow: 1px 1px 1px darkred;
+      box-shadow: 2px 2px 2px darkgoldenrod;
+      transition: 70ms;
+  }
+}
   
   /* Grupo para dispositivos iPad y otros dispositivos en orientación vertical */
   @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {

@@ -112,3 +112,8 @@
     z-index: 1;
     margin: auto;
 }
+
+/* Grupo para dispositivos iPhone 5 a iPhone 12 Max en orientación vertical */
+@media only screen and (max-device-width: 428px) and (orientation: portrait) {
+
+}

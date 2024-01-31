@@ -147,7 +147,15 @@
         width: 35vw;
         height: 35vw;
     }
-  }
+    .HeadParagraph2{
+        font-size: 1rem;
+        width: 100vw;
+    }
+    .HeadParagraph3{
+        font-size: 0.7rem;
+        width: 100vw;
+    }
+}
   
   /* Grupo para dispositivos iPad y otros dispositivos en orientación vertical */
   @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
