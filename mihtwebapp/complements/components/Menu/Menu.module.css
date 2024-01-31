@@ -60,6 +60,9 @@
     .Menu{
         width: 100vw;
     }
+    .MenuSectionsContainer{
+        position: relative;
+    }
     .Sections{
         width: 100vw;
         border-left: none;
@@ -81,4 +84,21 @@
     .MenuElements{
         width: 100vw;
     }
+}
+
+@media only screen and (max-device-width: 900px) and (orientation: landscape) {
+    .MenuSectionsContainer{
+        position: relative;
+    }
+}
+
+@media only screen and (max-device-width: 1024px) and (orientation: portrait) {
+    .MenuSectionsContainer{
+        position: relative;
+    }
+}
+@media only screen and (max-device-width: 1366px) and (orientation: landscape) {
+    .MenuSectionsContainer{
+        position: relative;
+    }       
 }
