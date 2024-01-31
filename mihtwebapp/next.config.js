@@ -1,20 +1,11 @@
-// /** @type {import('next').NextConfig} */
-// const nextConfig = {}
-
-// module.exports = nextConfig
-
 /** @type {import('next').NextConfig} */
 
-const withPWA = require('next-pwa');
-
-const nextConfig = {
-    ... withPWA(
-        {
-            dest: 'public',
-            register: true,
-            skipWaiting: true,
-        }
-    )
-}
-
-module.exports = nextConfig
+const withPWA = require("@ducanh2912/next-pwa").default(
+    {
+        register: true,
+        skipWaiting: true,
+        dest: "public"
+    }
+);
+  
+module.exports = withPWA();
