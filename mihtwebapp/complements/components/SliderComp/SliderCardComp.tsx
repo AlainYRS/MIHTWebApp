@@ -91,9 +91,14 @@ function SliderCardComp(props:ISlideGallery) {
                             onClick={()=>setShowGal(!ShowGal)}
                         />
                     }
-                    <Image className={styles.SlideImage} src={props.galleries[GalCounter].images[ImgCounter]} fill style={{objectFit: 'contain'}} sizes='(max-width: 768px) 70vw, (max-width: 1200px) 70vw, 800px' alt="SliderComp"
+                    {/* <Image className={styles.SlideImage} src={props.galleries[GalCounter].images[ImgCounter]} fill style={{objectFit: 'contain'}} sizes='(max-width: 768px) 70vw, (max-width: 1200px) 70vw, 800px' alt="SliderComp"
+                        onClick={() => setImgCounter(ImgCounter >= TotImgs - 1 ? 0 : ImgCounter + 1)}
+                    /> */}
+
+                    <img className={styles.SlideImage} src={props.galleries[GalCounter].images[ImgCounter]} style={{objectFit: 'contain'}} sizes='(max-width: 768px) 70vw, (max-width: 1200px) 70vw, 800px' alt="SliderComp"
                         onClick={() => setImgCounter(ImgCounter >= TotImgs - 1 ? 0 : ImgCounter + 1)}
                     />
+
                     {TotImgs>1 &&
                         <a className={styles.NxtImgSlideCard}
                             onClick={() => setImgCounter(ImgCounter >= TotImgs - 1 ? 0 : ImgCounter + 1)}
@@ -115,10 +120,17 @@ function SliderCardComp(props:ISlideGallery) {
                                 <div className={styles.SlideImage1} key={i} 
                                     style={{width:(props.width/3.5), height:(props.height/3.5)}}
                                     >
-                                    <Image 
+                                    {/* <Image 
                                         onClick={() => {setGalCounter(i), setTotImgs(Gallery.images.length), setImgCounter(0), setShowGal(false)}} 
                                         src={Gallery.images[0]} 
                                         fill
+                                        style={{objectFit: 'contain'}}
+                                        sizes='(max-width: 768px) 70vw, (max-width: 1200px) 70vw, 800px'
+                                        alt="SliderComp" 
+                                    /> */}
+                                    <img 
+                                        onClick={() => {setGalCounter(i), setTotImgs(Gallery.images.length), setImgCounter(0), setShowGal(false)}} 
+                                        src={Gallery.images[0]} 
                                         style={{objectFit: 'contain'}}
                                         sizes='(max-width: 768px) 70vw, (max-width: 1200px) 70vw, 800px'
                                         alt="SliderComp" 

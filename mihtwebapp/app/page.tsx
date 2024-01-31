@@ -80,15 +80,18 @@ export default function Home() {
           galleries={[
             {
               images:[
-                '/media/AlPastor.jpg',
+                // '/media/AlPastor.jpg',
+                'https://firebasestorage.googleapis.com/v0/b/mihottacoswebapp.appspot.com/o/AlPastor_350x350.webp?alt=media&token=00224201-3dc2-42a6-9d70-62f7cd6a3a1d',
               ],
               title: "Al Pastor",
               shortdesc: "Platillos de Hot Tacos",
               url:'https://order.tbdine.com/pickup/28824/menu',
-            },
+            }
+            ,
             {
               images:[
-                '/media/Ceviche.jpg',
+                // '/media/Ceviche.jpg',
+                'https://firebasestorage.googleapis.com/v0/b/mihottacoswebapp.appspot.com/o/Ceviche_350x350.webp?alt=media&token=b0181e55-7b93-4e5c-a9a2-c78f7f0720f4',
               ],
               title: "Ceviche",
               shortdesc: "Platillos de Hot Tacos",
@@ -96,7 +99,8 @@ export default function Home() {
             },
             {
               images:[
-                '/media/HotTacosMenus.jpg',
+                // '/media/HotTacosMenus.jpg',
+                'https://firebasestorage.googleapis.com/v0/b/mihottacoswebapp.appspot.com/o/HotTacosMenus_350x350.webp?alt=media&token=c390f254-b127-49f3-8a30-7217090a00d1',
               ],
               title: "Platillos de Hot Tacos",
               shortdesc: "Platillos de Hot Tacos",
@@ -104,7 +108,8 @@ export default function Home() {
             },
             {
               images:[
-                '/media/Molcajete.jpg',
+                // '/media/Molcajete.jpg',
+                'https://firebasestorage.googleapis.com/v0/b/mihottacoswebapp.appspot.com/o/Molcajete_350x350.webp?alt=media&token=bce207ae-6e04-48c8-ad38-1c2187d39b94',
               ],
               title: "Molcajete",
               shortdesc: "Platillos de Hot Tacos",
@@ -112,7 +117,8 @@ export default function Home() {
             },
             {
               images:[
-                '/media/PapasHotTacos.jpg',
+                // '/media/PapasHotTacos.jpg',
+                'https://firebasestorage.googleapis.com/v0/b/mihottacoswebapp.appspot.com/o/PapasHotTacos_350x350.webp?alt=media&token=0d90f04d-cb6f-4f2f-aa76-6445d7d0c463',
               ],
               title: "Papas Hot Tacos",
               shortdesc: "Platillos de Hot Tacos",
@@ -120,7 +126,8 @@ export default function Home() {
             },
             {
               images:[
-                '/media/ParrilladaMixta.jpg',
+                // '/media/ParrilladaMixta.jpg',
+                'https://firebasestorage.googleapis.com/v0/b/mihottacoswebapp.appspot.com/o/ParrilladaMixta_350x350.webp?alt=media&token=70d39363-e9a3-4c30-9514-b5e8551d6a2d',
               ],
               title: "Parrillada Mixta",
               shortdesc: "Platillos de Hot Tacos",
@@ -128,7 +135,8 @@ export default function Home() {
             },
             {
               images:[
-                '/media/PechugaAsada.jpg',
+                // '/media/PechugaAsada.jpg',
+                'https://firebasestorage.googleapis.com/v0/b/mihottacoswebapp.appspot.com/o/PechugaAsada_350x350.webp?alt=media&token=71ab4f79-bc00-4870-b186-c657ab730777',
               ],
               title: "Pechuga Asada",
               shortdesc: "Platillos de Hot Tacos",
@@ -136,7 +144,8 @@ export default function Home() {
             },
             {
               images:[
-                '/media/PozolePuerco.jpg',
+                // '/media/PozolePuerco.jpg',
+                'https://firebasestorage.googleapis.com/v0/b/mihottacoswebapp.appspot.com/o/PozolePuerco_350x350.webp?alt=media&token=153e2dbd-1089-4321-907a-e2c5f161af54',
               ],
               title: "Pozole de Puerco",
               shortdesc: "Platillos de Hot Tacos",
@@ -144,7 +153,8 @@ export default function Home() {
             },
             {
               images:[
-                '/media/Promo3.jpg',
+                // '/media/Promo3.jpg',
+                'https://firebasestorage.googleapis.com/v0/b/mihottacoswebapp.appspot.com/o/Promo3_350x350.webp?alt=media&token=a9b1a546-50fb-411c-a8ca-b29b5765befe',
               ],
               title: "Promoción",
               shortdesc: "Platillos de Hot Tacos",
@@ -152,7 +162,8 @@ export default function Home() {
             },
             {
               images:[
-                '/media/Pulpo.jpg',
+                // '/media/Pulpo.jpg',
+                'https://firebasestorage.googleapis.com/v0/b/mihottacoswebapp.appspot.com/o/Pulpo_350x350.webp?alt=media&token=139ab8d0-4fc6-4d44-8441-0c45b73bc963',
               ],
               title: "Pulpo",
               shortdesc: "Platillos de Hot Tacos",
@@ -160,7 +171,8 @@ export default function Home() {
             },
             {
               images:[
-                '/media/QueMeVes.jpg',
+                // '/media/QueMeVes.jpg',
+                'https://firebasestorage.googleapis.com/v0/b/mihottacoswebapp.appspot.com/o/QueMeVes_350x350.webp?alt=media&token=66c84051-5ce1-43e4-94e9-8b286728add9',
               ],
               title: "Que Me Ves",
               shortdesc: "Platillos de Hot Tacos",
@@ -168,7 +180,8 @@ export default function Home() {
             },
             {
               images:[
-                '/media/Quesabirrias.jpg',
+                // '/media/Quesabirrias.jpg',
+                'https://firebasestorage.googleapis.com/v0/b/mihottacoswebapp.appspot.com/o/Quesabirrias_350x350.webp?alt=media&token=5c391787-6784-4dca-b121-d6cd39b81004',
               ],
               title: "Quesabirrias",
               shortdesc: "Platillos de Hot Tacos",
@@ -176,7 +189,8 @@ export default function Home() {
             },
             {
               images:[
-                '/media/RibEye.jpg',
+                // '/media/RibEye.jpg',
+                'https://firebasestorage.googleapis.com/v0/b/mihottacoswebapp.appspot.com/o/RibEye_350x350.webp?alt=media&token=13c77054-a15a-4ad6-abbd-ec194de06eeb',
               ],
               title: "Rib Eye",
               shortdesc: "Platillos de Hot Tacos",
@@ -184,7 +198,8 @@ export default function Home() {
             },
             {
               images:[
-                '/media/Sopes.jpg',
+                // '/media/Sopes.jpg',
+                'https://firebasestorage.googleapis.com/v0/b/mihottacoswebapp.appspot.com/o/Sopes_350x350.webp?alt=media&token=68b5a574-2b4d-43e5-8f1c-ac4033f3db13',
               ],
               title: "Sopes",
               shortdesc: "Platillos de Hot Tacos",
@@ -192,7 +207,8 @@ export default function Home() {
             },
             {
               images:[
-                '/media/Torta.jpg',
+                // '/media/Torta.jpg',
+                'https://firebasestorage.googleapis.com/v0/b/mihottacoswebapp.appspot.com/o/Torta_350x350.webp?alt=media&token=ed4c0c2d-52a4-4d31-8bb4-b52b496cda04',
               ],
               title: "Torta",
               shortdesc: "Platillos de Hot Tacos",
