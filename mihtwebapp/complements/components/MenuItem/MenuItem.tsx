@@ -11,7 +11,7 @@ interface iMenuItem {
 
 export default function MenuItem(props:iMenuItem){
     return(
-        <div className={styles.MIDiv} id={props.Title}>
+        <div className={styles.MIDiv} id={"#"+props.Title}>
             <h1 className={styles.MITitle}>{props.Title}</h1>
             <h2 className={styles.MIPrice}>CA ${props.Price}</h2>
             <p className={styles.MIDescription}>{props.Description}</p>

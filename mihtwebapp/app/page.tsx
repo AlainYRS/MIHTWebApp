@@ -84,7 +84,7 @@ export default function Home() {
               images:[
                 '/media/AlPastor.jpg',
               ],
-              title: "Platillos Hot Tacos",
+              title: "AlPastor",
               shortdesc: "Platillos de Hot Tacos",
               url:'https://order.tbdine.com/pickup/28824/menu',
             },
