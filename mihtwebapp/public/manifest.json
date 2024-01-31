@@ -18,7 +18,7 @@
       { "src": "/Icons/HTIcons/icon-144x144.png", "sizes": "144x144" },
       { "src": "/Icons/HTIcons/icon-152x152.png", "sizes": "152x152" },
       { "src": "/Icons/HTIcons/icon-192x192.png", "sizes": "192x192" },
-      { "src": "/Icons/HTIcons/icon-284x284.png", "sizes": "284x284", "purpose": "maskable any" },
+      { "src": "/Icons/HTIcons/icon-284x284.png", "sizes": "284x284" },
       { "src": "/Icons/HTIcons/icon-512x512.png", "sizes": "512x512" }
     ],
     "screenshots": [
