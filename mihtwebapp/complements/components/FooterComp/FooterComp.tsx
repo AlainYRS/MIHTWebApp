@@ -39,10 +39,10 @@ function Footer(props:IFooter){
         <div className={styles.AppFooter}>
             <div id={styles.AppFooter}>
                 <div className={styles.SocialMed}>
-                    <a href="https://www.facebook.com/elpatronbarandgrill?mibextid=LQQJ4d" target="_blank" rel="noopener noreferrer">
+                    <a href="https://www.facebook.com/HotTacos?mibextid=LQQJ4d" target="_blank" rel="noopener noreferrer">
                         <Image src={'/Icons/FacebookIcon.png'} style={{borderRadius:'7px'}} width={30} height={30} alt={'Faceboook'}/>
                     </a>
-                    <a href="https://www.instagram.com/elpatron_leamington/?igshid=NTc4MTIwNjQ2YQ%3D%3D" target="_blank" rel="noopener noreferrer">
+                    <a href="https://www.instagram.com/hottacosrestaurant?igsh=Y3hkMHBhNDk5M2Rl" target="_blank" rel="noopener noreferrer">
                         <Image src={'/Icons/InstaIcon.png'} style={{borderRadius:'7px'}} width={30} height={30} alt={'Instagram'}/>
                     </a>
                 </div>

@@ -23,14 +23,12 @@ export default function Home() {
         if(headerHeight && catrina){
           if (scrollPosition > headerHeight) {
             // Si el usuario ha desplazado más allá de la altura del encabezado
-            catrina.style.width = '5vw' // Ajusta el ancho
-            catrina.style.height = '5vw' // Ajusta la altura
-            catrina.style.opacity = '0.7';
+            catrina.style.width = '7vw' // Ajusta el ancho
+            catrina.style.height = '7vw' // Ajusta la altura
           } else if (scrollPosition <= headerHeight && catrina){
             // Si el usuario está en la parte superior de la página
             catrina.style.width = '14vw' // Ajusta el ancho
             catrina.style.height = '14vw' // Ajusta la altura
-            catrina.style.opacity = '1';
           }
         }
       }
