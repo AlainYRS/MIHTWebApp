@@ -56,12 +56,7 @@
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background: black;
 }
 
 /* Estilos para navegadores webkit (Chrome, Safari) */
@@ -98,6 +93,6 @@ html {
 @media (prefers-color-scheme: light) {
   body {
     background-color: black;
-    /* color: white; */
+    color: white;
   }
 }
