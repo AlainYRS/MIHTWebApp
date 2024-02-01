@@ -56,12 +56,13 @@
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
+  background: black;
+  /* background: linear-gradient(
       to bottom,
       transparent,
       rgb(var(--background-end-rgb))
     )
-    rgb(var(--background-start-rgb));
+    rgb(var(--background-start-rgb)); */
 }
 
 /* Estilos para navegadores webkit (Chrome, Safari) */
@@ -93,4 +94,11 @@ body::-webkit-scrollbar-thumb {
 
 html {
   scroll-behavior: smooth;
+}
+
+@media (prefers-color-scheme: light) {
+  body {
+    background-color: black;
+    /* color: white; */
+  }
 }
