@@ -50,6 +50,11 @@
         width: 93%;
         margin: 0rem auto;
     }
+    .MIZoom{
+        width: 45vw;
+        height: 45vw;
+        border-radius: 14px;
+    }
     .MITitle{
         font-weight: normal;
     }
