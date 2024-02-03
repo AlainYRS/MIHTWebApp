@@ -6,10 +6,10 @@ import styles from "./page.module.css";
 import Menu from "@/complements/components/Menu/Menu";
 import Footer from '@/complements/components/FooterComp/FooterComp';
 import SliderCardComp from '@/complements/components/SliderComp/SliderCardComp';
-import React, { useEffect } from 'react';
-import { handleScroll, handleMouseMovement } from './pageFunctions';
+import React, { useEffect, useState } from 'react';
 
 export default function Home() {
+  const [catrinaStyle, setCatrinaStyle] = useState({ width: '14vw', height: '14vw' });
   // const mapaEstaticoUrl = "https://maps.app.goo.gl/fw18xgWNgxTyMctC8";
   // const mapaEstaticoUrl = `https://maps.googleapis.com/maps/api/staticmap?center=42.05327130119621,-82.59920537477937&zoom=13&size=600x450&key=${process.env.NEXT_PUBLIC_AYRS_API_Key}`;
 
@@ -37,14 +37,25 @@ export default function Home() {
 
 
   useEffect(() => {
-    // Agrega el listener de evento al montar el componente
+
+    function handleScroll() {
+      const Logo = document.getElementById('HeaderLogo');
+      const headerHeight = Logo?.offsetHeight;
+      const scrollPosition = window.scrollY;
+
+      if (headerHeight) {
+        if (scrollPosition > headerHeight) {
+          setCatrinaStyle({ width: '7vw', height: '7vw' });
+        } else {
+          setCatrinaStyle({ width: '14vw', height: '14vw' });
+        }
+      }
+    }    
+
     window.addEventListener('scroll', handleScroll);
-    window.addEventListener('mousemove', handleMouseMovement);
-  
-    // Limpia el listener de evento al desmontar el componente
+
     return () => {
       window.removeEventListener('scroll', handleScroll);
-      window.removeEventListener('mousemove', handleMouseMovement);
     };
   }, []); // El segundo argumento de useEffect ([]) indica que este efecto se ejecutará solo una vez al montar el componente
   
@@ -54,10 +65,13 @@ export default function Home() {
         <div className={styles.HeaderLogo} id="HeaderLogo">
           <Image src="/media/Hot Tacos Banner.jpg" fill priority sizes='(max-width: 768px) 70vw, (max-width: 1200px) 70vw, 800px' alt="Hot Tacos"/>
         </div>
-        <a className={styles.Catrina} id="catrina">
+        {/* <a className={styles.Catrina} id="catrina">
+          <Image src="/media/Catrina.png" fill sizes='(max-width: 768px) 35vw, (max-width: 1200px) 35vw, 800px' alt="Hot Tacos"/>
+        </a> */}
+        <a className={styles.Catrina} id="catrina" style={catrinaStyle}>
           <Image src="/media/Catrina.png" fill sizes='(max-width: 768px) 35vw, (max-width: 1200px) 35vw, 800px' alt="Hot Tacos"/>
         </a>
-        <h2 className={styles.HeadParagraph2} >Authentic Mexican Restaurant</h2>
+      <h2 className={styles.HeadParagraph2} >Authentic Mexican Restaurant</h2>
         <h3 className={styles.HeadParagraph3} ><a target="_blank" rel="noopener noreferrer" className={styles.MenuButtom} href="https://www.google.com/maps/dir//Hot+Tacos+Mexican+Restaurant/@42.0529949,-82.6816491,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x883ac1874678d4cf:0xd04e2ab656c80fa2!2m2!1d-82.5992483!2d42.0530244?entry=ttu"><u>16 Talbot Street E, Leamington ON, N8H 1L2</u></a> -   <a target="_blank" rel="noopener noreferrer" className={styles.MenuButtom} href="tel:+1-519-3291615" ><u className={styles.PhoneLink}>519 329 1615</u></a></h3>
       </div>
       
