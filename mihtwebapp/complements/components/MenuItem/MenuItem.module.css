@@ -10,6 +10,11 @@
     color: rgb(var(--htyellow));
     font-weight: bolder;
 }
+.MITitleEng{
+    font-size: larger;
+    color: rgb(whitesmoke);
+    font-weight: bolder;
+}
 .MIPrice{
     font-size: larger;
     width: 100%;
@@ -19,9 +24,16 @@
 }
 .MIDescription{
     text-align: left;
-    height: 9rem;
+    height: clamp(auto, max-content, 9rem);
     font-size: fit-content;
     overflow-y: auto;
+}
+.MIDescriptionEng{
+    text-align: left;
+    height: clamp(auto, max-content, 9rem);
+    font-size: fit-content;
+    overflow-y: auto;
+    color: rgb(var(--htyellow));
 }
 .MIZoom{
     width: 21vw;
@@ -58,10 +70,17 @@
     .MITitle{
         font-weight: normal;
     }
+    .MITitleEng{
+        font-weight: normal;
+    }
     .MIPrice{
         font-weight: normal;
     }
     .MIDescription{
+        height: max-content;
+        font-size: fit-content;
+    }
+    .MIDescriptionEng{
         height: max-content;
         font-size: fit-content;
     }

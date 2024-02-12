@@ -7,9 +7,11 @@ import Menu from "@/complements/components/Menu/Menu";
 import Footer from '@/complements/components/FooterComp/FooterComp';
 import SliderCardComp from '@/complements/components/SliderComp/SliderCardComp';
 import React, { useEffect, useState } from 'react';
+import PlayerComp from '@/complements/components/PlayerComp/PlayerComp'
 
 export default function Home() {
   const [catrinaStyle, setCatrinaStyle] = useState({ width: '14vw', height: '14vw' });
+  const [Player,setPlayer] = useState(true)
   // const mapaEstaticoUrl = "https://maps.app.goo.gl/fw18xgWNgxTyMctC8";
   // const mapaEstaticoUrl = `https://maps.googleapis.com/maps/api/staticmap?center=42.05327130119621,-82.59920537477937&zoom=13&size=600x450&key=${process.env.NEXT_PUBLIC_AYRS_API_Key}`;
 
@@ -313,6 +315,28 @@ export default function Home() {
             company={'Hot Tacos & Restaurant Inc.'}
         />
       </div>
+      {/* <div id={styles.GridCont9}>
+        <PlayerComp
+          url={'https://www.youtube.com/watch?v=EeuLoj0rb08'} 
+          // url={'https://www.youtube.com/shorts/48YexYtT0UA'} 
+          setState={setPlayer}
+          width={400} // number,
+          height={400} // number,
+          readOnly={true} // boolean,
+          vertical={'Top'} // 'Top' | 'Bottom' | 'Center',
+          horizontal={'Left'} // 'Left' | 'Right' | 'Center',
+          position={'relative'} // 'relative' | 'fixed' | 'absolute' | 'static' | 'sticky',
+          volume={0.01} //.01 | .25 | .5 | .75 | 1,
+          typeDevice={false} // boolean,
+          controls={false} // boolean,
+          playing={true} // boolean,
+          autoPlay={true} // boolean,
+          muted={true} // boolean,
+          loop={true} // boolean,
+        />
+      </div> */}
+
+
     </main>
   );
 }
