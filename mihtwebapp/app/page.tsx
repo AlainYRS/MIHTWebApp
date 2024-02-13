@@ -315,7 +315,7 @@ export default function Home() {
             company={'Hot Tacos & Restaurant Inc.'}
         />
       </div>
-      <div id={styles.GridCont9}>
+      {/* <div id={styles.GridCont9}>
         <PlayerComp
           url={'https://www.youtube.com/watch?v=EeuLoj0rb08'} 
           // url={'https://www.youtube.com/shorts/48YexYtT0UA'} 
@@ -334,7 +334,7 @@ export default function Home() {
           muted={true} // boolean,
           loop={true} // boolean,
         />
-      </div>
+      </div> */}
 
 
     </main>
