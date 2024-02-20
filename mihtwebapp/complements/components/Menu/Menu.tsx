@@ -80,7 +80,7 @@ export default function Menu(){
                         Price={15}
                         Description="Arroz, frijol, pico de gallo, queso mozzarella y carne de tu elección. Envuelto en una deliciosa tortilla de harina, dorado directamente a la plancha."
                         DescriptionEng="Rice, beans, pico de gallo, mozzarella cheese, and your choice of meat. Wrapped in a delicious flour tortilla and griddled directly."
-                        // ImagePath=""
+                        ImagePath="Photo"
                     />
                     <MenuItem 
                         Title="Papas Supreme Medianas"
@@ -179,7 +179,7 @@ export default function Menu(){
                         Price={19}
                         Description="Suaves tortillas rellenas de pollo, bañadas de salsa de jitomate gratinadas con queso y adornadas con cebolla, crema."
                         DescriptionEng="Soft tortillas filled with chicken, bathed in tomato sauce, gratinated with cheese, and adorned with onion and cream."
-                        // ImagePath=""
+                        ImagePath="Photo"
                     />
                     <MenuItem 
                         Title="Chilaquiles"
@@ -187,7 +187,7 @@ export default function Menu(){
                         Price={17}
                         Description="Chips cocinados en salsa roja o verde, vestidos con carne o un huevo estrellado, queso feta fresco, crema y aguacate, acompañado de lechuga y arroz."
                         DescriptionEng="Chips cooked in red or green sauce, dressed with meat or a fried egg, fresh feta cheese, cream, and avocado, accompanied by lettuce and rice."
-                        // ImagePath=""
+                        ImagePath="Photo"
                     />
                     <MenuItem 
                         Title="Flautas de pollo"
@@ -281,7 +281,7 @@ export default function Menu(){
                         Price={15}
                         Description="Salsa ligera de chile guajillo y menudo. Servido con tortillas, cebolla, cilantro, limón y salsa macha."
                         DescriptionEng="Light guajillo chili sauce and menudo. Served with tortillas, onion, cilantro, lemon, and macha sauce."
-                        // ImagePath=""
+                        ImagePath="Photo"
                     />
                     <MenuItem 
                         Title="Caldo de Res Mediano"
@@ -289,7 +289,7 @@ export default function Menu(){
                         Price={15}
                         Description="Carne de res con papa, elote, zanahoria, calabaza y repollo. Servido con tortillas, cebolla, cilantro, limón y salsa macha."
                         DescriptionEng="Beef with potatoes, corn, carrots, squash, and cabbage. Served with tortillas, onion, cilantro, lemon, and macha sauce."
-                        // ImagePath=""
+                        ImagePath="Photo"
                     />
                 </div>
                 <p className={styles.SectionMenuTitle} id="DelMar"><strong>DelMar</strong></p>
@@ -340,7 +340,7 @@ export default function Menu(){
                         Price={23}
                         Description="Tortilla de maíz frita cubierta con mayonesa, camarón, cebolla, tomate, pepino, cilantro, aguacate y lechuga."
                         DescriptionEng="Fried corn tortilla covered with mayonnaise, shrimp, onion, tomato, cucumber, cilantro, avocado, and lettuce."
-                        // ImagePath=""
+                        ImagePath="Photo"
                     />
                     <MenuItem 
                         Title="Coctel de Camarón"
@@ -348,7 +348,7 @@ export default function Menu(){
                         Price={17}
                         Description="Camarones bañados en una salsa refrescante a base de cátsup, mezclados con cebolla, cilantro, y aguacate. Servido con saladitas y salsa valentina."
                         DescriptionEng="Shrimp bathed in a refreshing ketchup-based sauce, mixed with onion, cilantro, and avocado. Served with saltines and Valentina sauce."
-                        // ImagePath=""
+                        ImagePath="Photo"
                     />
                     <MenuItem 
                         Title="Sopa de Mariscos"
@@ -356,7 +356,7 @@ export default function Menu(){
                         Price={25}
                         Description="Pulpo, pescado, camarón, surimi, almejas, callo de hacha. Servido con cebolla, cilantro, aguacate, limón y tostadas."
                         DescriptionEng="Octopus, fish, shrimp, surimi, clams. Served with onion, cilantro, avocado, lemon, and tostadas."
-                        // ImagePath=""
+                        ImagePath="Photo"
                     />
                     <MenuItem 
                         Title="Vuelve a la Vida"
@@ -447,7 +447,7 @@ export default function Menu(){
                         Price={5}
                         Description="Tacos de carne de res asada con exquisitas especias para lograr un toque fresco y jugoso al estilo mexicano."
                         DescriptionEng="Tacos with grilled beef seasoned with exquisite spices to achieve a fresh and juicy Mexican touch."
-                        // ImagePath=""
+                        ImagePath="Photo"
                     />
                     <MenuItem 
                         Title="Lengua o Cabeza"
@@ -463,7 +463,7 @@ export default function Menu(){
                         Price={6}
                         Description="Queso crema, lechuga, pico de gallo más proteína de su elección."
                         DescriptionEng="Cream cheese, lettuce, pico de gallo, plus your choice of protein."
-                        // ImagePath=""
+                        ImagePath="Photo"
                     />
                     <MenuItem 
                         Title="¿Qué me ves?"
@@ -503,7 +503,7 @@ export default function Menu(){
                         Price={7}
                         Description="Rellena de cerdo marinado en achiote y queso. Un sabor tradicional y delicioso."
                         DescriptionEng="Filled with pork marinated in achiote and cheese. A traditional and delicious flavor."
-                        // ImagePath=""
+                        ImagePath="Photo"
                     />
                     <MenuItem 
                         Title="Quesadilla de Tinga de Pollo"

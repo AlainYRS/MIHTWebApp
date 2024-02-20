@@ -229,7 +229,16 @@ export default function Home() {
               title: "Torta",
               shortdesc: "Platillos de Hot Tacos",
               url:'https://order.tbdine.com/pickup/28824/menu',
-            }
+            },
+            {
+              images:[
+                // '/media/Torta.jpg',
+                'https://firebasestorage.googleapis.com/v0/b/mihottacoswebapp.appspot.com/o/Wall%20e_350x350.webp?alt=media&token=6d37c3c2-0c0e-404f-b0cf-9dc08ddac1df',
+              ],
+              title: "Wall e",
+              shortdesc: "Hot Tacos New Member",
+              url:'https://order.tbdine.com/pickup/28824/menu',
+            },
           ]}
         />
       </div>
