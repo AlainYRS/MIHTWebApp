@@ -214,7 +214,7 @@ export default function Menu(){
                         Price={19}
                         Description="Acompañada de ensalada, arroz, frijol, tortillas y cebollines."
                         DescriptionEng="Served with salad, rice, beans, tortillas, and green onions."
-                        // ImagePath=""
+                        ImagePath="Photo"
                     />
                     <MenuItem 
                         Title="Pechuga a la plancha"
@@ -487,7 +487,7 @@ export default function Menu(){
                         Price={8}
                         Description="Tortilla de maíz acompañada de Camarones y una salsa preparada con tocino, pimientos, cebolla, queso y crema."
                         DescriptionEng="Corn tortilla accompanied by shrimp and a sauce prepared with bacon, peppers, onions, cheese and cream."
-                        // ImagePath=""
+                        ImagePath="Photo"
                     />
                     <MenuItem 
                         Title="Quesabirria"

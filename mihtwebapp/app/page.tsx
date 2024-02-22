@@ -260,33 +260,45 @@ export default function Home() {
             </tr>
             <tr className={styles.ScheduleRow}>
               <td className={styles.ScheduleDay}>Martes</td>
-              <td className={styles.ScheduleOpen}>12:00 pm</td>
-              <td className={styles.ScheduleClose}>7:00 pm</td>
+              <td className={styles.ScheduleOpen}>11:00 pm</td>
+              <td className={styles.ScheduleClose}>8:00 pm</td>
+              {/* <td className={styles.ScheduleOpen}>12:00 pm</td> */}
+              {/* <td className={styles.ScheduleClose}>7:00 pm</td> */}
             </tr>
             <tr className={styles.ScheduleRow}>
               <td className={styles.ScheduleDay}>Miércoles</td>
-              <td className={styles.ScheduleOpen}>12:00 pm</td>
-              <td className={styles.ScheduleClose}>8:30 pm</td>
+              <td className={styles.ScheduleOpen}>11:00 pm</td>
+              <td className={styles.ScheduleClose}>8:00 pm</td>
+              {/* <td className={styles.ScheduleOpen}>12:00 pm</td>
+              <td className={styles.ScheduleClose}>8:30 pm</td> */}
             </tr>
             <tr className={styles.ScheduleRow}>
               <td className={styles.ScheduleDay}>Jueves</td>
-              <td className={styles.ScheduleOpen}>11:30 am</td>
-              <td className={styles.ScheduleClose}>8:30 pm</td>
+              <td className={styles.ScheduleOpen}>11:00 am</td>
+              <td className={styles.ScheduleClose}>10:00 pm</td>
+              {/* <td className={styles.ScheduleOpen}>11:30 am</td>
+              <td className={styles.ScheduleClose}>8:30 pm</td> */}
             </tr>
             <tr className={styles.ScheduleRow}>
               <td className={styles.ScheduleDay}>Viernes</td>
-              <td className={styles.ScheduleOpen}>11:30 am</td>
-              <td className={styles.ScheduleClose}>8:30 pm</td>
+              <td className={styles.ScheduleOpen}>11:00 am</td>
+              <td className={styles.ScheduleClose}>10:00 pm</td>
+              {/* <td className={styles.ScheduleOpen}>11:30 am</td>
+              <td className={styles.ScheduleClose}>8:30 pm</td> */}
             </tr>
             <tr className={styles.ScheduleRow}>
               <td className={styles.ScheduleDay}>Sábado</td>
-              <td className={styles.ScheduleOpen}>12:00 pm</td>
-              <td className={styles.ScheduleClose}>8:00 pm</td>
+              <td className={styles.ScheduleOpen}>11:00 am</td>
+              <td className={styles.ScheduleClose}>10:00 pm</td>
+              {/* <td className={styles.ScheduleOpen}>12:00 pm</td>
+              <td className={styles.ScheduleClose}>8:00 pm</td> */}
             </tr>
             <tr className={styles.ScheduleRow}>
               <td className={styles.ScheduleDay}>Domingo</td>
-              <td className={styles.ScheduleOpen}>10:00 am</td>
-              <td className={styles.ScheduleClose}>7:00 pm</td>
+              <td className={styles.ScheduleOpen}>11:00 am</td>
+              <td className={styles.ScheduleClose}>8:00 pm</td>
+              {/* <td className={styles.ScheduleOpen}>10:00 am</td>
+              <td className={styles.ScheduleClose}>7:00 pm</td> */}
             </tr>
           </tbody>
         </table>
