@@ -1,0 +1,65 @@
+.BranchComp{
+    width: clamp(140px, 25%, 210px);
+    height: max-content;
+    margin: 1rem;
+    text-align: center;
+    cursor: pointer;
+}
+.HeadParagraph3{
+    display: block;
+    transition: var(--fast);
+    text-align: center;
+    font-size: 0.9rem;
+    border-bottom: 1px solid rgba(210,210,210, 0.35);
+    border-radius: 14px;
+    margin: 7px auto;
+    padding: 3px;
+    background-color: rgba(var(--htred),0.35);
+}
+.PhoneLink{
+    color: rgba(var(--htyellow),1);
+}
+.Picture{
+    border-radius: 3px;
+    border: 1px solid white;
+    box-shadow: 1px 1px 12px white;
+    transition: var(--fast);
+}
+.BranchComp:hover > img{
+    border: 1px solid rgba(var(--htred),0.7);
+    box-shadow: 0px 0px 0px white;
+}
+.BranchComp:hover > h3{
+    background-color: rgba(var(--htred),0.7);
+}
+.BranchComp:hover > h2{
+    background-color: rgba(var(--htyellow),1);
+}
+.BranchName{
+    background-color: rgba(var(--htyellow),0.7);
+    transition: var(--fast);
+    color: whitesmoke;
+    text-shadow: 2px 1px 1px rgba(var(--htred),0.7);
+    border-radius: 7px;
+    margin: 7px auto;
+    font-size: 1.1rem;
+    font-weight: bolder;
+    border-bottom: 1px solid rgba(210,210,210, 0.35);
+}
+
+/* Grupo para dispositivos iPhone 5 a iPhone 12 Max en orientación vertical */
+@media only screen and (max-device-width: 428px) and (orientation: portrait) {
+    .HeadParagraph3{
+        font-size: 0.7rem;
+        width: 100vw;
+    }
+}
+  
+  /* Grupo para dispositivos iPad y otros dispositivos en orientación vertical */
+  @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+    /* Estilos para dispositivos iPad y otros dispositivos en orientación vertical */
+    /* Aquí puedes mostrar el menú en orientación horizontal */
+    .menu {
+      display: block; /* Por ejemplo, cambiar a block para mostrar el menú */
+    }
+  }

@@ -23,7 +23,6 @@ export default function MenuItem(props:iMenuItem){
             {props.ImagePath && 
                 <div className={styles.MIZoom}>
                     <div className={styles.MIImg}>
-                        {/* <Image src={props.ImagePath} fill style={{objectFit: 'contain'}} sizes='(max-width: 768px) 35vw, (max-width: 1200px) 35vw, 800px' alt={props.Title}/> */}
                         <img src={props.ImagePath} style={{objectFit: 'contain'}} sizes='(max-width: 768px) 35vw, (max-width: 1200px) 35vw, 800px' alt={props.Title}/>
                     </div>
                 </div>
