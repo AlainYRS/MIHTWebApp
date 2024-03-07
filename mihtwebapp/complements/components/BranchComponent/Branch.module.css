@@ -51,7 +51,7 @@
 @media only screen and (max-device-width: 428px) and (orientation: portrait) {
     .HeadParagraph3{
         font-size: 0.7rem;
-        width: 100vw;
+        width: 100%;
     }
 }
   

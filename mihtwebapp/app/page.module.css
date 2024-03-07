@@ -127,7 +127,7 @@
 .Branches{
     display: flex;
     flex-flow: row wrap;
-    width: 100%;
+    width: 100vw;
     justify-content: space-around;
 }
 
