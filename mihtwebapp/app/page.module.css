@@ -82,6 +82,9 @@
     text-align: center;
     width: calc(100vw - 7px);
 }
+.HeadParagraph2 > strong{
+    color: red;
+}
 .HeadParagraph3{
     color: white;
     display: block;
@@ -91,11 +94,20 @@
 .HeadParagraph4{
     color: rgba(var(--htyellow),1);
     display: block;
-    text-align: left;
+    margin: 3.5px auto;
+    float: right;
+    background-color: rgba(210,140,70,0.35);
+    font-size: 0.7rem;
+    text-align: center;
     width: max-content;
     border-bottom: 1px solid gray;
-    padding: 0 7px;
+    padding: 0 3px;
     border-radius: 7px;
+}
+.HeadParagraph4 > strong{
+    color: yellow;
+    font-size: 1rem;
+    cursor: pointer;
 }
 .MI{
     border: 2px solid red;

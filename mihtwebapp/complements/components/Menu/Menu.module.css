@@ -3,8 +3,8 @@
 }
 .MenuSectionsContainer{
     position: sticky;
-    top: calc(7vw);
-    z-index: 2;
+    top: calc(6.5vw);
+    z-index: 1;
     background-color: black;
 }
 .Sections{
