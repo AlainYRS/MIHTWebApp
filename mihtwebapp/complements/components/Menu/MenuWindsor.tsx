@@ -69,7 +69,7 @@ export default function Menu(){
                     />
                     <MenuItem 
                         Title="Rib Eye Steak 300 g"
-                        TitleEng="Ryb Eye Steak 300 g"
+                        TitleEng="Rib Eye Steak 300 g"
                         Price={31}
                         Description="300 gramos con chile jalapeño, nopal, ccebollas verdes y papas de la casa."
                         DescriptionEng="300 grams with jalapeño pepper, nopal, green onions, house potato."
@@ -77,7 +77,7 @@ export default function Menu(){
                     />
                     <MenuItem 
                         Title="Rib Eye Steak 450 g"
-                        TitleEng="Ryb Eye Steak 450 g"
+                        TitleEng="Rib Eye Steak 450 g"
                         Price={38}
                         Description="450 gramos con chile jalapeño, nopal, ccebollas verdes y papas de la casa."
                         DescriptionEng="450 grams with jalapeño pepper, nopal, green onions, house potato."
@@ -130,15 +130,15 @@ export default function Menu(){
                 <p className={styles.SectionMenuTitle} id="Enchiladas"><strong>Enchiladas</strong></p>
                 <div className={styles.SectionMenu}>
                     <MenuItem 
-                        Title="Verdes o Rojas"
-                        TitleEng="Verdes o Rojas"
+                        Title="Enchiladas Verdes o Rojas"
+                        TitleEng="Green or Red Enchiladas"
                         Price={19}
                         Description="Tortilla suave rellena de pollo cubierta con salsa roja o verde, con lechuga, queso fetta, crema, cebolla, cubierta con aguacate. Servido con arroz."
                         DescriptionEng="Soft tortilla filled with chiken covered with a red or green sauce, with lettuce, fetta cheese, sour cream, onion and topped with avocado. Served with rice on the side."
                         // ImagePath=""
                     />
                     <MenuItem 
-                        Title="Suizas"
+                        Title="Enchiladas Suizas"
                         TitleEng="Swiss Enchiladas"
                         Price={21}
                         Description="Torillas suaves y rellenas de pollo, bañadas de salsa verde, crema y queso derretido."
@@ -154,8 +154,8 @@ export default function Menu(){
                         // ImagePath=""
                     />
                     <MenuItem 
-                        Title="Tricolor"
-                        TitleEng=""
+                        Title="Enchiladas Tricolor"
+                        TitleEng="Tricolor Enchiladas"
                         Price={23}
                         Description="6 enchiladas en total rellenas de pollo. (2) cubiertas con salsa verde, (2) enchiladas suizas, y (2) enchiladas rojas."
                         DescriptionEng="A total of 6 chicken enchiladas; (2) covered with green sauce, (2) enchiladas suizas, and (2) red enchiladas."
@@ -182,7 +182,7 @@ export default function Menu(){
                     />
                     <MenuItem 
                         Title="Carnitas"
-                        TitleEng="Carnitas"
+                        TitleEng="Puller Pork"
                         Price={5}
                         Description="Una fiesta mexicana de sabor en un taco con carnitas fritas en su propia manteca, creadas de manera tradicional."
                         DescriptionEng="A Mexican flavor party in a taco with fried pulled pork in their own lard, made in a traditional way."
@@ -246,7 +246,7 @@ export default function Menu(){
                     />
                     <MenuItem 
                         Title="Taco gobernador"
-                        TitleEng="Taco gobernador"
+                        TitleEng="Governor Taco"
                         Price={8}
                         Description="Camarones, salsa cremosa hecha con pimientos, cebolla roja, tocino, queso, y crema."
                         DescriptionEng="Shrimp, creamy sauce made with bell peppers, red onion, bacon, sour cream, and cheese."
@@ -307,8 +307,8 @@ export default function Menu(){
                 <p className={styles.SectionMenuTitle} id="AntojitosBarra"><strong>Antojitos de la Barra</strong></p>
                 <div className={styles.SectionMenu}>
                     <MenuItem 
-                        Title="Nachos Calientes de Pollo o Asada/ o Mezclado"
-                        TitleEng="Hot Nachos Chicken or Asada (beef)/or Mixed"
+                        Title="Nachos Calientes de Pollo o Asada o Mezclado"
+                        TitleEng="Hot Nachos Chicken or Asada (beef) or Mixed"
                         Price={9}
                         Description="Chips de tortilla calientes cubiertos con queso mozzarella, queso amarillo, su carne de elección, jalapeños y pico de gallo."
                         DescriptionEng="Hot tortilla chips topped with mozzarella cheese, yellow cheese, your choice of meat, jalapenos, and pico de gallo."
@@ -343,7 +343,7 @@ export default function Menu(){
                 <div className={styles.SectionMenu}>
                     <MenuItem 
                         Title="Helado de aguacate/vainilla."
-                        TitleEng="Avocado/Vanilla  Icecream"
+                        TitleEng="Avocado/Vanilla Icecream"
                         Price={10}
                         Description=""
                         DescriptionEng=""
@@ -351,7 +351,7 @@ export default function Menu(){
                     />
                     <MenuItem 
                         Title="Pastel de chocolate con helado de vainilla."
-                        TitleEng="Chocolate cake with  vanilla icecream1"
+                        TitleEng="Chocolate cake with vanilla icecream"
                         Price={9}
                         Description=""
                         DescriptionEng=""
