@@ -79,10 +79,16 @@ export default function Home() {
         </a>
         <h2 className={styles.HeadParagraph2} >{Branch == "" && "Authentic Mexican Restaurant"}
           {Branch == "Windsor" && 
-            <><strong>{Branch}</strong> - 325 Ouellette Ave - <u><a href={"tel:+519 818 5129"}>519 818 5129</a></u></>
+            <>
+              <a target="_blank" rel="noopener noreferrer" className={styles.MenuButtom} href={"https://www.google.com/maps/dir//hot+tacos+windsor+ontario/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x883b2dd18c2079f3:0x7c98cd6cc1c7cbea?sa=X&ved=1t:3061&ictx=111"} ><strong>{Branch}</strong> - <u>325 Ouellette Ave</u> -</a> 
+              <u><a href={"tel:+519 818 5129"}>519 818 5129</a></u>
+            </>
           }
           {Branch == "Leamington" && 
-            <><strong>{Branch}</strong> - 16 Talbot Street E - <u><a href={"tel:+519 329 1615"}>519 329 1615</a></u></>
+            <>
+              <a target="_blank" rel="noopener noreferrer" className={styles.MenuButtom} href={"https://www.google.com/maps/dir//Hot+Tacos+Mexican+Restaurant/@42.0529949,-82.6816491,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x883ac1874678d4cf:0xd04e2ab656c80fa2!2m2!1d-82.5992483!2d42.0530244?entry=ttu"} ><strong>{Branch}</strong> - <u>16 Talbot Street E</u> -</a> 
+              <u><a href={"tel:+519 329 1615"}>519 329 1615</a></u>
+            </>
           }
           {Chosen &&
             <h3 className={styles.HeadParagraph4} onClick={()=> {setBranch(""), setChosen(false)}}><strong>Cambiar / Change</strong> </h3>
@@ -92,7 +98,7 @@ export default function Home() {
       <div id={styles.GridCont2}> {/* NavBar */}
         {Branch=="Windsor" &&
           <NavBar
-          ImageURL={"https://firebasestorage.googleapis.com/v0/b/mihottacoswebapp.appspot.com/o/Hot%20Tacos_350x350.webp?alt=media&token=d9a53f57-d71f-4af0-a48a-f3453ef4392d"}
+          ImageURL={"https://www.google.com/maps/dir//hot+tacos+windsor+ontario/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x883b2dd18c2079f3:0x7c98cd6cc1c7cbea?sa=X&ved=1t:3061&ictx=111"}
           BranchName={"Windsor"}
           OnlineOrderingURL={"https://order.tbdine.com/pickup/51513/menu"}
           PhoneNumber={"1-519-818-5129"}
