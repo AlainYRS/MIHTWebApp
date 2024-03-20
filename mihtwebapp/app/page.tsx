@@ -100,7 +100,7 @@ export default function Home() {
           <NavBar
           ImageURL={"https://www.google.com/maps/dir//hot+tacos+windsor+ontario/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x883b2dd18c2079f3:0x7c98cd6cc1c7cbea?sa=X&ved=1t:3061&ictx=111"}
           BranchName={"Windsor"}
-          OnlineOrderingURL={"https://order.tbdine.com/pickup/51513/menu"}
+          // OnlineOrderingURL={"https://order.tbdine.com/pickup/51513/menu"}
           PhoneNumber={"1-519-818-5129"}
           Directions={"https://www.google.com/maps/dir/42.3109168,-83.046867/hot+tacos+windsor+ontario/@42.3140328,-83.0539755,15z/data=!4m9!4m8!1m1!4e1!1m5!1m1!1s0x883b2dd18c2079f3:0x7c98cd6cc1c7cbea!2m2!1d-83.0391109!2d42.3170951?entry=ttu"}
           FeedBackLink={"https://www.google.com/search?q=Hot+Tacos+Mexican+Restaurant&oq=hot&gs_lcrp=EgZjaHJvbWUqBggBEEUYOzIGCAAQRRg5MgYIARBFGDsyBggCEEUYOzIGCAMQRRg7MhUIBBAuGCcYrwEYxwEYgAQYigUYjgUyDAgFEAAYQxiABBiKBTIMCAYQABhDGIAEGIoFMgwIBxAAGEMYgAQYigUyDQgIEC4YxwEY0QMYgAQyBwgJEAAYjwLSAQkzOTYxajBqMTWoAgCwAgA&sourceid=chrome&ie=UTF-8&lqi=ChxIb3QgVGFjb3MgTWV4aWNhbiBSZXN0YXVyYW50SP7mtdeLsICACFo-EAAQARACEAMYABgBGAIYAyIcaG90IHRhY29zIG1leGljYW4gcmVzdGF1cmFudCoKCAIQABABEAIQAzICZW6SARJtZXhpY2FuX3Jlc3RhdXJhbnSaASRDaGREU1VoTk1HOW5TMFZKUTBGblNVTXhja3BMYnpoblJSQUKqAUUQATIfEAEiGw77zvW_g1eMG3zgLIufMx5wXH_5RvSPTrVAxzIgEAIiHGhvdCB0YWNvcyBtZXhpY2FuIHJlc3RhdXJhbnQ#lkt=LocalPoiReviews&rlimm=15009981570700808098"}
@@ -316,17 +316,17 @@ export default function Home() {
               <tr className={styles.ScheduleRow}>
                 <td className={styles.ScheduleDay}>Friday (Viernes)</td>
                 <td className={styles.ScheduleOpen}>11:00 am</td>
-                <td className={styles.ScheduleClose}>11:00 pm</td>
+                <td className={styles.ScheduleClose}>9:00 pm</td>
               </tr>
               <tr className={styles.ScheduleRow}>
                 <td className={styles.ScheduleDay}>Saturday (Sábado)</td>
                 <td className={styles.ScheduleOpen}>11:00 am</td>
-                <td className={styles.ScheduleClose}>11:00 pm</td>
+                <td className={styles.ScheduleClose}>9:00 pm</td>
               </tr>
               <tr className={styles.ScheduleRow}>
                 <td className={styles.ScheduleDay}>Sunday (Domingo)</td>
                 <td className={styles.ScheduleOpen}>11:00 am</td>
-                <td className={styles.ScheduleClose}>11:00 pm</td>
+                <td className={styles.ScheduleClose}>9:00 pm</td>
               </tr>
             </tbody>
           </table>
