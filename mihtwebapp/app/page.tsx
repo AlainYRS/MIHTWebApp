@@ -98,7 +98,7 @@ export default function Home() {
       <div id={styles.GridCont2}> {/* NavBar */}
         {Branch=="Windsor" &&
           <NavBar
-          ImageURL={"https://www.google.com/maps/dir//hot+tacos+windsor+ontario/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x883b2dd18c2079f3:0x7c98cd6cc1c7cbea?sa=X&ved=1t:3061&ictx=111"}
+          ImageURL={"https://firebasestorage.googleapis.com/v0/b/mihottacoswebapp.appspot.com/o/Hot%20Tacos%20Windsor_350x350.webp?alt=media&token=1453a054-1a61-4c3b-9870-d2f3335b90d3"}
           BranchName={"Windsor"}
           // OnlineOrderingURL={"https://order.tbdine.com/pickup/51513/menu"}
           PhoneNumber={"1-519-818-5129"}
