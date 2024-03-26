@@ -487,7 +487,7 @@ export default function Menu(){
                         Price={8}
                         Description="Tortilla de maíz acompañada de Camarones y una salsa preparada con tocino, pimientos, cebolla, queso y crema."
                         DescriptionEng="Corn tortilla accompanied by shrimp and a sauce prepared with bacon, peppers, onions, cheese and cream."
-                        ImagePath="Photo"
+                        ImagePath="https://firebasestorage.googleapis.com/v0/b/mihottacoswebapp.appspot.com/o/Taco%20Gobernador_350x350.webp?alt=media&token=ea68e358-54af-4c9f-94f0-ddcb8208aab2"
                     />
                     <MenuItem 
                         Title="Quesabirria"
