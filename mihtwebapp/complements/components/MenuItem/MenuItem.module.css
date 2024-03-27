@@ -9,14 +9,14 @@
     padding: 0.5rem;
     border-radius: 14px;
 }
-.MITitle{
-    font-size: larger;
-    color: rgb(var(--htyellow));
-    font-weight: bolder;
-}
-.MITitleEng{
+.MITitle1{
     font-size: larger;
     color: rgb(whitesmoke);
+    font-weight: bolder;
+}
+.MITitle2{
+    font-size: larger;
+    color: rgb(var(--htyellow));
     font-weight: bolder;
 }
 .MIPrice{
@@ -26,13 +26,13 @@
     color: rgba(var(--htred),0.7);
     font-weight: bolder;
 }
-.MIDescription{
+.MIDescription1{
     text-align: left;
     height: clamp(auto, max-content, 9rem);
     font-size: fit-content;
     overflow-y: auto;
 }
-.MIDescriptionEng{
+.MIDescription2{
     text-align: left;
     height: clamp(auto, max-content, 9rem);
     font-size: fit-content;
