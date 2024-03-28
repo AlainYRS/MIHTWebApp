@@ -133,8 +133,8 @@ export default function Menu(){
                         Title2="Enchiladas Verdes o Rojas"
                         Title1="Green or Red Enchiladas"
                         Price={19}
-                        Description2="Tortilla suave rellena de pollo cubierta con salsa roja o verde, con lechuga, queso fetta, crema, cebolla, cubierta con aguacate. Servido con arroz."
-                        Description1="Soft tortilla filled with chiken covered with a red or green sauce, with lettuce, fetta cheese, sour cream, onion and topped with avocado. Served with rice on the side."
+                        Description2="Tortilla suave rellena de pollo cubierta con salsa roja o verde, con lechuga, queso fetta, crema, cebolla, cubierta con aguacate. Servido con frijoles."
+                        Description1="Soft tortilla filled with chiken covered with a red or green sauce, with lettuce, fetta cheese, sour cream, onion and topped with avocado. Served with beans on the side."
                         // ImagePath=""
                     />
                     <MenuItem 
