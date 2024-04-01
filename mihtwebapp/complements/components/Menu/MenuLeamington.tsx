@@ -29,7 +29,7 @@ export default function Menu(){
                         Price={22}
                         Description1="Totopos calientes cubiertos de queso Mozzarella, queso amarillo, la carne de tu elección, jalapeños y pico de gallo."
                         Description2="Hot tortilla chips covered with Mozzarella cheese, yellow cheese, your choice of meat, jalapeños, and pico de gallo."
-                        ImagePath="https://firebasestorage.googleapis.com/v0/b/mihottacoswebapp.appspot.com/o/Nachos%20Calientes_350x350.webp?alt=media&token=63a398d6-3709-495c-a640-95f043686015"
+                        ImagePath="https://firebasestorage.googleapis.com/v0/b/mihottacoswebapp.appspot.com/o/Nachos%20Supreme_350x350.webp?alt=media&token=80c9f9fa-a3c0-4493-80d0-f0dfa565564b"
                     />
                     <MenuItem 
                         Title1="Nachos Supreme"
@@ -37,7 +37,7 @@ export default function Menu(){
                         Price={18}
                         Description1="Chips preparados al momento, cubiertos con queso amarillo derretido, chorizo, lechuga, pico de gallo, crema y queso feta fresco."
                         Description2="Chips prepared on the spot, topped with melted yellow cheese, chorizo, lettuce, pico de gallo, cream, and fresh feta cheese."
-                        ImagePath="https://firebasestorage.googleapis.com/v0/b/mihottacoswebapp.appspot.com/o/Nachos%20Supreme_350x350.webp?alt=media&token=80c9f9fa-a3c0-4493-80d0-f0dfa565564b"
+                        ImagePath="https://firebasestorage.googleapis.com/v0/b/mihottacoswebapp.appspot.com/o/Nachos%20Calientes_350x350.webp?alt=media&token=63a398d6-3709-495c-a640-95f043686015"
                     />
                     <MenuItem 
                         Title1="Aros de Cebolla"
