@@ -34,7 +34,7 @@
 }
 #GridCont4{
     grid-area: Schedule;
-    width: max-content;
+    width: calc(min-content, max-content, 100vw);
     margin: auto;
 }
 #GridCont5{
@@ -134,7 +134,7 @@
 .BusinessHours{
     margin: auto;
     border-radius: 7px;
-    width: 100vw;
+    width: calc(min-content, max-content, 100vw);
 }
 .ScheduleDay,
 .ScheduleOpen,
