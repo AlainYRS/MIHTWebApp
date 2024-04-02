@@ -410,13 +410,58 @@ export default function Home() {
       </div>
 
       <div id={styles.GridCont8}> {/* Footer */}
-        <Footer 
-            author= {'Alain Y. Rivera S.'}
-            copyright= {'Alain Rivera'}
-            date= {'Jan 24, 2024'}
-            version= {'1.0.0'}
-            company={'Hot Tacos & Restaurant Inc.'}
-        />
+        {Branch=="Windsor" &&
+          <Footer 
+              author= {'Alain Y. Rivera S.'}
+              copyright= {'Alain Rivera'}
+              date= {'Jan 24, 2024'}
+              version= {'1.0.0'}
+              company={'Hot Tacos & Restaurant Inc.'}
+              platforms={[
+                {
+                  // PName: 'Doordash',
+                  PIcon: '/Icons/Doordash.png',
+                  PUrl: 'https://www.doordash.com/es-US/store/hot-tacos-restaurant---windsor-windsor-28078584/?event_type=autocomplete&pickup=false',
+                },
+                {
+                  // PName: 'Skip the Dishes',
+                  PIcon: '/Icons/SkipTheDishes.jpg',
+                  PUrl: 'https://www.skipthedishes.com/hot-tacos-ouellette-ave',
+                },
+                // {
+                //   // PName: 'Uber Eats',
+                //   PIcon: '/Icons/Uber Eats.png',
+                //   PUrl: '',
+                // }
+              ]}
+          />
+        }
+        {Branch=="Leamington" &&
+          <Footer 
+              author= {'Alain Y. Rivera S.'}
+              copyright= {'Alain Rivera'}
+              date= {'Jan 24, 2024'}
+              version= {'1.0.0'}
+              company={'Hot Tacos & Restaurant Inc.'}
+              platforms={[
+                // {
+                //   // PName: 'Doordash',
+                //   PIcon: '/Icons/Doordash.png',
+                //   PUrl: '',
+                // },
+                {
+                  // PName: 'Skip the Dishes',
+                  PIcon: '/Icons/SkipTheDishes.jpg',
+                  PUrl: 'https://www.skipthedishes.com/hot-tacos-talbot-street-east',
+                },
+                {
+                  // PName: 'Uber Eats',
+                  PIcon: '/Icons/Uber Eats.png',
+                  PUrl: 'https://www.ubereats.com/ca/store/hot-tacos-restaurant/58HVtyoTVG6600eVmrKUjw?diningMode=DELIVERY&sc=SEARCH_SUGGESTION',
+                }
+              ]}
+          />
+        }
       </div>
       <div id={styles.GridCont9}>  {/* Player */}
         {/* <PlayerComp

@@ -26,12 +26,19 @@ import React from 'react';
 import styles from './FooterComp.module.css';
 import Image from 'next/image';
 
+interface iPlatforms{
+    PName?: string,
+    PIcon?: string,
+    PUrl: string,
+}
+
 interface IFooter{
     author: string,
     copyright: string,
     date: string,
     version: string,
     company: string,
+    platforms?: iPlatforms[],
  }
 
 function Footer(props:IFooter){
@@ -45,6 +52,16 @@ function Footer(props:IFooter){
                     <a href="https://www.instagram.com/hottacosrestaurant?igsh=Y3hkMHBhNDk5M2Rl" target="_blank" rel="noopener noreferrer">
                         <Image src={'/Icons/InstaIcon.png'} style={{borderRadius:'7px'}} width={30} height={30} alt={'Instagram'}/>
                     </a>
+                    {props.platforms && 
+                        props.platforms.map((plat, index) => {
+                            return(
+                                <a href={plat.PUrl} target="_blank" rel="noopener noreferrer">
+                                    {plat.PIcon && <Image src={plat.PIcon} key={index} style={{borderRadius:'7px'}} width={30} height={30} alt={'Instagram'}/>}
+                                    {plat.PName && plat.PName}
+                                </a>
+                            )
+                        })
+                    }
                 </div>
             </div>
             <div>
