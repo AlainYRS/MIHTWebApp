@@ -134,6 +134,7 @@
 .BusinessHours{
     margin: auto;
     border-radius: 7px;
+    width: 100vw;
 }
 .ScheduleDay,
 .ScheduleOpen,
