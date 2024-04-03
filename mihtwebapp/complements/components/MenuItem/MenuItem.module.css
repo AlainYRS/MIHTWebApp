@@ -8,6 +8,12 @@
     border: 1px solid rgba(255,255,255,0.35);
     padding: 0.5rem;
     border-radius: 14px;
+    transition: var(--norm);
+}
+.MIDiv:hover{
+    background-color: rgba(255, 255, 255, 0.07);
+    box-shadow: 0px 2px 5px white;
+    border: 2px solid white;
 }
 .MITitle1{
     font-size: larger;
@@ -47,6 +53,10 @@
     border-radius: 14px;
     overflow: hidden;
     box-shadow: 0px 2px 5px white;
+    transition: var(--norm);
+}
+.MIZoom:hover{
+    box-shadow: 0px 2px 5px transparent;
 }
 .MIImg{
     position: relative;

@@ -444,11 +444,11 @@ export default function Home() {
               version= {'1.0.0'}
               company={'Hot Tacos & Restaurant Inc.'}
               platforms={[
-                // {
-                //   // PName: 'Doordash',
-                //   PIcon: '/Icons/Doordash.png',
-                //   PUrl: '',
-                // },
+                {
+                  // PName: 'Doordash',
+                  PIcon: '/Icons/Doordash.png',
+                  PUrl: 'https://www.doordash.com/es-US/store/hot-tacos-restaurant-leamington-2340887/?cursor=eyJzZWFyY2hfaXRlbV9jYXJvdXNlbF9jdXJzb3IiOnsicXVlcnkiOiJob3QgdGFjb3MgcmVzdGF1cmFudCIsIml0ZW1faWRzIjpbXSwic2VhcmNoX3Rlcm0iOiJob3QgdGFjbyByZXN0YXVyYW50IiwidmVydGljYWxfaWQiOi05OTksInZlcnRpY2FsX25hbWUiOiJhbGwifSwic3RvcmVfcHJpbWFyeV92ZXJ0aWNhbF9pZHMiOlsxXX0=&pickup=false',
+                },
                 {
                   // PName: 'Skip the Dishes',
                   PIcon: '/Icons/SkipTheDishes.jpg',

@@ -17,7 +17,7 @@ export default function NavMenu(props: INavBar){
                 <h2 className={styles.TitleNavBar}>{props.BranchName}</h2>
             </div>
             {props.OnlineOrderingURL &&
-                <a target="_blank" rel="noopener noreferrer" className={styles.MenuButtom} href={props.OnlineOrderingURL} >Hacer pedido<br/><p className={styles.EngTitle}>Order Online</p></a>
+                <a target="_blank" rel="noopener noreferrer" className={styles.MenuButtom} href={props.OnlineOrderingURL} >Pedido en Linea<br/><p className={styles.EngTitle}>Order Online</p></a>
             }
             {props.PhoneNumber &&
                 <a target="_blank" rel="noopener noreferrer" className={styles.MenuButtom} href={"tel:+"+props.PhoneNumber} >Pedido Telefónico<br/><p className={styles.EngTitle}>Call to Order</p></a>
