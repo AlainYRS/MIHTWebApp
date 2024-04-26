@@ -102,7 +102,7 @@ export default function Home() {
             {/* <!-- Versión en español --> */}
             <p className={styles.SEOEspañol}>¡Hot Tacos te da la bienvenida a Leamington y Windsor, Ontario! Con cuatro años de apoyo de la comunidad latina y canadiense, platos variados para una experiencia mexicana auténtica, y rápido crecimiento, somos el principal restaurante mexicano. ¡Descubre por qué somos el favorito de los amantes de la comida mexicana!</p>
             {/* <!-- Versión en inglés --> */}
-            <p className={styles.SEOEnglish}>Hot Tacos welcomes you to Leamington and Windsor, Ontario! With four years of support from the Latin and Canadian community, diverse dishes for an authentic Mexican experience, and rapid growth, we're the top Mexican restaurant. Find out why we're the favorite for Mexican cuisine lovers!</p>
+            <p className={styles.SEOEnglish}>Hot Tacos welcomes you to Leamington and Windsor, Ontario! With four years of support from the Latin and Canadian community, diverse dishes for an authentic Mexican experience, and rapid growth, we are the top Mexican restaurant. Find out why we are the favorite for Mexican cuisine lovers!</p>
           </>
         }
       </div>
