@@ -136,6 +136,19 @@
     border-radius: 7px;
     width: calc(min-content, max-content, 100vw);
 }
+.SEOEspañol,
+.SEOEnglish{
+    text-align: center;
+    padding: 1rem;
+    width: auto;
+    margin: auto;
+}
+.SEOEspañol{
+    color: rgba(var(--white),1);
+}
+.SEOEnglish{
+    color: rgba(var(--htyellow),1);
+}
 .ScheduleDay,
 .ScheduleOpen,
 .ScheduleClose{
