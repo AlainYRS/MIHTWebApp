@@ -440,11 +440,11 @@ export default function Home() {
                   PIcon: '/Icons/SkipTheDishes.jpg',
                   PUrl: 'https://www.skipthedishes.com/hot-tacos-ouellette-ave',
                 },
-                // {
-                //   // PName: 'Uber Eats',
-                //   PIcon: '/Icons/Uber Eats.png',
-                //   PUrl: '',
-                // }
+                {
+                  // PName: 'Uber Eats',
+                  PIcon: '/Icons/Uber Eats.png',
+                  PUrl: 'https://www.ubereats.com/store/hot-tacos-restaurant-windsor/lb8T3K1CW420ob1pafD7lw?utm_source=menu-maker',
+                }
               ]}
           />
         }
