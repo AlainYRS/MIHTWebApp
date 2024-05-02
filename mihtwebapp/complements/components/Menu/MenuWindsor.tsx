@@ -250,7 +250,7 @@ export default function Menu(){
                         Price={8}
                         Description2="Camarones, salsa cremosa hecha con pimientos, cebolla roja, tocino, queso, y crema."
                         Description1="Shrimp, creamy sauce made with bell peppers, red onion, bacon, sour cream, and cheese."
-                        ImagePath="https://firebasestorage.googleapis.com/v0/b/mihottacoswebapp.appspot.com/o/Taco%20Gobernador_350x350.webp?alt=media&token=ea68e358-54af-4c9f-94f0-ddcb8208aab2Photo"
+                        ImagePath="https://firebasestorage.googleapis.com/v0/b/mihottacoswebapp.appspot.com/o/Taco%20Gobernador_350x350.webp?alt=media&token=ea68e358-54af-4c9f-94f0-ddcb8208aab2"
                     />
                     <MenuItem 
                         Title2="Taco Vegetariano"
