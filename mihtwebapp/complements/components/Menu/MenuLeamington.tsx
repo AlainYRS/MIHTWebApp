@@ -80,7 +80,7 @@ export default function Menu(){
                         Price={15}
                         Description1="Arroz, frijol, pico de gallo, queso mozzarella y carne de tu elección. Envuelto en una deliciosa tortilla de harina, dorado directamente a la plancha."
                         Description2="Rice, beans, pico de gallo, mozzarella cheese, and your choice of meat. Wrapped in a delicious flour tortilla and griddled directly."
-                        ImagePath="Photo"
+                        ImagePath="https://firebasestorage.googleapis.com/v0/b/mihottacoswebapp.appspot.com/o/Burrito_350x350.webp?alt=media&token=52550f3a-2852-4685-a376-88821e5366df"
                     />
                     <MenuItem 
                         Title1="Papas Supreme Medianas"
@@ -88,7 +88,7 @@ export default function Menu(){
                         Price={12}
                         Description1="Papas fritas al momento, queso amarillo derretido, chorizo, lechuga, pico de gallo, crema y queso feta fresco."
                         Description2="Freshly fried potatoes with melted yellow cheese, chorizo, lettuce, pico de gallo, cream, and fresh feta cheese."
-                        // ImagePath=""
+                        ImagePath="https://firebasestorage.googleapis.com/v0/b/mihottacoswebapp.appspot.com/o/SupremeFries_350x350.webp?alt=media&token=50d185c9-9dc4-49a5-ba82-b0d08dbd222c"
                     />
                     <MenuItem 
                         Title1="Papas a la Hot Tacos"
@@ -123,7 +123,7 @@ export default function Menu(){
                         Price={17}
                         Description1="Tortilla de maíz frita vestida con frijol, lechuga, aguacate, jitomate, crema y tu carne favorita."
                         Description2="Fried corn tortilla dressed with beans, lettuce, avocado, tomato, cream, and your favorite meat."
-                        // ImagePath=""
+                        ImagePath="https://firebasestorage.googleapis.com/v0/b/mihottacoswebapp.appspot.com/o/Tostadas_350x350.webp?alt=media&token=181dce26-9963-47c6-8ea5-1a6f7de53b99"
                     />
                     <MenuItem 
                         Title1="Torta"
@@ -139,7 +139,7 @@ export default function Menu(){
                         Price={18}
                         Description1="Un diamante culinario mexicano, es una tortilla rellena de frijol, cubierta en salsa verde y roja, acompañada de la carne de tu elección, cebolla, aguacate, queso y crema."
                         Description2="A Mexican culinary gem, a tortilla filled with beans, covered in green and red sauce, accompanied by your choice of meat, onions, avocado, cheese and cream."
-                        ImagePath="Photo"
+                        ImagePath="https://firebasestorage.googleapis.com/v0/b/mihottacoswebapp.appspot.com/o/HTC-Huarache_350x350.webp?alt=media&token=99f28aab-4f0b-40bb-960e-451f1e437e2d"
                     />
                     <MenuItem 
                         Title1="3 Sopes"
@@ -163,7 +163,7 @@ export default function Menu(){
                         Price={18}
                         Description1="Milanesa de cerdo servida con papas fritas, arroz, frijoles y tortillas. Exquisito para un exigente paladar."
                         Description2="Pork milanese served with french fries, rice, beans, and tortillas. Exquisite for a discerning palate."
-                        // ImagePath=""
+                        ImagePath="https://firebasestorage.googleapis.com/v0/b/mihottacoswebapp.appspot.com/o/Milanesa%20de%20pollo_350x350.webp?alt=media&token=6182493d-5d68-4da3-9e57-9b81572cf0dd"
                     />
                     <MenuItem 
                         Title1="Enchiladas de Pollo o Res"
@@ -179,7 +179,7 @@ export default function Menu(){
                         Price={19}
                         Description1="Suaves tortillas rellenas de pollo, bañadas de salsa de jitomate gratinadas con queso y adornadas con cebolla, crema."
                         Description2="Soft tortillas filled with chicken, bathed in tomato sauce, gratinated with cheese, and adorned with onion and cream."
-                        ImagePath="Photo"
+                        // ImagePath="Photo"
                     />
                     <MenuItem 
                         Title1="Chilaquiles"
@@ -187,7 +187,7 @@ export default function Menu(){
                         Price={17}
                         Description1="Chips cocinados en salsa roja o verde, vestidos con carne o un huevo estrellado, queso feta fresco, crema y aguacate, acompañado de lechuga y arroz."
                         Description2="Chips cooked in red or green sauce, dressed with meat or a fried egg, fresh feta cheese, cream, and avocado, accompanied by lettuce and rice."
-                        ImagePath="Photo"
+                        // ImagePath="Photo"
                     />
                     <MenuItem 
                         Title1="Flautas de pollo"
@@ -281,7 +281,7 @@ export default function Menu(){
                         Price={15}
                         Description1="Salsa ligera de chile guajillo y menudo. Servido con tortillas, cebolla, cilantro, limón y salsa macha."
                         Description2="Light guajillo chili sauce and menudo. Served with tortillas, onion, cilantro, lemon, and macha sauce."
-                        ImagePath="Photo"
+                        ImagePath="https://firebasestorage.googleapis.com/v0/b/mihottacoswebapp.appspot.com/o/MENUDO%20DE%20RES_350x350.webp?alt=media&token=c45d827c-079a-4b28-9b67-990529bb9425"
                     />
                     <MenuItem 
                         Title1="Caldo de Res Mediano"
@@ -289,7 +289,7 @@ export default function Menu(){
                         Price={15}
                         Description1="Carne de res con papa, elote, zanahoria, calabaza y repollo. Servido con tortillas, cebolla, cilantro, limón y salsa macha."
                         Description2="Beef with potatoes, corn, carrots, squash, and cabbage. Served with tortillas, onion, cilantro, lemon, and macha sauce."
-                        ImagePath="Photo"
+                        // ImagePath="Photo"
                     />
                 </div>
                 <p className={styles.SectionMenuTitle} id="DelMar"><strong>DelMar</strong></p>
@@ -340,7 +340,7 @@ export default function Menu(){
                         Price={23}
                         Description1="Tortilla de maíz frita cubierta con mayonesa, camarón, cebolla, tomate, pepino, cilantro, aguacate y lechuga."
                         Description2="Fried corn tortilla covered with mayonnaise, shrimp, onion, tomato, cucumber, cilantro, avocado, and lettuce."
-                        ImagePath="Photo"
+                        ImagePath="https://firebasestorage.googleapis.com/v0/b/mihottacoswebapp.appspot.com/o/Tostadas%20De%20Camaron_350x350.webp?alt=media&token=7f9bb669-32c8-475a-a8d6-57a25dc99572"
                     />
                     <MenuItem 
                         Title1="Coctel de Camarón"
@@ -348,7 +348,7 @@ export default function Menu(){
                         Price={17}
                         Description1="Camarones bañados en una salsa refrescante a base de cátsup, mezclados con cebolla, cilantro, y aguacate. Servido con saladitas y salsa valentina."
                         Description2="Shrimp bathed in a refreshing ketchup-based sauce, mixed with onion, cilantro, and avocado. Served with saltines and Valentina sauce."
-                        ImagePath="Photo"
+                        ImagePath="https://firebasestorage.googleapis.com/v0/b/mihottacoswebapp.appspot.com/o/Coctel%20De%20Camaron_350x350.webp?alt=media&token=2a1a9dac-ec2f-4bac-a1cc-595ee56994ef"
                     />
                     <MenuItem 
                         Title1="Sopa de Mariscos"
@@ -356,7 +356,7 @@ export default function Menu(){
                         Price={25}
                         Description1="Pulpo, pescado, camarón, surimi, almejas, callo de hacha. Servido con cebolla, cilantro, aguacate, limón y tostadas."
                         Description2="Octopus, fish, shrimp, surimi, clams. Served with onion, cilantro, avocado, lemon, and tostadas."
-                        ImagePath="Photo"
+                        ImagePath="https://firebasestorage.googleapis.com/v0/b/mihottacoswebapp.appspot.com/o/Sopa%20De%20Marisco_350x350.webp?alt=media&token=f0802e1b-0730-41f6-ad5f-e278770f4523"
                     />
                     <MenuItem 
                         Title1="Vuelve a la Vida"
@@ -463,7 +463,7 @@ export default function Menu(){
                         Price={6}
                         Description1="Queso crema, lechuga, pico de gallo más proteína de su elección."
                         Description2="Cream cheese, lettuce, pico de gallo, plus your choice of protein."
-                        ImagePath="Photo"
+                        // ImagePath="Photo"
                     />
                     <MenuItem 
                         Title1="¿Qué me ves?"
@@ -503,7 +503,7 @@ export default function Menu(){
                         Price={7}
                         Description1="Rellena de cerdo marinado en achiote y queso. Un sabor tradicional y delicioso."
                         Description2="Filled with pork marinated in achiote and cheese. A traditional and delicious flavor."
-                        ImagePath="Photo"
+                        // ImagePath="Photo"
                     />
                     <MenuItem 
                         Title1="Quesadilla de Tinga de Pollo"
