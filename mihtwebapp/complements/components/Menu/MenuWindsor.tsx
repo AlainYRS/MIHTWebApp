@@ -38,7 +38,7 @@ export default function Menu(){
                         Price={13}
                         Description2="Tiras de tortilla crujientes bañadas en caldillo de jitomate, chiles secos y especias mexicanas. Con queso, crema, aguacate, chicharrón, y hojuelas de chile pasilla."
                         Description1="Crispy tortilla strips deeped in a red broth made with tomatos, peppers and mexican spices. With cheese, sour cream, avocado, chicharron, and pasilla pepper flakes."
-                        // ImagePath=""
+                        ImagePath="https://firebasestorage.googleapis.com/v0/b/mihottacoswebapp.appspot.com/o/Sopa%20Azteca_350x350.webp?alt=media&token=cc1e7f58-7635-456a-96ca-800ee7d4657f"
                     />
                     <MenuItem 
                         Title2="Consome de Birria."
@@ -108,7 +108,7 @@ export default function Menu(){
                         Price={30}
                         Description2="Pulpo preparado a tu gusto, ya sea al ajillo, a la diabla, o al cilantro acompañados con arroz, ensalada, y tortillas."
                         Description1="Your choice of garlic, diabla, y ajillo(garlic, guajillo pepper), or coriander vinaigrette. Comes with rice, salad, and tortillas."
-                        // ImagePath=""
+                        ImagePath="https://firebasestorage.googleapis.com/v0/b/mihottacoswebapp.appspot.com/o/Pulpo%20al%20Gusto_350x350.webp?alt=media&token=073b9147-4aab-401a-8c79-eb8ec8bae518"
                     />
                     <MenuItem 
                         Title2="Camarones al Gusto"
@@ -116,7 +116,7 @@ export default function Menu(){
                         Price={25}
                         Description2="Camarones preparados a tu gusto, ya sea al ajillo, a la diabla, mango habanero, o empanizado. Acompañados con arroz, ensalada, y tortillas."
                         Description1="Your choice of garlic, diabla, y ajillo (garlic, guajillo pepper), mango habanero, or breaded. Comes with rice, salad, and tortillas."
-                        // ImagePath=""
+                        ImagePath="https://firebasestorage.googleapis.com/v0/b/mihottacoswebapp.appspot.com/o/Camarones%20Empanizados_350x350.webp?alt=media&token=55230475-f7ba-4478-b0a3-98452b5797c4"
                     />
                     <MenuItem 
                         Title2="Coctel de Camarón"
@@ -159,7 +159,7 @@ export default function Menu(){
                         Price={23}
                         Description2="6 enchiladas en total rellenas de pollo. (2) cubiertas con salsa verde, (2) enchiladas suizas, y (2) enchiladas rojas."
                         Description1="A total of 6 chicken enchiladas; (2) covered with green sauce, (2) enchiladas suizas, and (2) red enchiladas."
-                        // ImagePath=""
+                        ImagePath="https://firebasestorage.googleapis.com/v0/b/mihottacoswebapp.appspot.com/o/Enchiladas%20Tricolor_350x350.webp?alt=media&token=b5c32b49-3a9e-46d5-8391-d4022f089ac4"
                     />
                 </div>
                 <p className={styles.SectionMenuTitle} id="Tacos"><strong>Tacos</strong></p>
