@@ -77,7 +77,11 @@ export default function Home() {
           <Image src="/media/Hot Tacos Banner.jpg" fill priority sizes='(max-width: 768px) 70vw, (max-width: 1200px) 70vw, 800px' alt="Hot Tacos"/>
         </div>
         <a className={styles.Catrina} id="catrina" style={catrinaStyle}>
-          <Image src="/media/Catrina.png" fill sizes='(max-width: 768px) 35vw, (max-width: 1200px) 35vw, 800px' alt="Hot Tacos"/>
+          {Branch == "Street Food" ?
+            <Image src="/media/StreetFood.png" fill sizes='(max-width: 768px) 35vw, (max-width: 1200px) 35vw, 800px' alt="Hot Tacos"/>
+            :
+            <Image src="/media/Catrina.png" fill sizes='(max-width: 768px) 35vw, (max-width: 1200px) 35vw, 800px' alt="Hot Tacos"/>
+          }
         </a>
         <h2 className={styles.HeadParagraph2} >{Branch == "" && "Authentic Mexican Restaurants"}
           {Branch == "Windsor" && 
