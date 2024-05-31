@@ -40,7 +40,7 @@ export default function Home() {
           }
         }
       }
-    );
+    )
   }
 
   useEffect(() => {
@@ -693,7 +693,7 @@ export default function Home() {
             <tbody className={styles.TableBody}>
               <tr className={styles.ScheduleRow}>
                 <td className={styles.ScheduleDay}>Lunes (Monday)</td>
-                <td className={styles.ScheduleOpen}>7am to 1pm</td>
+                <td className={styles.ScheduleOpen}>8am to 1pm</td>
                 <td className={styles.ScheduleOpen}>5pm to 9pm</td>
               </tr>
               <tr className={styles.ScheduleRow}>
@@ -703,27 +703,27 @@ export default function Home() {
               </tr>
               <tr className={styles.ScheduleRow}>
                 <td className={styles.ScheduleDay}>Miércoles (Wednesday)</td>
-                <td className={styles.ScheduleOpen}>7am to 1pm</td>
+                <td className={styles.ScheduleOpen}>8am to 1pm</td>
                 <td className={styles.ScheduleOpen}>5pm to 9pm</td>
               </tr>
               <tr className={styles.ScheduleRow}>
                 <td className={styles.ScheduleDay}>Jueves (Thursday)</td>
-                <td className={styles.ScheduleOpen}>7am to 1pm</td>
+                <td className={styles.ScheduleOpen}>8am to 1pm</td>
                 <td className={styles.ScheduleOpen}>5pm to 9pm</td>
               </tr>
               <tr className={styles.ScheduleRow}>
                 <td className={styles.ScheduleDay}>Viernes (Friday)</td>
-                <td className={styles.ScheduleOpen}>7am to 1pm</td>
+                <td className={styles.ScheduleOpen}>8am to 1pm</td>
                 <td className={styles.ScheduleOpen}>5pm to 9pm</td>
               </tr>
               <tr className={styles.ScheduleRow}>
                 <td className={styles.ScheduleDay}>Sábado (Saturday)</td>
-                <td className={styles.ScheduleOpen}>7am to 1pm</td>
+                <td className={styles.ScheduleOpen}>8am to 1pm</td>
                 <td className={styles.ScheduleOpen}>5pm to 9pm</td>
               </tr>
               <tr className={styles.ScheduleRow}>
                 <td className={styles.ScheduleDay}>Domingo (Sunday)</td>
-                <td className={styles.ScheduleOpen}>7am to 1pm</td>
+                <td className={styles.ScheduleOpen}>8am to 1pm</td>
                 <td className={styles.ScheduleOpen}>5pm to 9pm</td>
               </tr>
             </tbody>

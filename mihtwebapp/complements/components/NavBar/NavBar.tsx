@@ -26,7 +26,7 @@ export default function NavMenu(props: INavBar){
                 <a target="_blank" rel="noopener noreferrer" className={styles.MenuButtom} href={props.Directions} >Como llegar<br/><p className={styles.EngTitle}>Directions</p></a>
             }
             {props.FeedBackLink &&
-                <a target="_blank" rel="noopener noreferrer" className={styles.MenuButtom} href={props.FeedBackLink}>Dinos tu Opinión<br/><p className={styles.EngTitle}>Feedback</p></a>
+                <a target="_blank" rel="noopener noreferrer" className={styles.MenuButtom} href={props.FeedBackLink}>Opiniones<br/><p className={styles.EngTitle}>Reviews</p></a>
             }
         </nav>
     );
