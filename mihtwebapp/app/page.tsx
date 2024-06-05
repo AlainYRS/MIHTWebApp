@@ -924,7 +924,7 @@ export default function Home() {
               Location={"https://www.google.com/maps/dir//Hot+Tacos+Mexican+Restaurant/@42.0529949,-82.6816491,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x883ac1874678d4cf:0xd04e2ab656c80fa2!2m2!1d-82.5992483!2d42.0530244?entry=ttu"}
               Phone={"+1 519 329 1615"}
               OnlineSells={"https://order.tbdine.com/pickup/28824/menu"}
-              Image={"https://firebasestorage.googleapis.com/v0/b/mihottacoswebapp.appspot.com/o/Hot%20Tacos%20Leamington_350x350.webp?alt=media&token=30f1f525-9c85-456e-8b02-4b8cb465668a"}
+              Image={"https://firebasestorage.googleapis.com/v0/b/mihottacoswebapp.appspot.com/o/Hot%20Tacos%20Leamington_350x350.webp?alt=media&token=4877403b-8deb-4a7b-9698-0de7e1c172b2"}
               setState={setBranch}
               />
             <BranchComp 
@@ -933,7 +933,7 @@ export default function Home() {
               Location={"https://maps.app.goo.gl/1ie6ruZfKYL8YmHu9"}
               Phone={"+1 226 936 2953"}
               OnlineSells={"https://www.clover.com/online-ordering/hot-tacos-street-food"}
-              Image={"https://firebasestorage.googleapis.com/v0/b/mihottacoswebapp.appspot.com/o/Access%20Image%20SF_350x350.webp?alt=media&token=b8b7557c-f7cf-4a3c-b143-85063a160ab0"}
+              Image={"https://firebasestorage.googleapis.com/v0/b/mihottacoswebapp.appspot.com/o/Access%20Image%20SF_350x350.webp?alt=media&token=7d92c9ac-a29f-4838-92f8-7a35520c9b54"}
               setState={setBranch}
             />
             <BranchComp 
@@ -942,7 +942,7 @@ export default function Home() {
               Location={"https://maps.app.goo.gl/Li6UnVBbNbqhBed49"}
               Phone={"+1 519 818 5129"}
               OnlineSells={"https://order.tbdine.com/pickup/51513/menu"}
-              Image={"https://firebasestorage.googleapis.com/v0/b/mihottacoswebapp.appspot.com/o/Hot%20Tacos%20Windsor_350x350.webp?alt=media&token=1453a054-1a61-4c3b-9870-d2f3335b90d3"}
+              Image={"https://firebasestorage.googleapis.com/v0/b/mihottacoswebapp.appspot.com/o/Hot%20Tacos%20Windsor_350x350.webp?alt=media&token=fedf2bf1-967d-4eb1-a2ca-44c4746738d3"}
               setState={setBranch}
             />
           </div>
