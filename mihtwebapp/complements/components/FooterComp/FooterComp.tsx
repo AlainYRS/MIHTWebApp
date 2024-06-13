@@ -45,6 +45,9 @@ function Footer(props:IFooter){
     return (
         <div className={styles.AppFooter}>
             <div id={styles.AppFooter}>
+            <div>
+                <h6 className={styles.Author}>Developed by {props.author} for {props.company} at {props.date}</h6>
+            </div>
                 <div className={styles.SocialMed}>
                     <a href="https://www.facebook.com/HotTacos?mibextid=LQQJ4d" target="_blank" rel="noopener noreferrer">
                         <Image src={'/Icons/FacebookIcon.png'} style={{borderRadius:'7px'}} width={30} height={30} alt={'Faceboook'}/>
@@ -65,7 +68,7 @@ function Footer(props:IFooter){
                 </div>
             </div>
             <div>
-                <h6 className={styles.Author}>Developed by {props.author} for {props.company} at {props.date}</h6>
+                <a href="https://www.restaurantji.com/on/leamington/hot-tacos-restaurant-/" className={styles.Certified}><img alt="Hot Tacos Mexican Restaurant is a must-visit according to Restaurantji - your go-to source for the best local restaurants." className={styles.CertifiedImg} src="https://cdn6.localdatacdn.com/certificate/6182576/hot-tacos-mexican-restaurant.png" /></a>
             </div>
         </div>
     )

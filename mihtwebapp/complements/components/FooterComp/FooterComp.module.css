@@ -57,3 +57,16 @@
 .SocialMed > a{
     margin: 1rem;
 }
+.Certified{
+    display:inline-block;
+    width: 140px;
+    height: auto;
+    transition: var(--norm);
+}
+.Certified:hover{
+    width: 700px;
+}
+.CertifiedImg{
+    width: 100%;
+    height: auto;
+}

@@ -1,10 +1,10 @@
 .NavBarContainer{
     width: calc(100vw - 7px);
-    height: max-content;
     display: flex;
     justify-content: space-evenly;
     gap: 3.5px;
     padding: 3.5px;
+    height: calc(100% - 35px);
     background-color: black;
     box-shadow: 0px 3.5px 3.5px rgb(255,255,255,0.21);
 }
@@ -50,6 +50,8 @@
     border-radius: 7px;
     margin: auto;
     transition: var(--norm);
+    height: 100%;
+    align-content: center;
 }
 .MenuButtom:hover{
     color: darkred;
@@ -59,11 +61,17 @@
     box-shadow: 2px 2px 2px darkgoldenrod;
     transition: 70ms;
 }
+.restaurantji{
+    width: 70px;
+    margin: auto;
+}
+
 
 /* Grupo para dispositivos iPhone 5 a iPhone 12 Max en orientación vertical */
 @media only screen and (max-device-width: 428px) and (orientation: portrait) {
   .NavBarContainer{
       width: 100vw;
+      height: 100%;
       font-size: 1rem;
       /* white-space: nowrap; */
   }
@@ -75,7 +83,7 @@
   }
   .MenuButtom{
       border: 1px solid white;
-      border-radius: 7px;
+      border-radius: 14px;
       margin: auto;
       padding: 3px;
   }
@@ -86,6 +94,10 @@
       text-shadow: 1px 1px 1px darkred;
       box-shadow: 2px 2px 2px darkgoldenrod;
       transition: 70ms;
+  }
+  .restaurantji{
+    width: 49px;
+    margin: auto;
   }
 }
   

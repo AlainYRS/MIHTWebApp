@@ -26,7 +26,11 @@ export default function NavMenu(props: INavBar){
                 <a target="_blank" rel="noopener noreferrer" className={styles.MenuButtom} href={props.Directions} >Como llegar<br/><p className={styles.EngTitle}>Directions</p></a>
             }
             {props.FeedBackLink &&
-                <a target="_blank" rel="noopener noreferrer" className={styles.MenuButtom} href={props.FeedBackLink}>Opiniones<br/><p className={styles.EngTitle}>Reviews</p></a>
+                <a target="_blank" rel="noopener noreferrer" className={styles.MenuButtom} href={props.FeedBackLink}>
+                    Opiniones<br/>
+                    <p className={styles.EngTitle}>Reviews</p>
+                    <img className={styles.restaurantji} src="https://www.restaurantji.com/badges/index.php?id=6182576&badge=badge-1-template.png" alt="Hot Tacos Mexican Restaurant is a must-visit at local restaurants"/>
+                </a>
             }
         </nav>
     );
