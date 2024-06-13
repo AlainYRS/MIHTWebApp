@@ -116,7 +116,7 @@ export default function Home() {
       <div id={styles.GridCont2}> {/* NavBar */}
         {Branch=="Windsor" &&
           <NavBar
-          ImageURL={"https://firebasestorage.googleapis.com/v0/b/mihottacoswebapp.appspot.com/o/Hot%20Tacos%20Windsor_350x350.webp?alt=media&token=1453a054-1a61-4c3b-9870-d2f3335b90d3"}
+          ImageURL={"https://firebasestorage.googleapis.com/v0/b/mihottacoswebapp.appspot.com/o/Hot%20Tacos%20Windsor_350x350.webp?alt=media&token=fedf2bf1-967d-4eb1-a2ca-44c4746738d3"}
           BranchName={"Windsor"}
           OnlineOrderingURL={"https://order.tbdine.com/pickup/51513/menu"}
           PhoneNumber={"1-519-818-5129"}
@@ -127,7 +127,7 @@ export default function Home() {
         }
         {Branch=="Street Food" &&
           <NavBar
-            ImageURL={"https://firebasestorage.googleapis.com/v0/b/mihottacoswebapp.appspot.com/o/Access%20Image%20SF_350x350.webp?alt=media&token=b8b7557c-f7cf-4a3c-b143-85063a160ab0"}
+            ImageURL={"https://firebasestorage.googleapis.com/v0/b/mihottacoswebapp.appspot.com/o/StreetFood_350x350.webp?alt=media&token=c3e59fbb-4ec2-4a23-9c14-4442febb1d7a"}
             BranchName={"Street Food"}
             OnlineOrderingURL={"https://www.clover.com/online-ordering/hot-tacos-street-food"}
             PhoneNumber={"1-226-936-2953"}
