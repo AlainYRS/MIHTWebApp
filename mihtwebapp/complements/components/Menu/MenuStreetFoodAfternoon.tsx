@@ -34,7 +34,7 @@ export default function Menu(){
                         Price={20}
                         Description1="Clasica telera con un toque de mayonesa y rellena de jamon, salchicha, milanesa, chorizo, huevo, lechuga, tomate, aguacate y queso mozzarella"
                         Description2="A classic telera with a touch of mayonnaise stuffed with ham, sausage, pork milanesa, chorizo, a fried egg, lettuce, tomato, avocado, and mozzarella cheese"
-                        // ImagePath=""
+                        ImagePath="https://firebasestorage.googleapis.com/v0/b/mihottacoswebapp.appspot.com/o/HotTacosStreetFood_Torta%20cubana_350x350.webp?alt=media&token=8dd39b35-1928-4e63-987c-6e0d6eb973fb"
                     />
                     <MenuItem 
                         Title1="Pambazo"
@@ -42,7 +42,7 @@ export default function Menu(){
                         Price={15}
                         Description1="Pambazo rojo relleno de papa con chorizo, lechuga, crema, queso feta, aguacate y servido con una porción de papas fritas"
                         Description2="Red pambazo stuffed with potato & chorizo, lettuce, cream, feta cheese, and avocado. Served with a portion of French fries"
-                        // ImagePath=""
+                        ImagePath="https://firebasestorage.googleapis.com/v0/b/mihottacoswebapp.appspot.com/o/HotTacosStreetFood_Pambazo_350x350.webp?alt=media&token=289f4ef3-38ff-4ff6-9b57-de7334376902"
                     />
                     <MenuItem 
                         Title1="Pambazo Veracruzano"
@@ -58,7 +58,7 @@ export default function Menu(){
                         Price={18}
                         Description1="Auntentica representacion de Guadalaraja, una telera bañada en salsa de la casa y rellena de la carne de tu gusto adornada con cebolla curtida. Servida con una porción de papas fritas"
                         Description2="An authentic representation of Guadalaraja, this telera is drenched in house sauce and stuffed with the meat of your choice, garnished with cured onion. It is served with a portion of fries"
-                        // ImagePath=""
+                        ImagePath="https://firebasestorage.googleapis.com/v0/b/mihottacoswebapp.appspot.com/o/Torta%20ahogada%20drawned%20torta-2_350x350.webp?alt=media&token=2da22dc6-21e3-4496-a73b-625d70ffed38"
                     />
                     <MenuItem 
                         Title1="Torta Milanesa"
@@ -93,7 +93,7 @@ export default function Menu(){
                         Price={25}
                         Description1="Carne asada, pastor, chorizo, jamón, chile morrón y cebolla, gratinado con una deliciosa capa de queso. Servido con tortillas"
                         Description2="Carne asada, pastor, chorizo, ham, bell pepper, and onion are topped with a delicious layer of cheese. Served with tortillas"
-                        // ImagePath=""
+                        ImagePath="https://firebasestorage.googleapis.com/v0/b/mihottacoswebapp.appspot.com/o/Alambre%20a%20la%20street%20food_350x350.webp?alt=media&token=f1cd6646-3d05-4044-be57-8e878097ac51"
                     />
                     <MenuItem 
                         Title1="Alambre Tradicional"
@@ -184,7 +184,7 @@ export default function Menu(){
                         Price={14}
                         Description1="Chicharron grande untado de mayonesa y adornado con lechuga, cueritos, tomate, pepino y rebanadas de aguacate. Bañado en salda valentina, crema y queso"
                         Description2="A large pork chicharron spread with mayonnaise is garnished with lettuce, cueritos, tomato, cucumber, and avocado slices. It is bathed in valentina sauce, cream, and cheese"
-                        // ImagePath=""
+                        ImagePath="https://firebasestorage.googleapis.com/v0/b/mihottacoswebapp.appspot.com/o/Chicharron%20preparado_350x350.webp?alt=media&token=a8aa559d-754b-4133-b02e-78d59f3b432e"
                     />
                     <MenuItem 
                         Title1="Esquite"
@@ -192,7 +192,7 @@ export default function Menu(){
                         Price={14}
                         Description1="Sublime y con estilo. Granos de maíz, mantequilla, mayonesa, queso feta fresco, chile en polvo y jugo de limon"
                         Description2="Sublime and stylish. Corn garnished with butter, Mayonnaise, fresh feta cheese, chile powder and lime juice"
-                        // ImagePath=""
+                        ImagePath="https://firebasestorage.googleapis.com/v0/b/mihottacoswebapp.appspot.com/o/Esquite_350x350.webp?alt=media&token=48538a08-0337-4692-b1e3-318cd51a68b5"
                     />
                 </div>
                 <p className={styles.SectionMenuTitle} id="Tacos"><strong>Tacos</strong></p>
@@ -310,7 +310,7 @@ export default function Menu(){
                         Price={18}
                         Description1="Hamburguesa casera, adornada con lechuga fresca, tomate, cebolla, queso cheddar, jalapeño relleno de queso crema y envuelto con tocino. Servida con una porción de papas fritas"
                         Description2="A homemade burger garnished with fresh lettuce, tomato, onion, cheddar cheese and topped with a jalapeño popper wrapped in bacon. Served with a side of fries"
-                        // ImagePath=""
+                        ImagePath="https://firebasestorage.googleapis.com/v0/b/mihottacoswebapp.appspot.com/o/HotTacosStreetFood_Poper%20hamburger_350x350.webp?alt=media&token=1c4cd914-8d93-4fa2-8cb1-1584329b8325"
                     />
                     <MenuItem 
                         Title1="Hamburguesa de Pollo"
@@ -345,7 +345,7 @@ export default function Menu(){
                         Price={7}
                         Description1="Clasico hot dog envuelto en tocino y cubierto en guacamole"
                         Description2="Classic hot dog wrapped in bacon and covered in guacamole"
-                        // ImagePath=""
+                        ImagePath="https://firebasestorage.googleapis.com/v0/b/mihottacoswebapp.appspot.com/o/Hot%20dog%20Guacamole_350x350.webp?alt=media&token=7395a677-09bc-4c4e-a886-cca1b92015a2"
                     />
                     <MenuItem 
                         Title1="Street Food Hot Dog"
@@ -364,7 +364,7 @@ export default function Menu(){
                         Price={25}
                         Description1="Un clasico de la casa. Papas fritas al momento, queso amarillo derretido, mezcladas con carne asada y cubiertas en guacamole"
                         Description2="It's a house classic. Fresh fries and cheddar cheese mixed with asada and covered in guacamole"
-                        // ImagePath=""
+                        ImagePath="https://firebasestorage.googleapis.com/v0/b/mihottacoswebapp.appspot.com/o/HotTacosStreetFood_Papas%20a%20la%20hot%20tacos_350x350.webp?alt=media&token=24d41dd3-cf7f-4008-a656-f67dfa63a399"
                     />
                     <MenuItem 
                         Title1="A la Street Food"
@@ -415,7 +415,7 @@ export default function Menu(){
                         Price={16}
                         Description1="Una de las firmas de nuestra cocina. Tortilla grande de harina, rellena de queso mozzarella, lechuga, aguacate, adereso de la casa y la carne de tu elección: carne al pastor, chorizo, pollo o asada. * Embuelto en una costra de queso!"
                         Description2="One of our kitchen’s signatures! A large flour tortilla filled with mozzarella cheese, lettuce, avocado and your choice of protein: al pastor, chorizo, chicken, asada beef, cochinita, lengua, carnitas. * Wrapped in a cheese crust."
-                        // ImagePath=""
+                        ImagePath="https://firebasestorage.googleapis.com/v0/b/mihottacoswebapp.appspot.com/o/Burrito%20a%20la%20street%20food_350x350.webp?alt=media&token=b35d8b32-c8a6-44b0-8baf-3cfcbec2f200"
                     />
                     <MenuItem 
                         Title1="Burrito Ahogado"

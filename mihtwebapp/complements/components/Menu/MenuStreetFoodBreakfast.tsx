@@ -23,7 +23,7 @@ export default function Menu(){
                         Price={11}
                         Description1="Servido con granola y acompañado de tu elección de yogurt o queso cottage."
                         Description2="Served with granola and complemented by your choice of yogurt or cottage cheese."
-                        // ImagePath=""
+                        ImagePath="https://firebasestorage.googleapis.com/v0/b/mihottacoswebapp.appspot.com/o/Coctel%20de%20Frutas_350x350.webp?alt=media&token=1fc33f5d-a956-46b5-acf1-fdce2184d5ef"
                     />
                     <MenuItem 
                         Title1="Guacamole"
@@ -31,7 +31,7 @@ export default function Menu(){
                         Price={12}
                         Description1="Aguacate machacado y mezclado con jitomate, cebolla, cilantro, jugo de limón y sal. Servido con sus debidos totopos de maíz autenticos de la casa."
                         Description2="Mashed avocado mixed with tomato, onion, cilantro, lemon juice, and salt. Served with signature homemade corn chips"
-                        // ImagePath=""
+                        ImagePath="https://firebasestorage.googleapis.com/v0/b/mihottacoswebapp.appspot.com/o/Guacamole_350x350.webp?alt=media&token=0b457545-e864-4d0f-b418-78ee7a451567"
                     />
                     <MenuItem 
                         Title1="Pan Dulce"
@@ -77,7 +77,7 @@ export default function Menu(){
                         Price={14}
                         Description1="4 tortillas de maíz rellenas de queso bañadas con salsa de frijol. Servidas con queso feta, chiles toreados y tu opcion de proteina: chorizo, pastor o pollo. Asada disponible por un costo adicional."
                         Description2="4 corn tortillas stuffed with cheese dipped in homemade bean sauce. Served with feta cheese, chiles toreados (grilled jalapeños) and your choice of protein: chorizo, pastor or chicken. * Asada beef is available for an additional cost."
-                        // ImagePath=""
+                        ImagePath="https://firebasestorage.googleapis.com/v0/b/mihottacoswebapp.appspot.com/o/Enfrijoladas%20Tlacotalpe%C3%B1as_350x350.webp?alt=media&token=074b9c6b-cb4e-4c5b-aa37-09d6852bf08e"
                     />
                     <MenuItem 
                         Title1="Chilaquiles"
@@ -85,7 +85,7 @@ export default function Menu(){
                         Price={15}
                         Description1="Tortilla de maiz frita bañada en la salsa de tu eleccion verde o roja, servidos con cebolla fresca, tu proteina favorita, crema, queso y aguacate."
                         Description2="Fried corn tortilla simmered in the sauce of your choice, either red or green sauce, topped with freshly chopped onions, your favourite protein, sour cream, feta cheese and avocado."
-                        // ImagePath=""
+                        ImagePath="https://firebasestorage.googleapis.com/v0/b/mihottacoswebapp.appspot.com/o/Chilaquiles_350x350.webp?alt=media&token=91c18eb4-998b-4f11-98f4-65378d86b4a8"
                     />
                     <MenuItem 
                         Title1="Enchiladas Verdes o Rojas"
@@ -93,7 +93,7 @@ export default function Menu(){
                         Price={18}
                         Description1="Suaves ortillas de maíz rellenas de huevo, pollo o queso. Bañadas en la salsa de tu elección y vestidas con cebolla fresca, crema y queso."
                         Description2="Soft corn tortillas filled with egg, chicken, or cheese, bathed in the sauce of your choice, red or green, and topped with freshly chopped onions, sour cream, and cheese."
-                        // ImagePath=""
+                        ImagePath="https://firebasestorage.googleapis.com/v0/b/mihottacoswebapp.appspot.com/o/Enchiladas%20verdes_350x350.webp?alt=media&token=3b5e7e48-9a01-4b53-977a-2252311b7061"
                     />
                     <MenuItem 
                         Title1="Enchiladas Suizas"
@@ -133,7 +133,7 @@ export default function Menu(){
                         Price={17}
                         Description1="El clasico sandwich de pan blanco de caja embadurnado con mayonesa, vestido con lechuga, tomate, jamón, tocino y pollo a la plancha. Servido con una guarnicion de frescas papas a la francesa."
                         Description2="White bread with mayonnaise topped with fresh lettuce, tomato, ham, bacon and grilled chicken covered by another piece of white bread. Served with a side of French fries"
-                        // ImagePath=""
+                        ImagePath="https://firebasestorage.googleapis.com/v0/b/mihottacoswebapp.appspot.com/o/Club%20sandwich_350x350.webp?alt=media&token=e4915b3d-1179-4122-9bd7-70742f713ffb"
                     />
                 </div>
                 <p className={styles.SectionMenuTitle} id="Cravings/AntojitosBreakfast"><strong>Cravings / Antojitos</strong></p>
@@ -160,7 +160,7 @@ export default function Menu(){
                         Price={14}
                         Description1="Tacos dorados rellenos de papa y chorizo y adornados con lechuga, crema, queso, pico de gallo y aguacate"
                         Description2="Hardshell corn tortilla taco is filled with homemade potato and chorizo filling and topped with lettuce, sour cream, feta cheese, pico de gallo and avocado"
-                        // ImagePath=""
+                        ImagePath="https://firebasestorage.googleapis.com/v0/b/mihottacoswebapp.appspot.com/o/Doraditas_350x350.webp?alt=media&token=677802fb-2e2c-452c-b902-dd1fa83a2693"
                     />
                     <MenuItem 
                         Title1="Flutes"
@@ -187,7 +187,7 @@ export default function Menu(){
                         Price={18}
                         Description1="Caldo ligero preparado de chile guajillo y menudo. Servido con cebolla, cilantro, limon, tortillas de maíz y  salsa matcha"
                         Description2="Light guajillo chile broth and beef tripe. Served with cilantro, onion, limes, tortillas and matcha sauce"
-                        // ImagePath=""
+                        ImagePath="https://firebasestorage.googleapis.com/v0/b/mihottacoswebapp.appspot.com/o/HotTacosStreetFood_Menudo_350x350.webp?alt=media&token=d836d1f2-2df8-4fc6-b8fe-464bb74c4d4e"
                     />
                 </div>
             </div>

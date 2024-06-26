@@ -17,7 +17,6 @@ export default function Menu(){
                     <a className={styles.SectionLink} href="#Extras">Extras</a>
                     <a className={styles.SectionLink} href="#Postres">Postres</a>
                     <a className={styles.SectionLink} href="#Bebidas">Bebidas</a>
-                    <a className={styles.SectionLink} href="#">Especiales</a>
                 </div>
             </div>
             <div className={styles.MenuElements}>
@@ -45,7 +44,7 @@ export default function Menu(){
                         Price={8}
                         Description1="Aros de cebolla fritos acompañados de aderezo."
                         Description2="Fried onion rings served with dressing."
-                        // ImagePath=""
+                        ImagePath="https://firebasestorage.googleapis.com/v0/b/mihottacoswebapp.appspot.com/o/Aros%20de%20Cebolla_350x350.webp?alt=media&token=87acc055-3207-48d1-ba04-4b9cd6e586e1"
                     />
                     <MenuItem 
                         Title1="Jalapeños"
@@ -179,7 +178,7 @@ export default function Menu(){
                         Price={19}
                         Description1="Suaves tortillas rellenas de pollo, bañadas de salsa de jitomate gratinadas con queso y adornadas con cebolla, crema."
                         Description2="Soft tortillas filled with chicken, bathed in tomato sauce, gratinated with cheese, and adorned with onion and cream."
-                        // ImagePath="Photo"
+                        ImagePath="https://firebasestorage.googleapis.com/v0/b/mihottacoswebapp.appspot.com/o/Enchiladas%20Suizas_350x350.webp?alt=media&token=ce90a664-f394-4a6e-b87e-10f01be0117b"
                     />
                     <MenuItem 
                         Title1="Chilaquiles"
@@ -187,7 +186,7 @@ export default function Menu(){
                         Price={17}
                         Description1="Chips cocinados en salsa roja o verde, vestidos con carne o un huevo estrellado, queso feta fresco, crema y aguacate, acompañado de lechuga y arroz."
                         Description2="Chips cooked in red or green sauce, dressed with meat or a fried egg, fresh feta cheese, cream, and avocado, accompanied by lettuce and rice."
-                        // ImagePath="Photo"
+                        ImagePath="https://firebasestorage.googleapis.com/v0/b/mihottacoswebapp.appspot.com/o/Chilaquiles_350x350.webp?alt=media&token=b0417840-474f-4f05-9162-240961cdfd86"
                     />
                     <MenuItem 
                         Title1="Flautas de pollo"
@@ -230,7 +229,7 @@ export default function Menu(){
                         Price={18}
                         Description1="Acompañada de ensalada, arroz, frijol y tortillas."
                         Description2="Served with salad, rice, beans and tortillas."
-                        // ImagePath=""
+                        ImagePath="https://firebasestorage.googleapis.com/v0/b/mihottacoswebapp.appspot.com/o/Carnitas_350x350.webp?alt=media&token=bcc56324-8155-4caf-8b25-95c48be4cff1"
                     />
                     <MenuItem 
                         Title1="Costillas de cerdo a la BBQ"
@@ -238,7 +237,7 @@ export default function Menu(){
                         Price={17}
                         Description1="Costillas de cerdo con papas fritas."
                         Description2="Pork ribs with fries."
-                        // ImagePath=""
+                        ImagePath="https://firebasestorage.googleapis.com/v0/b/mihottacoswebapp.appspot.com/o/Costillas%20de%20Puerco_350x350.webp?alt=media&token=5b4cd5d3-0c94-413b-983b-a508beccfe49"
                     />
                     <MenuItem 
                         Title1="Rib-Eye 300 gr."
@@ -289,7 +288,7 @@ export default function Menu(){
                         Price={15}
                         Description1="Carne de res con papa, elote, zanahoria, calabaza y repollo. Servido con tortillas, cebolla, cilantro, limón y salsa macha."
                         Description2="Beef with potatoes, corn, carrots, squash, and cabbage. Served with tortillas, onion, cilantro, lemon, and macha sauce."
-                        // ImagePath="Photo"
+                        ImagePath="https://firebasestorage.googleapis.com/v0/b/mihottacoswebapp.appspot.com/o/Caldo%20de%20Res_350x350.webp?alt=media&token=16450f15-c032-4b10-b962-d205ce1537c6"
                     />
                 </div>
                 <p className={styles.SectionMenuTitle} id="DelMar"><strong>DelMar</strong></p>
@@ -308,7 +307,7 @@ export default function Menu(){
                         Price={22}
                         Description1="Camarones preparados al ajillo, mojo de ajo, a la diabla, a la mantequilla, al cilantro o mango habanero, acompañados con arroz y papas."
                         Description2="Shrimp prepared garlic-style, garlic mojo, devil-style, buttered, cilantro-style, or habanero mango style, accompanied by rice and potatoes."
-                        // ImagePath=""
+                        ImagePath="https://firebasestorage.googleapis.com/v0/b/mihottacoswebapp.appspot.com/o/Especial%20de%20Camaron_350x350.webp?alt=media&token=ef6b235f-0158-490c-bb75-0f63e68a10f0"
                     />
                     <MenuItem 
                         Title1="Pulpo al Gusto"
@@ -324,7 +323,7 @@ export default function Menu(){
                         Price={22}
                         Description1="Camarón con zanahoria y papa. Acompañado de cilantro, cebolla, aguacate, limón y tostadas."
                         Description2="Shrimp with carrots and potatoes. Served with cilantro, onion, avocado, lemon, and tostadas."
-                        // ImagePath=""
+                        ImagePath="https://firebasestorage.googleapis.com/v0/b/mihottacoswebapp.appspot.com/o/Caldo%20de%20Camaron_350x350.webp?alt=media&token=523a47e9-c314-49ce-9749-13d2a3747b92"
                     />
                     <MenuItem 
                         Title1="Ceviche de Camarón"
@@ -364,7 +363,7 @@ export default function Menu(){
                         Price={25}
                         Description1="Mezcla de mariscos: camarones, pulpo y ostión servidos más surimi con salsa coctelera de la casa, jugo de limón, aguacate, pepino, cebolla y cilantro."
                         Description2="Seafood mix: shrimp, octopus, and oyster served with surimi, house cocktail sauce, lemon juice, avocado, cucumber, onion, and cilantro."
-                        // ImagePath=""
+                        ImagePath="https://firebasestorage.googleapis.com/v0/b/mihottacoswebapp.appspot.com/o/Vuelve%20a%20la%20Vida_350x350.webp?alt=media&token=05a21533-edb8-48cb-9427-df94ddbeed71"
                     />
                 </div>
                 <p className={styles.SectionMenuTitle} id="TacosQuesadillas"><strong>TacosQuesadillas</strong></p>
@@ -375,7 +374,7 @@ export default function Menu(){
                         Price={4}
                         Description1="Tacos originales mexicanos, carne marinada con la receta original de los auténticos taqueros mexicanos."
                         Description2="Authentic Mexican tacos, marinated meat with the original recipe of authentic Mexican taqueros."
-                        // ImagePath=""
+                        ImagePath="https://firebasestorage.googleapis.com/v0/b/mihottacoswebapp.appspot.com/o/Tacos%20al%20Pastor_350x350.webp?alt=media&token=139c2d88-5441-4808-9522-b899d3062b98"
                     />
                     <MenuItem 
                         Title1="Chorizo"
@@ -383,7 +382,7 @@ export default function Menu(){
                         Price={4}
                         Description1="Auténtico chorizo mexicano, marinado de manera exquisita para disfrutar su sabor perfecto."
                         Description2="Authentic Mexican chorizo, exquisitely marinated to savor its perfect flavor."
-                        // ImagePath=""
+                        ImagePath="https://firebasestorage.googleapis.com/v0/b/mihottacoswebapp.appspot.com/o/Tacos%20de%20Chorizo_350x350.webp?alt=media&token=f0ca998e-f0b6-4ac4-b4db-85debde1542b"
                     />
                     <MenuItem 
                         Title1="Carnitas"
@@ -391,7 +390,7 @@ export default function Menu(){
                         Price={4}
                         Description1="Una fiesta mexicana de sabor en un taco con carnitas fritas en su propia manteca, creadas de manera tradicional."
                         Description2="A Mexican flavor party in a taco with fried pulled pork in their own lard, made in a traditional way."
-                        // ImagePath=""
+                        ImagePath="https://firebasestorage.googleapis.com/v0/b/mihottacoswebapp.appspot.com/o/Tacos%20de%20Carnitas_350x350.webp?alt=media&token=e3fe56f0-9fbf-41ea-a3fa-d847f2461e17"
                     />
                     <MenuItem 
                         Title1="Cueritos"
@@ -399,7 +398,7 @@ export default function Menu(){
                         Price={4}
                         Description1="El sabor en un taco con cueritos creados de manera tradicional, original de la cocina mexicana."
                         Description2="The flavor in a taco with pork skin created in the traditional, original Mexican cuisine."
-                        // ImagePath=""
+                        ImagePath="https://firebasestorage.googleapis.com/v0/b/mihottacoswebapp.appspot.com/o/Tacos%20de%20Cueritos_350x350.webp?alt=media&token=213871eb-4dc4-434d-88fd-14a315c32509"
                     />
                     <MenuItem 
                         Title1="Bistec de Cerdo"
@@ -415,7 +414,7 @@ export default function Menu(){
                         Price={4.5}
                         Description1="Tacos de pollo sazonado para quienes disfrutan el sabor tradicional."
                         Description2="Seasoned chicken tacos for those who enjoy traditional flavor."
-                        // ImagePath=""
+                        ImagePath="https://firebasestorage.googleapis.com/v0/b/mihottacoswebapp.appspot.com/o/Tacos%20de%20Pollo_350x350.webp?alt=media&token=6fa3adf7-ecef-4277-b297-b82af6922445"
                     />
                     <MenuItem 
                         Title1="Vegetariano"
@@ -439,7 +438,7 @@ export default function Menu(){
                         Price={5}
                         Description1="Del sureste mexicano para Leamington. Carne de cerdo cocida con la receta original yucateca."
                         Description2="From the Mexican southeast to Leamington, pork cooked with the original Yucatecan recipe."
-                        // ImagePath=""
+                        ImagePath="https://firebasestorage.googleapis.com/v0/b/mihottacoswebapp.appspot.com/o/Tacos%20de%20Cochinita%20Pibil_350x350.webp?alt=media&token=51ddaa6b-7fb2-432e-9635-f17a4afbda21"
                     />
                     <MenuItem 
                         Title1="Carne Asada"
@@ -447,15 +446,23 @@ export default function Menu(){
                         Price={5}
                         Description1="Tacos de carne de res asada con exquisitas especias para lograr un toque fresco y jugoso al estilo mexicano."
                         Description2="Tacos with grilled beef seasoned with exquisite spices to achieve a fresh and juicy Mexican touch."
-                        // ImagePath=""
+                        ImagePath="https://firebasestorage.googleapis.com/v0/b/mihottacoswebapp.appspot.com/o/Tacos%20de%20Asada_350x350.webp?alt=media&token=65c90a54-4ece-4956-a009-c87b3266f155"
                     />
                     <MenuItem 
-                        Title1="Lengua o Cabeza"
-                        Title2="Tongue or beef Head"
+                        Title1="Cabeza"
+                        Title2="Beef Head"
                         Price={5}
-                        Description1="Tacos de lengua o cabeza de res finamente preparada para alcanzar una delicia con personalidad mexicana."
-                        Description2="Tacos with finely prepared beef tongue or head for a delight with Mexican personality."
-                        // ImagePath=""
+                        Description1="Tacos de cabeza de res finamente preparada para alcanzar una delicia con personalidad mexicana."
+                        Description2="Tacos with finely prepared beef head for a delight with Mexican personality."
+                        ImagePath="https://firebasestorage.googleapis.com/v0/b/mihottacoswebapp.appspot.com/o/Tacos%20de%20Cabeza_350x350.webp?alt=media&token=07f55a2e-d84b-4d18-aef4-29f8a6308cfe"
+                    />
+                    <MenuItem 
+                        Title1="Lengua"
+                        Title2="Beef Tongue"
+                        Price={5}
+                        Description1="Tacos de lengua de res finamente preparada para alcanzar una delicia con personalidad mexicana."
+                        Description2="Tacos with finely prepared beef tongue for a delight with Mexican personality."
+                        ImagePath="https://firebasestorage.googleapis.com/v0/b/mihottacoswebapp.appspot.com/o/Tacos%20de%20Lengua_350x350.webp?alt=media&token=c8f6d86d-33f3-4bbc-9564-2e33ed5fbb9e"
                     />
                     <MenuItem 
                         Title1="Supreme"
@@ -495,7 +502,7 @@ export default function Menu(){
                         Price={8}
                         Description1="Desde México para Canadá… Tortillas cubiertas de queso con carne de borrego y sabor indescriptible a notas de mariachi."
                         Description2="From Mexico to Canada... Tortillas covered with cheese and lamb meat with an indescribable flavor reminiscent of mariachi notes."
-                        // ImagePath=""
+                        ImagePath="https://firebasestorage.googleapis.com/v0/b/mihottacoswebapp.appspot.com/o/HotTacosStreetFood_Quesabirrias_350x350.webp?alt=media&token=7a46c229-7087-4082-9e31-1d3651f1c33f"
                     />
                     <MenuItem 
                         Title1="Quesadilla de Cochinita Pibil"
@@ -511,7 +518,7 @@ export default function Menu(){
                         Price={6}
                         Description1="Pollo desmenuzado en una salsa de jitomate y chipotle, servido en tortilla de maíz."
                         Description2="Shredded chicken in a tomato and chipotle sauce, served in a corn tortilla."
-                        // ImagePath=""
+                        ImagePath="https://firebasestorage.googleapis.com/v0/b/mihottacoswebapp.appspot.com/o/Quesadilla%20de%20Tinga_350x350.webp?alt=media&token=d74a390c-c04c-4a97-88a9-856bae0334b7"
                     />
                     <MenuItem 
                         Title1="Quesadilla de Queso"
@@ -570,7 +577,7 @@ export default function Menu(){
                         Price={12}
                         Description1=""
                         Description2=""
-                        // ImagePath=""
+                        ImagePath="https://firebasestorage.googleapis.com/v0/b/mihottacoswebapp.appspot.com/o/Guacamole_350x350.webp?alt=media&token=0b457545-e864-4d0f-b418-78ee7a451567"
                     />
                     <MenuItem 
                         Title1="Tortillas (5 pzas)"
@@ -586,7 +593,7 @@ export default function Menu(){
                         Price={2}
                         Description1=""
                         Description2=""
-                        // ImagePath=""
+                        ImagePath="https://firebasestorage.googleapis.com/v0/b/mihottacoswebapp.appspot.com/o/Chiles_350x350.webp?alt=media&token=a07b45a2-827e-4a70-af29-70170cf85a72"
                     />
                     <MenuItem 
                         Title1="Nopal asado (2 pzas)"
@@ -594,7 +601,7 @@ export default function Menu(){
                         Price={4}
                         Description1=""
                         Description2=""
-                        // ImagePath=""
+                        ImagePath="https://firebasestorage.googleapis.com/v0/b/mihottacoswebapp.appspot.com/o/Nopales_350x350.webp?alt=media&token=d038bb57-926b-418a-aaa5-43ce240f39e9"
                     />
                     <MenuItem 
                         Title1="Cebolla cambray (5 pzas)"
@@ -602,7 +609,7 @@ export default function Menu(){
                         Price={3}
                         Description1=""
                         Description2=""
-                        // ImagePath=""
+                        ImagePath="https://firebasestorage.googleapis.com/v0/b/mihottacoswebapp.appspot.com/o/Cebollas_350x350.webp?alt=media&token=3ced1e43-f624-48a4-82f9-ca9db9702fa0"
                     />
                 </div>
                 <p className={styles.SectionMenuTitle} id="Postres"><strong>Postres</strong></p>
