@@ -4,10 +4,10 @@ import styles from "@/complements/components/BranchComponent/Branch.module.css";
 
 interface IBranch{
     Name: string,
-    Location: string,
-    Phone: string,
-    Address: string,
-    OnlineSells: string,
+    Location?: string,
+    Phone?: string,
+    Address?: string,
+    OnlineSells?: string,
     Image?: string,
     setState: any,
 }
@@ -22,9 +22,11 @@ export default function BranchComp(props: IBranch){
                     href={props.Location}>
                     <u>{props.Address}</u>
                 </a><br/>
+                {props.Phone && 
                 <a target="_blank" rel="noopener noreferrer" className={styles.MenuButtom} href={"tel:+"+props.Phone.toString()} >
                     <u className={styles.PhoneLink}>{props.Phone.toString()}</u>
-                </a>
+                    </a>
+                }
             </h3>
         </div>
     )

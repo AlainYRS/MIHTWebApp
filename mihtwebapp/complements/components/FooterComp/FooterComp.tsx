@@ -32,6 +32,12 @@ interface iPlatforms{
     PUrl: string,
 }
 
+interface iSocMed{
+    PName?: string,
+    PIcon?: string,
+    PUrl: string,
+}
+
 interface IFooter{
     author: string,
     copyright: string,
@@ -39,39 +45,36 @@ interface IFooter{
     version: string,
     company: string,
     platforms?: iPlatforms[],
- }
+    socmed?: iSocMed[],
+}
 
 function Footer(props:IFooter){
     return (
-        <div className={styles.AppFooter}>
-            <div id={styles.AppFooter}>
-            <div>
-                <h6 className={styles.Author}>Developed by {props.author} for {props.company} at {props.date}</h6>
+        <>
+            <div className={(styles.AppFooter, styles.SocialMed)}>
+                {props.socmed && 
+                    props.socmed.map((socmed, index) => {
+                        return(
+                            <a href={socmed.PUrl} key={index} target="_blank" rel="noopener noreferrer">
+                                {socmed.PIcon && <Image src={socmed.PIcon} style={{borderRadius:'7px'}} width={30} height={30} alt={'Social Media'}/>}
+                                {socmed.PName && socmed.PName}
+                            </a>
+                        )
+                    })
+                }
+                {props.platforms && 
+                    props.platforms.map((plat, index) => {
+                        return(
+                            <a href={plat.PUrl} target="_blank" rel="noopener noreferrer">
+                                {plat.PIcon && <Image src={plat.PIcon} key={index} style={{borderRadius:'7px'}} width={30} height={30} alt={'Platforms'}/>}
+                                {plat.PName && plat.PName}
+                            </a>
+                        )
+                    })
+                }
             </div>
-                <div className={styles.SocialMed}>
-                    <a href="https://www.facebook.com/HotTacos?mibextid=LQQJ4d" target="_blank" rel="noopener noreferrer">
-                        <Image src={'/Icons/FacebookIcon.png'} style={{borderRadius:'7px'}} width={30} height={30} alt={'Faceboook'}/>
-                    </a>
-                    <a href="https://www.instagram.com/hottacosrestaurant?igsh=Y3hkMHBhNDk5M2Rl" target="_blank" rel="noopener noreferrer">
-                        <Image src={'/Icons/InstaIcon.png'} style={{borderRadius:'7px'}} width={30} height={30} alt={'Instagram'}/>
-                    </a>
-                    {props.platforms && 
-                        props.platforms.map((plat, index) => {
-                            return(
-                                <a href={plat.PUrl} target="_blank" rel="noopener noreferrer">
-                                    {plat.PIcon && <Image src={plat.PIcon} key={index} style={{borderRadius:'7px'}} width={30} height={30} alt={'Instagram'}/>}
-                                    {plat.PName && plat.PName}
-                                </a>
-                            )
-                        })
-                    }
-                </div>
-            </div>
-            <div>
-                <a href="https://www.restaurantji.com/on/leamington/hot-tacos-restaurant-/" className={styles.Certified}><img alt="Hot Tacos Mexican Restaurant is a must-visit according to Restaurantji - your go-to source for the best local restaurants." className={styles.CertifiedImg} src="https://cdn6.localdatacdn.com/certificate/6182576/hot-tacos-mexican-restaurant.png" /></a>
-            </div>
-        </div>
+            <h6 className={styles.Author}>Developed by {props.author} / {props.company} {props.date}</h6>
+        </>
     )
 }
-
 export default React.memo(Footer)

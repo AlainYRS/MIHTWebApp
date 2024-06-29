@@ -12,6 +12,7 @@ import SliderCardComp from '@/complements/components/SliderComp/SliderCardComp';
 import React, { useEffect, useState } from 'react';
 import PlayerComp from '@/complements/components/PlayerComp/PlayerComp';
 import BranchComp from "@/complements/components/BranchComponent/Branch";
+import Link from 'next/link';
 
 export default function Home() {
   const [catrinaStyle, setCatrinaStyle] = useState({ width: '14vw', height: '14vw' });
@@ -115,35 +116,40 @@ export default function Home() {
 
       <div id={styles.GridCont2}> {/* NavBar */}
         {Branch=="Windsor" &&
-          <NavBar
-          ImageURL={"https://firebasestorage.googleapis.com/v0/b/mihottacoswebapp.appspot.com/o/Hot%20Tacos%20Windsor_350x350.webp?alt=media&token=fedf2bf1-967d-4eb1-a2ca-44c4746738d3"}
-          BranchName={"Windsor"}
-          OnlineOrderingURL={"https://order.tbdine.com/pickup/51513/menu"}
-          PhoneNumber={"1-519-818-5129"}
-          Directions={"https://www.google.com/maps/dir/42.3109168,-83.046867/hot+tacos+windsor+ontario/@42.3140328,-83.0539755,15z/data=!4m9!4m8!1m1!4e1!1m5!1m1!1s0x883b2dd18c2079f3:0x7c98cd6cc1c7cbea!2m2!1d-83.0391109!2d42.3170951?entry=ttu"}
-          FeedBackLink={"https://corporations-group-site.vercel.app/"}
-          // FeedBackLink={"https://www.google.com/search?q=Hot+Tacos+Mexican+Restaurant&oq=hot&gs_lcrp=EgZjaHJvbWUqBggBEEUYOzIGCAAQRRg5MgYIARBFGDsyBggCEEUYOzIGCAMQRRg7MhUIBBAuGCcYrwEYxwEYgAQYigUYjgUyDAgFEAAYQxiABBiKBTIMCAYQABhDGIAEGIoFMgwIBxAAGEMYgAQYigUyDQgIEC4YxwEY0QMYgAQyBwgJEAAYjwLSAQkzOTYxajBqMTWoAgCwAgA&sourceid=chrome&ie=UTF-8&lqi=ChxIb3QgVGFjb3MgTWV4aWNhbiBSZXN0YXVyYW50SP7mtdeLsICACFo-EAAQARACEAMYABgBGAIYAyIcaG90IHRhY29zIG1leGljYW4gcmVzdGF1cmFudCoKCAIQABABEAIQAzICZW6SARJtZXhpY2FuX3Jlc3RhdXJhbnSaASRDaGREU1VoTk1HOW5TMFZKUTBGblNVTXhja3BMYnpoblJSQUKqAUUQATIfEAEiGw77zvW_g1eMG3zgLIufMx5wXH_5RvSPTrVAxzIgEAIiHGhvdCB0YWNvcyBtZXhpY2FuIHJlc3RhdXJhbnQ#lkt=LocalPoiReviews&rlimm=15009981570700808098"}
-          />
+          <Link href="/Reviews">
+            <NavBar
+              ImageURL={"https://firebasestorage.googleapis.com/v0/b/mihottacoswebapp.appspot.com/o/Hot%20Tacos%20Windsor_350x350.webp?alt=media&token=fedf2bf1-967d-4eb1-a2ca-44c4746738d3"}
+              BranchName={"Windsor"}
+              OnlineOrderingURL={"https://order.tbdine.com/pickup/51513/menu"}
+              PhoneNumber={"1-519-818-5129"}
+              Directions={"https://www.google.com/maps/dir/42.3109168,-83.046867/hot+tacos+windsor+ontario/@42.3140328,-83.0539755,15z/data=!4m9!4m8!1m1!4e1!1m5!1m1!1s0x883b2dd18c2079f3:0x7c98cd6cc1c7cbea!2m2!1d-83.0391109!2d42.3170951?entry=ttu"}
+              FeedBackLink={"http://www.hottacosrestaurant.com/Reviews"}
+              // FeedBackLink={"https://corporations-group-site.vercel.app/"}
+              // FeedBackLink={"https://www.google.com/search?q=Hot+Tacos+Mexican+Restaurant&oq=hot&gs_lcrp=EgZjaHJvbWUqBggBEEUYOzIGCAAQRRg5MgYIARBFGDsyBggCEEUYOzIGCAMQRRg7MhUIBBAuGCcYrwEYxwEYgAQYigUYjgUyDAgFEAAYQxiABBiKBTIMCAYQABhDGIAEGIoFMgwIBxAAGEMYgAQYigUyDQgIEC4YxwEY0QMYgAQyBwgJEAAYjwLSAQkzOTYxajBqMTWoAgCwAgA&sourceid=chrome&ie=UTF-8&lqi=ChxIb3QgVGFjb3MgTWV4aWNhbiBSZXN0YXVyYW50SP7mtdeLsICACFo-EAAQARACEAMYABgBGAIYAyIcaG90IHRhY29zIG1leGljYW4gcmVzdGF1cmFudCoKCAIQABABEAIQAzICZW6SARJtZXhpY2FuX3Jlc3RhdXJhbnSaASRDaGREU1VoTk1HOW5TMFZKUTBGblNVTXhja3BMYnpoblJSQUKqAUUQATIfEAEiGw77zvW_g1eMG3zgLIufMx5wXH_5RvSPTrVAxzIgEAIiHGhvdCB0YWNvcyBtZXhpY2FuIHJlc3RhdXJhbnQ#lkt=LocalPoiReviews&rlimm=15009981570700808098"}
+              />
+          </Link>
         }
         {Branch=="Street Food" &&
           <NavBar
-            ImageURL={"https://firebasestorage.googleapis.com/v0/b/mihottacoswebapp.appspot.com/o/StreetFood_350x350.webp?alt=media&token=c3e59fbb-4ec2-4a23-9c14-4442febb1d7a"}
-            BranchName={"Street Food"}
-            OnlineOrderingURL={"https://www.clover.com/online-ordering/hot-tacos-street-food"}
-            PhoneNumber={"1-226-936-2953"}
-            Directions={"https://www.google.com/maps/dir//Hot+Tacos+Street+Food,+Erie+Street+South,+Leamington,+ON/@42.0525494,-82.6820086,12z/data=!3m1!4b1!4m8!4m7!1m0!1m5!1m1!1s0x883ac1fb07467f03:0x562a0e9ef0c923a2!2m2!1d-82.5996073!2d42.0524514?entry=ttu"}
-            FeedBackLink={"https://corporations-group-site.vercel.app/"}
-            // FeedBackLink={"https://www.google.com/search?gs_ssp=eJwFwTEOgCAMAMC4mji6szjTgiLwBH-BSHEwaZQOPN-7cdJVI0p_oL4dYYgLdO9tykgn7KvbCWyEvjmToIRCkIOxyRzzzaIkZW6qyVeKKGK-flrCF1E&q=hot+tacos+street+food&oq=hot+tacos+&gs_lcrp=EgZjaHJvbWUqDQgBEC4YrwEYxwEYgAQyBggAEEUYOzINCAEQLhivARjHARiABDINCAIQLhivARjHARiABDIHCAMQABiABDIHCAQQABiABDIGCAUQRRhAMgYIBhBFGDkyBwgHEAAYgATSAQk1MzYyajBqMTWoAgiwAgE&sourceid=chrome&ie=UTF-8"}
+          ImageURL={"https://firebasestorage.googleapis.com/v0/b/mihottacoswebapp.appspot.com/o/StreetFood_350x350.webp?alt=media&token=c3e59fbb-4ec2-4a23-9c14-4442febb1d7a"}
+          BranchName={"Street Food"}
+          OnlineOrderingURL={"https://www.clover.com/online-ordering/hot-tacos-street-food"}
+          PhoneNumber={"1-226-936-2953"}
+          Directions={"https://www.google.com/maps/dir//Hot+Tacos+Street+Food,+Erie+Street+South,+Leamington,+ON/@42.0525494,-82.6820086,12z/data=!3m1!4b1!4m8!4m7!1m0!1m5!1m1!1s0x883ac1fb07467f03:0x562a0e9ef0c923a2!2m2!1d-82.5996073!2d42.0524514?entry=ttu"}
+          FeedBackLink={"http://www.hottacosrestaurant.com/Reviews"}
+          // FeedBackLink={"https://corporations-group-site.vercel.app/"}
+          // FeedBackLink={"https://www.google.com/search?gs_ssp=eJwFwTEOgCAMAMC4mji6szjTgiLwBH-BSHEwaZQOPN-7cdJVI0p_oL4dYYgLdO9tykgn7KvbCWyEvjmToIRCkIOxyRzzzaIkZW6qyVeKKGK-flrCF1E&q=hot+tacos+street+food&oq=hot+tacos+&gs_lcrp=EgZjaHJvbWUqDQgBEC4YrwEYxwEYgAQyBggAEEUYOzINCAEQLhivARjHARiABDINCAIQLhivARjHARiABDIHCAMQABiABDIHCAQQABiABDIGCAUQRRhAMgYIBhBFGDkyBwgHEAAYgATSAQk1MzYyajBqMTWoAgiwAgE&sourceid=chrome&ie=UTF-8"}
           />
         }
         {Branch=="Leamington" &&
           <NavBar
-            ImageURL={"https://firebasestorage.googleapis.com/v0/b/mihottacoswebapp.appspot.com/o/Hot%20Tacos_350x350.webp?alt=media&token=d9a53f57-d71f-4af0-a48a-f3453ef4392d"}
-            BranchName={"Leamington"}
-            OnlineOrderingURL={"https://order.tbdine.com/pickup/28824/menu"}
-            PhoneNumber={"1-519-329-1615"}
-            Directions={"https://www.google.com/maps/dir//Hot+Tacos+Mexican+Restaurant/@42.0529949,-82.6816491,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x883ac1874678d4cf:0xd04e2ab656c80fa2!2m2!1d-82.5992483!2d42.0530244?entry=ttu"}
-            FeedBackLink={"https://corporations-group-site.vercel.app/"}
+          ImageURL={"https://firebasestorage.googleapis.com/v0/b/mihottacoswebapp.appspot.com/o/Hot%20Tacos_350x350.webp?alt=media&token=d9a53f57-d71f-4af0-a48a-f3453ef4392d"}
+          BranchName={"Leamington"}
+          OnlineOrderingURL={"https://order.tbdine.com/pickup/28824/menu"}
+          PhoneNumber={"1-519-329-1615"}
+          Directions={"https://www.google.com/maps/dir//Hot+Tacos+Mexican+Restaurant/@42.0529949,-82.6816491,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x883ac1874678d4cf:0xd04e2ab656c80fa2!2m2!1d-82.5992483!2d42.0530244?entry=ttu"}
+          FeedBackLink={"http://www.hottacosrestaurant.com/Reviews"}
+            // FeedBackLink={"https://corporations-group-site.vercel.app/"}
             // FeedBackLink={"https://www.google.com/search?q=Hot+Tacos+Mexican+Restaurant&oq=hot&gs_lcrp=EgZjaHJvbWUqBggBEEUYOzIGCAAQRRg5MgYIARBFGDsyBggCEEUYOzIGCAMQRRg7MhUIBBAuGCcYrwEYxwEYgAQYigUYjgUyDAgFEAAYQxiABBiKBTIMCAYQABhDGIAEGIoFMgwIBxAAGEMYgAQYigUyDQgIEC4YxwEY0QMYgAQyBwgJEAAYjwLSAQkzOTYxajBqMTWoAgCwAgA&sourceid=chrome&ie=UTF-8&lqi=ChxIb3QgVGFjb3MgTWV4aWNhbiBSZXN0YXVyYW50SP7mtdeLsICACFo-EAAQARACEAMYABgBGAIYAyIcaG90IHRhY29zIG1leGljYW4gcmVzdGF1cmFudCoKCAIQABABEAIQAzICZW6SARJtZXhpY2FuX3Jlc3RhdXJhbnSaASRDaGREU1VoTk1HOW5TMFZKUTBGblNVTXhja3BMYnpoblJSQUKqAUUQATIfEAEiGw77zvW_g1eMG3zgLIufMx5wXH_5RvSPTrVAxzIgEAIiHGhvdCB0YWNvcyBtZXhpY2FuIHJlc3RhdXJhbnQ#lkt=LocalPoiReviews&rlimm=15009981570700808098"}
           />
         }
@@ -841,6 +847,18 @@ export default function Home() {
                   PUrl: 'https://www.ubereats.com/store/hot-tacos-restaurant-windsor/lb8T3K1CW420ob1pafD7lw?utm_source=menu-maker',
                 }
               ]}
+              socmed={[
+                {
+                  // PName: 'Facebook',
+                  PIcon: '/Icons/FacebookIcon.png',
+                  PUrl: 'https://www.facebook.com/HotTacos?mibextid=LQQJ4d',
+                },
+                {
+                  // PName: 'Instagram',
+                  PIcon: '/Icons/InstaIcon.png',
+                  PUrl: 'https://www.instagram.com/hottacosrestaurant?igsh=Y3hkMHBhNDk5M2Rl',
+                },
+              ]}
           />
         }
         {Branch=="Leamington" &&
@@ -867,6 +885,18 @@ export default function Home() {
                   PUrl: 'https://www.ubereats.com/ca/store/hot-tacos-restaurant/58HVtyoTVG6600eVmrKUjw?diningMode=DELIVERY&sc=SEARCH_SUGGESTION',
                 }
               ]}
+              socmed={[
+                {
+                  // PName: 'Facebook',
+                  PIcon: '/Icons/FacebookIcon.png',
+                  PUrl: 'https://www.facebook.com/HotTacos?mibextid=LQQJ4d',
+                },
+                {
+                  // PName: 'Instagram',
+                  PIcon: '/Icons/InstaIcon.png',
+                  PUrl: 'https://www.instagram.com/hottacosrestaurant?igsh=Y3hkMHBhNDk5M2Rl',
+                },
+              ]}
           />
         }
         {Branch=="Street Food" &&
@@ -892,6 +922,18 @@ export default function Home() {
                   PIcon: '/Icons/Uber Eats.png',
                   PUrl: 'https://www.ubereats.com/ca/store/hot-tacos-street-food/djfQQXgbUDiMyLj26jovaA?diningMode=DELIVERY&sc=SEARCH_SUGGESTION',
                 }
+              ]}
+              socmed={[
+                {
+                  // PName: 'Facebook',
+                  PIcon: '/Icons/FacebookIcon.png',
+                  PUrl: 'https://www.facebook.com/HotTacos?mibextid=LQQJ4d',
+                },
+                {
+                  // PName: 'Instagram',
+                  PIcon: '/Icons/InstaIcon.png',
+                  PUrl: 'https://www.instagram.com/hottacosrestaurant?igsh=Y3hkMHBhNDk5M2Rl',
+                },
               ]}
           />
         }

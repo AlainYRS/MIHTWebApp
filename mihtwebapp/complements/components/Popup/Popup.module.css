@@ -1,0 +1,15 @@
+.Popup {
+    position: fixed;
+    bottom: 21%;
+    left: 50%;
+    color: white;
+    font-weight: 500;
+    font-size: 2rem;
+    transform: translateX(-50%);
+    background-color: rgba(14,21,35,1);
+    padding: 10px 20px;
+    border: 1px solid #ccc;
+    border-radius: 14px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(70, 70, 70, 0.2);
+  }

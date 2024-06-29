@@ -1,0 +1,73 @@
+.Logo{
+    margin: 1rem auto;
+    border-radius: 14px;
+    border: 1px solid white;
+    box-shadow: 3px 3px 3px gray;
+    width: clamp(140px, 210px, 350px);
+}
+.Chosen{
+    background-color: rgb(7, 35, 49);
+    padding: 0.5rem;
+    width: max-content;
+    text-align: center;
+    font-weight: 400;
+    font-size: 1.4rem;
+    color: white;
+    text-shadow: 1px 1px 1px rgba(var(--htred),1);
+    border: 1px solid white;
+    border-radius: 7px;
+    margin: 0.3rem auto;
+    cursor: pointer;
+}
+.Branches{
+    display: flex;
+    flex-flow: row wrap;
+    width: 100vw;
+    justify-content: space-around;
+}
+.SubLeyends{
+    color: rgba(var(--htred),1);
+    text-shadow: 1px 1px 1px rgba(var(--htyellow),0.35);
+    font-weight: 600;
+    font-size: 2rem;
+    width: 100%;
+    border-radius: 14px;
+    margin: 1rem;
+    text-align: center;
+    background-color: rgba(70,70,70,0.35);
+    border: 1px solid rgba(var(--htyellow),1);
+    cursor: pointer;
+}
+.CustomerData{
+    padding: 1rem;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    width: clamp(21%, 35%, 100%);
+    margin: auto;
+}
+.CustomerInput{
+    margin: 1rem;
+    border-radius: 4px;
+    padding: 3px 7px;
+    width: clamp(auto, auto, max-content);
+    color: black;
+}
+.Gifts{
+    border: 1px solid red;
+}
+.GiftOption{
+    color: white;
+    text-align: center;
+}
+.GiftOption > label{
+    padding: 0.3rem;
+}
+.suboton{
+    display: block;
+    margin: 1rem auto;
+    border: 1px solid white;
+    background-color: rgb(71, 14, 14);
+    border-radius: 7px;
+    padding: 0.3rem 0.7rem;
+}

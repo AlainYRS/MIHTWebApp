@@ -1,0 +1,210 @@
+.Main{
+    width: calc(100vw - 7px);
+    display: grid;
+    background: black;
+    color: white;
+    grid-template-rows: repeat(4, auto);
+    grid-template-columns: 1fr;
+    gap: 0.35rem 0;
+    grid-template-areas: 
+    'Head'
+    'Branch'
+    'Footer'
+    ;
+}
+#Head{
+    grid-area: Head;
+    background-color: black;
+    position: sticky;
+    display: block;
+    width: 100%;
+    z-index: 1;
+    text-align: center;
+}
+#GridCont1{
+    position: relative;
+    grid-area: Branch;
+    margin: 0 0 5rem 0;
+}
+#GridCont2{
+    grid-area: Footer;
+    background-color: black;
+    position: fixed;
+    width: 100%;
+    bottom: 0px;
+}
+.Branches{
+    display: flex;
+    flex-flow: row wrap;
+    width: 100vw;
+    justify-content: space-around;
+}
+.Leyends{
+    color: rgba(var(--htyellow),1);
+    text-shadow: 1px 1px 2px white;
+    font-weight: 700;
+    font-size: 3.5rem;
+    margin: auto;
+    position: sticky;
+    top: 0px;
+}
+.SubLeyends{
+    color: rgba(var(--htred),1);
+    text-shadow: 1px 1px 1px rgba(var(--htyellow),0.35);
+    font-weight: 600;
+    font-size: 2rem;
+    width: 100%;
+    border-radius: 14px;
+    margin: 0 1rem;
+    text-align: center;
+    background-color: rgba(70,70,70,0.35);
+    border: 1px solid rgba(var(--htyellow),1);
+    cursor: pointer;
+}
+.Options{
+    display: flex;
+    width: 100%;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    padding: 1rem;
+    margin: 1rem;
+}
+.Option{
+    display: block;
+    border: 1px solid rgba(255,255,255,0.35);
+    background-color: rgba(70,140,210,0.21);
+    border-radius: 35px;
+    font-weight: 700;
+    color: rgba(245,245,245,0.7);
+    padding: 0.35rem 3.5rem;
+    transition: var(--fast);
+    text-align: center;
+}
+.Option:hover{
+    border: 1px solid whitesmoke;
+    background-color: rgba(70,140,210,0.1);
+    color: rgba(255,255,255,1);
+    box-shadow: 1px 1px 2px rgba(255,255,255,1);
+}
+.Chosen{
+    background-color: black;
+    padding: 0.5rem;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 2rem;
+    color: white;
+    border: 1px solid white;
+    border-radius: 14px;
+    margin: 1rem;
+    cursor: pointer;
+}
+.Stars{
+    margin: 1rem;
+    display: flex;
+    flex-flow: row nowrap;
+}
+.Stars > img{
+    margin: 7px;
+    width: 70px;
+    height: 70px;
+    padding: 7px;
+    border-radius: 21px;
+    transition: var(--fast);
+    border: 1px solid transparent;
+    cursor: pointer;
+}
+.Stars > img:hover{
+    background-color: rgba(70,70,70,0.7);
+    border: 1px solid rgba(210,210,210,0.35);
+}
+.StarRate{
+    width: 21px;
+    height: 21px;
+    margin: auto 7px;
+}
+.Feedback{
+    width: 100%;
+    height: clamp(2rem, 5rem, auto);
+    color: black;
+    border-radius: 7px;
+    padding: 7px;
+    margin: 1rem;
+}
+.ContaminiPict{
+    position: relative;
+    height: 100%;
+    align-content: center;
+}
+.miniPict{
+    width: 35px;
+    height: 35px;
+    border-radius: 100%;
+    vertical-align: middle;
+    margin: 0 7px;
+}
+.Submit{
+    border: 1px solid white;
+    padding: 0.35rem 1rem;
+    border-radius: 14px;
+    background-color: rgba(var(--htred),0.35);
+    font-weight: 700;
+    transition: var(--fast);
+}
+.Submit:hover{
+    background-color: rgba(var(--htred),0.7);
+}
+
+/* Grupo para dispositivos iPhone 5 a iPhone 12 Max en orientación vertical */
+@media only screen and (max-device-width: 428px) and (orientation: portrait) {
+    #Head{
+        position: relative;
+    }
+    .Leyends{
+        font-size: 2.1rem;
+    }
+    .SubLeyends{
+        font-size: 2rem;
+    }
+    .Stars{
+        margin: 0.35rem;
+    }
+    .Stars > img{
+        margin: 3.5px;
+        width: 49px;
+        height: 49px;
+        padding: 7px;
+        border-radius: 21px;
+        transition: var(--fast);
+        border: 1px solid transparent;
+    }
+    .Options{
+        flex-flow: column nowrap;
+        margin: 0;
+    }
+    .Option{
+        margin: 0.35rem;
+    }    
+}
+@media only screen and (max-device-width: 428px) and (orientation: landscape) {
+    #Head{
+        position: relative;
+    }
+}
+  
+  /* Grupo para dispositivos iPad y otros dispositivos en orientación vertical */
+  @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+    /* Estilos para dispositivos iPad y otros dispositivos en orientación vertical */
+    /* Aquí puedes mostrar el menú en orientación horizontal */
+    #Head{
+        position: relative;
+    }
+    .menu {
+      display: block; /* Por ejemplo, cambiar a block para mostrar el menú */
+    }
+  }
+  
