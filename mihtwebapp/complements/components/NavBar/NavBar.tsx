@@ -8,6 +8,7 @@ interface INavBar{
     PhoneNumber?: string,
     Directions?: string,
     FeedBackLink?: string,
+    RafflesLink?: string,
 }
 export default function NavMenu(props: INavBar){
     return (
@@ -31,6 +32,12 @@ export default function NavMenu(props: INavBar){
                     Opiniones<br/>
                     <p className={styles.EngTitle}>Reviews</p>
                     <img className={styles.restaurantji} src="https://www.restaurantji.com/badges/index.php?id=6182576&badge=badge-1-template.png" alt="Hot Tacos Mexican Restaurant is a must-visit at local restaurants"/>
+                </a>
+            }
+            {props.RafflesLink &&
+                <a className={styles.MenuButtom} href={props.RafflesLink}>
+                    Rifas<br/>
+                    <p className={styles.EngTitle}>Raffles</p>
                 </a>
             }
         </nav>
