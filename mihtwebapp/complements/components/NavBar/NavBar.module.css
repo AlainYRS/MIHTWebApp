@@ -3,7 +3,7 @@
     display: flex;
     justify-content: space-evenly;
     gap: 3.5px;
-    padding: 3.5px;
+    padding: 3px 2px;
     height: calc(100% - 35px);
     background-color: black;
     box-shadow: 0px 3.5px 3.5px rgb(255,255,255,0.21);
@@ -42,9 +42,11 @@
     color: rgb(var(--htyellow));
     background-color: rgb(var(--htred));
     border: 1px solid white;
-    padding: 3.5px 7px;
-    font-weight: bold;
+    padding: 3px 7px;
     text-align: center;
+    font-weight: 700;
+    display: flex;
+    flex-flow: column nowrap;
     text-shadow: 1px 1px 1px black;
     box-shadow: 2px 2px 2px transparent;
     border-radius: 7px;
@@ -66,14 +68,16 @@
     margin: auto;
 }
 
-
 /* Grupo para dispositivos iPhone 5 a iPhone 12 Max en orientación vertical */
 @media only screen and (max-device-width: 428px) and (orientation: portrait) {
   .NavBarContainer{
       width: 100vw;
       height: 100%;
-      font-size: 1rem;
-      /* white-space: nowrap; */
+      font-size: 0.9rem;
+      flex-flow: row nowrap;
+      white-space: nowrap;
+      overflow: auto;
+      position: relative;
   }
   .BranchIcon{
     display: none;
@@ -83,9 +87,13 @@
   }
   .MenuButtom{
       border: 1px solid white;
-      border-radius: 14px;
+      border-radius: 7px;
+      padding: 3px 7px;
+      background-color: rgba(14,35,49,0.7);
+      width: 70vw;
+      height: max-content;
       margin: auto;
-      padding: 3px;
+      font-weight: 400;
   }
   .MenuButtom:hover{
       color: darkred;
@@ -96,8 +104,7 @@
       transition: 70ms;
   }
   .restaurantji{
-    width: 49px;
-    margin: auto;
+    display: none;
   }
 }
   
