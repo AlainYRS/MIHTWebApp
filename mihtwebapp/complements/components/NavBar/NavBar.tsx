@@ -21,13 +21,13 @@ export default function NavMenu(props: INavBar){
                 <h2 className={styles.TitleNavBar}>{props.BranchName}</h2>
             </div>
             {props.OnlineOrderingURL &&
-                <a target="_blank" rel="noopener noreferrer" className={styles.MenuButtom} href={props.OnlineOrderingURL} >Pedir en Linea<p className={styles.EngTitle}>Order Online</p></a>
+                <a target="_blank" rel="noopener noreferrer" className={styles.MenuButtom} href={props.OnlineOrderingURL} >Hacer Pedido<p className={styles.EngTitle}>Order Online</p></a>
             }
             {props.PhoneNumber &&
-                <a target="_blank" rel="noopener noreferrer" className={styles.MenuButtom} href={"tel:+"+props.PhoneNumber} >Pedido Telefónico<p className={styles.EngTitle}>Call to Order</p></a>
+                <a target="_blank" rel="noopener noreferrer" className={styles.MenuButtom} href={"tel:+"+props.PhoneNumber} >Llamar<p className={styles.EngTitle}>Call</p></a>
             }
             {props.Directions &&
-                <a target="_blank" rel="noopener noreferrer" className={styles.MenuButtom} href={props.Directions} >Como llegar<p className={styles.EngTitle}>Directions</p></a>
+                <a target="_blank" rel="noopener noreferrer" className={styles.MenuButtom} href={props.Directions} >Ubicación<p className={styles.EngTitle}>Directions</p></a>
             }
             {props.RafflesLink &&
                 <a className={styles.MenuButtom} href={props.RafflesLink}>
