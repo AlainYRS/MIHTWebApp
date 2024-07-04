@@ -652,8 +652,8 @@ export default function Home() {
             <tbody className={styles.TableBody}>
               <tr className={styles.ScheduleRow}>
                 <td className={styles.ScheduleDay}>Monday (Lunes)</td>
-                <td className={styles.ScheduleOpen}>Closed</td>
-                <td className={styles.ScheduleClose}>Closed</td>
+                <td className={styles.ScheduleOpen}>11:00 am</td>
+                <td className={styles.ScheduleClose}>9:00 pm</td>
               </tr>
               <tr className={styles.ScheduleRow}>
                 <td className={styles.ScheduleDay}>Tuesday (Martes)</td>
