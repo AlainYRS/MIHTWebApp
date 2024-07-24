@@ -19,7 +19,7 @@ import Link from "next/link";
             </div>
             <div className={styles.Links}>
                 <Link href='https://www.hottacosrestaurant.com/Reviews' className={styles.Link}>Califica el Servicio</Link>
-                <Link href='#' className={styles.Link}>Accede a Wifi</Link>
+                {/* <Link href='#' className={styles.Link}>Accede a Wifi</Link> */}
                 <Link href='https://www.hottacosrestaurant.com/Raffles' className={styles.Link}>Participa en Rifas</Link>
                 <Link href='https://hottacosrestaurant.com/' className={styles.Link}>Consulta el Menu</Link>
             </div>
