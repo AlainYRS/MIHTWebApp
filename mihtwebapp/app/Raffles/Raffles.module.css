@@ -43,7 +43,7 @@
     display: flex;
     flex-flow: column nowrap;
     justify-content: space-around;
-    width: clamp(21%, 35%, 100%);
+    width: clamp(40%, 50%, 90%);
     margin: auto;
 }
 .CustomerInput{
