@@ -3,11 +3,7 @@ import styles from './Landing.module.css';
 import Image from 'next/image';
 import Link from "next/link";
 
-interface iLanding{
-    src: string,
-}
-
- export default function LandingPage(props: iLanding[]){
+ export default function LandingPage(){
     return(
         <div className={styles.LandingContainer}>
             <div className={styles.Logos}>
