@@ -43,6 +43,14 @@ export default function NavMenu(props: INavBar){
                     <img className={styles.restaurantji} src="https://www.restaurantji.com/badges/index.php?id=6182576&badge=badge-1-template.png" alt="Hot Tacos Mexican Restaurant is a must-visit at local restaurants"/>
                 </a>
             }
+            {props.RafflesLink &&
+                <a className={styles.MenuButtom} href={props.RafflesLink}>
+                    <img className={styles.MXNFlag} src="/Icons/MXNIcon.png" alt="" />
+                    Septiembre 15
+                    <p className={styles.EngTitle}>El Patron Bar & Grill</p>
+                    <img className={styles.restaurantji} src="https://firebasestorage.googleapis.com/v0/b/mihottacoswebapp.appspot.com/o/Luchador_350x350.webp?alt=media&token=134cf8a5-10f0-40b6-957a-f142ba08c4dd" alt="Hot Tacos Mexican Restaurant is a must-visit at local restaurants"/>
+                </a>
+            }
        </nav>
     );
 }
