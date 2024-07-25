@@ -39,3 +39,7 @@
     background-color: rgba(var(--darkredmate),1);
     color: rgba(var(--yellowmate),1);
 }
+.Link:last-child{
+    background-color: rgba(var(--darkredmate),1);
+    color: rgba(var(--yellowmate),1);
+}
