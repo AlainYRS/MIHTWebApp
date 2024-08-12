@@ -148,6 +148,7 @@ export default function Home() {
             Directions={"https://www.google.com/maps/dir//Hot+Tacos+Mexican+Restaurant/@42.0529949,-82.6816491,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x883ac1874678d4cf:0xd04e2ab656c80fa2!2m2!1d-82.5992483!2d42.0530244?entry=ttu"}
             FeedBackLink={"http://www.hottacosrestaurant.com/Reviews"}
             RafflesLink={"http://www.hottacosrestaurant.com/Raffles"}
+            Eventlink={"https://www.eventbrite.com/e/ncg-wrestling-presents-lucha-libra-supreme-tickets-950830508647"}
             // FeedBackLink={"https://www.google.com/search?q=Hot+Tacos+Mexican+Restaurant&oq=hot&gs_lcrp=EgZjaHJvbWUqBggBEEUYOzIGCAAQRRg5MgYIARBFGDsyBggCEEUYOzIGCAMQRRg7MhUIBBAuGCcYrwEYxwEYgAQYigUYjgUyDAgFEAAYQxiABBiKBTIMCAYQABhDGIAEGIoFMgwIBxAAGEMYgAQYigUyDQgIEC4YxwEY0QMYgAQyBwgJEAAYjwLSAQkzOTYxajBqMTWoAgCwAgA&sourceid=chrome&ie=UTF-8&lqi=ChxIb3QgVGFjb3MgTWV4aWNhbiBSZXN0YXVyYW50SP7mtdeLsICACFo-EAAQARACEAMYABgBGAIYAyIcaG90IHRhY29zIG1leGljYW4gcmVzdGF1cmFudCoKCAIQABABEAIQAzICZW6SARJtZXhpY2FuX3Jlc3RhdXJhbnSaASRDaGREU1VoTk1HOW5TMFZKUTBGblNVTXhja3BMYnpoblJSQUKqAUUQATIfEAEiGw77zvW_g1eMG3zgLIufMx5wXH_5RvSPTrVAxzIgEAIiHGhvdCB0YWNvcyBtZXhpY2FuIHJlc3RhdXJhbnQ#lkt=LocalPoiReviews&rlimm=15009981570700808098"}
           />
         }

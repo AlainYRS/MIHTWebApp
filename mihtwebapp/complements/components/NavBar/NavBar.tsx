@@ -10,6 +10,7 @@ interface INavBar{
     Directions?: string,
     FeedBackLink?: string,
     RafflesLink?: string,
+    Eventlink?: string,
 }
 export default function NavMenu(props: INavBar){
     const [MenuDisplay, setMenuDisplay] = useState<boolean>(true)
@@ -43,8 +44,8 @@ export default function NavMenu(props: INavBar){
                     <img className={styles.restaurantji} src="https://www.restaurantji.com/badges/index.php?id=6182576&badge=badge-1-template.png" alt="Hot Tacos Mexican Restaurant is a must-visit at local restaurants"/>
                 </a>
             }
-            {props.RafflesLink &&
-                <a className={styles.MenuButtom} href={props.RafflesLink}>
+            {props.Eventlink &&
+                <a className={styles.MenuButtom} href={props.Eventlink}  target="_blank">
                     <img className={styles.MXNFlag} src="/Icons/MXNIcon.png" alt="" />
                     Septiembre 15
                     <p className={styles.EngTitle}>El Patron Bar & Grill</p>
