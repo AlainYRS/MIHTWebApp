@@ -584,7 +584,7 @@ export default function Menu(){
                     <MenuItem 
                         Title1="Jarritos"
                         Title2=""
-                        Price={3.5}
+                        // Price={3.5}
                         Description1=""
                         Description2=""
                         // ImagePath=""
