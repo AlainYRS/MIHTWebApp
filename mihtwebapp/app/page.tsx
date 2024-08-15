@@ -107,7 +107,7 @@ export default function Home() {
         {Branch=="" &&
           <>
             {/* <!-- Versión en español --> */}
-            <p className={styles.SEOEspañol}>¡Hot Tacos te da la bienvenida a Leamington y Windsor, Ontario! Con cuatro años de apoyo de la comunidad latina y canadiense, platos variados para una experiencia mexicana auténtica, y rápido crecimiento, somos el principal restaurante mexicano. ¡Descubre por qué somos el favorito de los amantes de la comida mexicana!</p>
+            <p className={styles.SEOEspañol}>¡Hot Tacos te da la bienvenida a Leamington y Windsor, Ontario! Con cuatro años de apoyo de la comunidad latina y canadiense, platos variados para una experiencia mexicana auténtica, y un rápido crecimiento, somos el principal restaurante mexicano. ¡Descubre por qué somos el favorito de los amantes de la comida mexicana!</p>
             {/* <!-- Versión en inglés --> */}
             <p className={styles.SEOEnglish}>Hot Tacos welcomes you to Leamington and Windsor, Ontario! With four years of support from the Latin and Canadian community, diverse dishes for an authentic Mexican experience, and rapid growth, we are the top Mexican restaurant. Find out why we are the favorite for Mexican cuisine lovers!</p>
           </>
@@ -934,6 +934,15 @@ export default function Home() {
                   PUrl: 'https://www.instagram.com/hottacosrestaurant?igsh=Y3hkMHBhNDk5M2Rl',
                 },
               ]}
+          />
+        }
+        {Branch=="" &&
+          <Footer 
+            author= {'Alain Y. Rivera S.'}
+            copyright= {'Alain Rivera'}
+            date= {'Jan 24, 2024'}
+            version= {'1.0.0'}
+            company={'Restaurant Group'}
           />
         }
       </div>
