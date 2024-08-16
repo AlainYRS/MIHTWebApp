@@ -124,6 +124,7 @@ export default function Home() {
               Directions={"https://www.google.com/maps/dir/42.3109168,-83.046867/hot+tacos+windsor+ontario/@42.3140328,-83.0539755,15z/data=!4m9!4m8!1m1!4e1!1m5!1m1!1s0x883b2dd18c2079f3:0x7c98cd6cc1c7cbea!2m2!1d-83.0391109!2d42.3170951?entry=ttu"}
               FeedBackLink={"http://www.hottacosrestaurant.com/Reviews"}
               RafflesLink={"http://www.hottacosrestaurant.com/Raffles"}
+              Eventlink={"https://www.eventbrite.com/e/ncg-wrestling-presents-lucha-libra-supreme-tickets-950830508647"}
               // FeedBackLink={"https://www.google.com/search?q=Hot+Tacos+Mexican+Restaurant&oq=hot&gs_lcrp=EgZjaHJvbWUqBggBEEUYOzIGCAAQRRg5MgYIARBFGDsyBggCEEUYOzIGCAMQRRg7MhUIBBAuGCcYrwEYxwEYgAQYigUYjgUyDAgFEAAYQxiABBiKBTIMCAYQABhDGIAEGIoFMgwIBxAAGEMYgAQYigUyDQgIEC4YxwEY0QMYgAQyBwgJEAAYjwLSAQkzOTYxajBqMTWoAgCwAgA&sourceid=chrome&ie=UTF-8&lqi=ChxIb3QgVGFjb3MgTWV4aWNhbiBSZXN0YXVyYW50SP7mtdeLsICACFo-EAAQARACEAMYABgBGAIYAyIcaG90IHRhY29zIG1leGljYW4gcmVzdGF1cmFudCoKCAIQABABEAIQAzICZW6SARJtZXhpY2FuX3Jlc3RhdXJhbnSaASRDaGREU1VoTk1HOW5TMFZKUTBGblNVTXhja3BMYnpoblJSQUKqAUUQATIfEAEiGw77zvW_g1eMG3zgLIufMx5wXH_5RvSPTrVAxzIgEAIiHGhvdCB0YWNvcyBtZXhpY2FuIHJlc3RhdXJhbnQ#lkt=LocalPoiReviews&rlimm=15009981570700808098"}
             />
         }
@@ -136,6 +137,7 @@ export default function Home() {
             Directions={"https://www.google.com/maps/dir//Hot+Tacos+Street+Food,+Erie+Street+South,+Leamington,+ON/@42.0525494,-82.6820086,12z/data=!3m1!4b1!4m8!4m7!1m0!1m5!1m1!1s0x883ac1fb07467f03:0x562a0e9ef0c923a2!2m2!1d-82.5996073!2d42.0524514?entry=ttu"}
             FeedBackLink={"http://www.hottacosrestaurant.com/Reviews"}
             RafflesLink={"http://www.hottacosrestaurant.com/Raffles"}
+            Eventlink={"https://www.eventbrite.com/e/ncg-wrestling-presents-lucha-libra-supreme-tickets-950830508647"}
             // FeedBackLink={"https://www.google.com/search?gs_ssp=eJwFwTEOgCAMAMC4mji6szjTgiLwBH-BSHEwaZQOPN-7cdJVI0p_oL4dYYgLdO9tykgn7KvbCWyEvjmToIRCkIOxyRzzzaIkZW6qyVeKKGK-flrCF1E&q=hot+tacos+street+food&oq=hot+tacos+&gs_lcrp=EgZjaHJvbWUqDQgBEC4YrwEYxwEYgAQyBggAEEUYOzINCAEQLhivARjHARiABDINCAIQLhivARjHARiABDIHCAMQABiABDIHCAQQABiABDIGCAUQRRhAMgYIBhBFGDkyBwgHEAAYgATSAQk1MzYyajBqMTWoAgiwAgE&sourceid=chrome&ie=UTF-8"}
           />
         }
