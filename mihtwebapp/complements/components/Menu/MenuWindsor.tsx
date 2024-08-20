@@ -24,7 +24,7 @@ export default function Menu(){
                     <MenuItem 
                         Title2="Ensalada de la Casa"
                         Title1="House Salad"
-                        Price={17}
+                        // Price={17}
                         Description2="Lechuga, pico de gallo, aguacate, pechuga de pollo asada y vinagreta de cilantro de la casa."
                         Description1="Lettuce, pico de gallo, avocado, grilled chicken breast, and house dressing."
                         // ImagePath=""
