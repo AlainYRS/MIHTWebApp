@@ -44,3 +44,7 @@
     background-color: rgba(var(--darkredmate),1);
     color: rgba(var(--yellowmate),1);
 }
+.SMR{
+    margin: auto;
+    display: flex;
+}
