@@ -980,7 +980,8 @@ export default function Home() {
                   {Player ?
                     <div className={styles.ImgsContainer}>
                       <PlayerComp
-                      url={'/media/Video Lucha Independencia - compreso a 480p.mp4'}
+                      // url={'/media/Video Lucha Independencia - compreso a 480p.mp4'}
+                      url={'https://youtu.be/T75dJjvU6N8'}
                       setState={setActPlayer}
                       width={450}
                       height={210}
