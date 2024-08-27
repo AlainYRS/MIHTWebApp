@@ -8,6 +8,7 @@
     gap: 0.35rem 0;
     grid-template-areas: 
     'Header      Header'
+    'Player      Player'
     'Branch      Branch'
     'Navbar      Navbar'
     'Slider      Schedule'
@@ -16,6 +17,36 @@
     'Maps        Maps'
     'Footer      Footer'
     ;
+}
+.ImgsContainer{
+    height: 210px;
+    /* overflow: hidden; */
+}
+.PlayerCont{
+    grid-area: Player;
+    text-align: center;
+}
+.PlayerImg{
+    margin: auto;
+    height: 210px;
+    width: 450px;
+    border-radius: 14px;
+}
+.PlayerPlay{
+    position: relative;
+    margin: auto;
+    top: -105px;
+}
+.PlayerLogo{
+    position: relative;
+    margin: auto;
+    top: -250px;
+    background-color: rgba(0,0,0,0.7);
+    padding: 0.5rem;
+    width: 6rem;
+    height: 6rem;
+    left: 180px;
+    border-radius: 7px;
 }
 #GridCont1{
     grid-area: Header;

@@ -16,9 +16,11 @@ import Link from 'next/link';
 
 export default function Home() {
   const [catrinaStyle, setCatrinaStyle] = useState({ width: '14vw', height: '14vw' });
-  const [Player,setPlayer] = useState(true)
+  const [Player, setPlayer] = useState(false)
   const [Branch, setBranch] = useState("") // ""
   const [Chosen, setChosen] = useState(false) // false
+  const [ActPlayer, setActPlayer] = useState(false)
+
   // const mapaEstaticoUrl = "https://maps.app.goo.gl/fw18xgWNgxTyMctC8";
   // const mapaEstaticoUrl = `https://maps.googleapis.com/maps/api/staticmap?center=42.05327130119621,-82.59920537477937&zoom=13&size=600x450&key=${process.env.NEXT_PUBLIC_AYRS_API_Key}`;
 
@@ -84,7 +86,7 @@ export default function Home() {
             <Image src="/media/Catrina.png" fill sizes='(max-width: 768px) 35vw, (max-width: 1200px) 35vw, 800px' alt="Hot Tacos"/>
           }
         </a>
-        <h2 className={styles.HeadParagraph2} >{Branch == "" && "Authentic Mexican Restaurants"}
+        <h2 className={styles.HeadParagraph2} >{Branch == "" && "Authentic Mexican Experience"}
           {Branch == "Windsor" && 
             <>
               <a target="_blank" rel="noopener noreferrer" className={styles.MenuButtom} href={"https://www.google.com/maps/dir//hot+tacos+windsor+ontario/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x883b2dd18c2079f3:0x7c98cd6cc1c7cbea?sa=X&ved=1t:3061&ictx=111"} ><strong>{Branch}</strong> - <u>325 Ouellette Ave</u> -</a> 
@@ -972,35 +974,69 @@ export default function Home() {
 
       <div id={styles.GridCont10}> {/* Branches */}
         {Chosen==false &&
-          <div className={styles.Branches}>
-            <BranchComp 
-              Name={"Leamington"}
-              Address={"16 Talbot Street E, Leamington ON, N8H 1L2"}
-              Location={"https://www.google.com/maps/dir//Hot+Tacos+Mexican+Restaurant/@42.0529949,-82.6816491,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x883ac1874678d4cf:0xd04e2ab656c80fa2!2m2!1d-82.5992483!2d42.0530244?entry=ttu"}
-              Phone={"+1 519 329 1615"}
-              OnlineSells={"https://order.tbdine.com/pickup/28824/menu"}
-              Image={"https://firebasestorage.googleapis.com/v0/b/mihottacoswebapp.appspot.com/o/Hot%20Tacos%20Leamington_350x350.webp?alt=media&token=4877403b-8deb-4a7b-9698-0de7e1c172b2"}
-              setState={setBranch}
+          <>
+            <div>
+              <div className={styles.PlayerCont}>
+                  {Player ?
+                    <div className={styles.ImgsContainer}>
+                      <PlayerComp
+                      url={'/media/Video Lucha Independencia - compreso a 480p.mp4'}
+                      setState={setActPlayer}
+                      width={450}
+                      height={210}
+                      readOnly={false}
+                      vertical={'Center'}
+                      horizontal={'Center'}
+                      position={'absolute'}
+                      volume={1} //': .01 | .25 | .5 | .75 | 1,'
+                      typeDevice={true}
+                      controls={true}
+                      playing={true}
+                      autoplay={true}
+                      muted={false}
+                      loop={true}
+                      />
+                    </div>
+                  :
+                    <div className={styles.ImgsContainer}>
+                      <img className={styles.PlayerImg} onClick={()=>setPlayer(true)} src="/media/Lucha de Independencia.jpg" alt="" />
+                      <img className={styles.PlayerPlay} onClick={()=>setPlayer(true)} src="/Icons/VideoIcon.png" alt="" />
+                      <img className={styles.PlayerLogo} onClick={()=>setPlayer(true)} src="/media/ElPatronClear.png" alt="" />
+                    </div>
+                  }
+                <h1>Ven a la lucha de independencia <br/>15 de Septiembre en El Patron Bar & Grill</h1>
+              </div>
+            </div>
+            <div className={styles.Branches}>
+              <BranchComp 
+                Name={"Leamington"}
+                Address={"16 Talbot Street E, Leamington ON, N8H 1L2"}
+                Location={"https://www.google.com/maps/dir//Hot+Tacos+Mexican+Restaurant/@42.0529949,-82.6816491,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x883ac1874678d4cf:0xd04e2ab656c80fa2!2m2!1d-82.5992483!2d42.0530244?entry=ttu"}
+                Phone={"+1 519 329 1615"}
+                OnlineSells={"https://order.tbdine.com/pickup/28824/menu"}
+                Image={"https://firebasestorage.googleapis.com/v0/b/mihottacoswebapp.appspot.com/o/Hot%20Tacos%20Leamington_350x350.webp?alt=media&token=4877403b-8deb-4a7b-9698-0de7e1c172b2"}
+                setState={setBranch}
+                />
+              <BranchComp 
+                Name={"Street Food"}
+                Address={"26 Erie St S, Leamington, ON N8H 1R6"}
+                Location={"https://maps.app.goo.gl/1ie6ruZfKYL8YmHu9"}
+                Phone={"+1 226 936 2953"}
+                OnlineSells={"https://www.clover.com/online-ordering/hot-tacos-street-food"}
+                Image={"https://firebasestorage.googleapis.com/v0/b/mihottacoswebapp.appspot.com/o/Access%20Image%20SF_350x350.webp?alt=media&token=7d92c9ac-a29f-4838-92f8-7a35520c9b54"}
+                setState={setBranch}
               />
-            <BranchComp 
-              Name={"Street Food"}
-              Address={"26 Erie St S, Leamington, ON N8H 1R6"}
-              Location={"https://maps.app.goo.gl/1ie6ruZfKYL8YmHu9"}
-              Phone={"+1 226 936 2953"}
-              OnlineSells={"https://www.clover.com/online-ordering/hot-tacos-street-food"}
-              Image={"https://firebasestorage.googleapis.com/v0/b/mihottacoswebapp.appspot.com/o/Access%20Image%20SF_350x350.webp?alt=media&token=7d92c9ac-a29f-4838-92f8-7a35520c9b54"}
-              setState={setBranch}
-            />
-            <BranchComp 
-              Name={"Windsor"}
-              Address={"325 Ouellette Ave, Windsor, ON N9A 4J1"}
-              Location={"https://maps.app.goo.gl/Li6UnVBbNbqhBed49"}
-              Phone={"+1 519 818 5129"}
-              OnlineSells={"https://order.tbdine.com/pickup/51513/menu"}
-              Image={"https://firebasestorage.googleapis.com/v0/b/mihottacoswebapp.appspot.com/o/Hot%20Tacos%20Windsor_350x350.webp?alt=media&token=fedf2bf1-967d-4eb1-a2ca-44c4746738d3"}
-              setState={setBranch}
-            />
-          </div>
+              <BranchComp 
+                Name={"Windsor"}
+                Address={"325 Ouellette Ave, Windsor, ON N9A 4J1"}
+                Location={"https://maps.app.goo.gl/Li6UnVBbNbqhBed49"}
+                Phone={"+1 519 818 5129"}
+                OnlineSells={"https://order.tbdine.com/pickup/51513/menu"}
+                Image={"https://firebasestorage.googleapis.com/v0/b/mihottacoswebapp.appspot.com/o/Hot%20Tacos%20Windsor_350x350.webp?alt=media&token=fedf2bf1-967d-4eb1-a2ca-44c4746738d3"}
+                setState={setBranch}
+              />
+            </div>
+          </>
         }
       </div>
     </main>

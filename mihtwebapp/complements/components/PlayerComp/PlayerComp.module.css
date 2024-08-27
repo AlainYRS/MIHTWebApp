@@ -7,7 +7,7 @@
 }
 .PlayerScreen{
     background-color: rgb(10,10,10,1);
-    /* border: 1px solid whitesmoke; */
+    border: 1px solid whitesmoke;
     border-radius: 14px;
     overflow: hidden;
     z-index: 35;
