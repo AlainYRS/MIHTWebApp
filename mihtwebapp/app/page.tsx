@@ -975,12 +975,10 @@ export default function Home() {
       <div id={styles.GridCont10}> {/* Branches */}
         {Chosen==false &&
           <>
-            <div>
-              <div className={styles.PlayerCont}>
-                  {Player ?
-                    <div className={styles.ImgsContainer}>
-                      <PlayerComp
-                      // url={'/media/Video Lucha Independencia - compreso a 480p.mp4'}
+            <div className={styles.PlayerCont}>
+                {Player ?
+                  <div className={styles.ImgsContainer}>
+                    <PlayerComp
                       url={'https://youtu.be/T75dJjvU6N8'}
                       setState={setActPlayer}
                       width={450}
@@ -996,17 +994,16 @@ export default function Home() {
                       autoplay={true}
                       muted={false}
                       loop={true}
-                      />
-                    </div>
-                  :
-                    <div className={styles.ImgsContainer}>
-                      <img className={styles.PlayerImg} onClick={()=>setPlayer(true)} src="/media/Lucha de Independencia.jpg" alt="" />
-                      <img className={styles.PlayerPlay} onClick={()=>setPlayer(true)} src="/Icons/VideoIcon.png" alt="" />
-                      <img className={styles.PlayerLogo} onClick={()=>setPlayer(true)} src="/media/ElPatronClear.png" alt="" />
-                    </div>
-                  }
-                <h1>Ven a la lucha de independencia <br/>15 de Septiembre en El Patron Bar & Grill</h1>
-              </div>
+                    />
+                  </div>
+                :
+                  <div className={styles.ImgsContainer}>
+                    <img className={styles.PlayerImg} onClick={()=>setPlayer(true)} src="/media/Lucha de Independencia.jpg" alt="" />
+                    <img className={styles.PlayerPlay} onClick={()=>setPlayer(true)} src="/Icons/VideoIcon.png" alt="" />
+                    <img className={styles.PlayerLogo} onClick={()=>setPlayer(true)} src="/media/ElPatronClear.png" alt="" />
+                  </div>
+                }
+              <h1 className={styles.ImagesTitle}>Ven a la lucha de independencia <br/>15 de Septiembre en El Patron Bar & Grill</h1>
             </div>
             <div className={styles.Branches}>
               <BranchComp 
@@ -1039,6 +1036,12 @@ export default function Home() {
             </div>
           </>
         }
+      </div>
+      <div id={styles.GridCont11}>
+        <img className={styles.ImgBackground} src="/media/AlPastor.jpg" alt="" />
+        {/* <video autoPlay loop muted>
+          <source  src='/media/NEW LOCATION - HOT TACOS.mp4' type="video"/>
+        </video>  */}
       </div>
     </main>
   );

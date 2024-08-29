@@ -14,7 +14,7 @@
     border-radius: 14px;
     margin: 7px auto;
     padding: 3px;
-    background-color: rgba(var(--htred),0.35);
+    background-color: rgba(var(--htred),1);
 }
 .PhoneLink{
     color: rgba(var(--htyellow),1);
@@ -36,10 +36,10 @@
     background-color: rgba(var(--htyellow),1);
 }
 .BranchName{
-    background-color: rgba(var(--htyellow),0.7);
+    background-color: rgba(var(--htyellow),1);
     transition: var(--fast);
     color: whitesmoke;
-    text-shadow: 2px 1px 1px rgba(var(--htred),0.7);
+    text-shadow: 2px 1px 1px rgba(var(--htred),1);
     border-radius: 7px;
     margin: 7px auto;
     font-size: 1.1rem;
