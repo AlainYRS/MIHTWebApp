@@ -2,7 +2,7 @@
     "name": "Mi Hot Tacos WebApp",
     "short_name": "Hot Tacos",
     "description": "Progressive Web Application desarrollada por Alain Y Rivera S para la gestión de información del restaurante Hot Tacos",
-    "theme_color": "#070A35",
+    "theme_color": "#000000",
     "background_color": "#000000",
     "display_override": ["fullscreen", "minimal-ui"],
     "display": "fullscreen",
