@@ -109,7 +109,6 @@
     width: 100%;
     height: 100%;
     z-index: 0;
-    display: flex;
 }
 .ImgBackground{
     z-index: -1;
@@ -250,6 +249,9 @@
     }
     #GridCont3{
         width: calc(100vw - 7px);
+    }
+    #GridCont11{
+        display: flex;
     }
     .HeaderLogo{
         /* width: 100vw; */
