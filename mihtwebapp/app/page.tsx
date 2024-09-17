@@ -975,7 +975,7 @@ export default function Home() {
       <div id={styles.GridCont10}> {/* Branches */}
         {Chosen==false &&
           <>
-            <div className={styles.PlayerCont}>
+            {/* <div className={styles.PlayerCont}>
                 {Player ?
                   <div className={styles.ImgsContainer}>
                     <PlayerComp
@@ -1004,7 +1004,7 @@ export default function Home() {
                   </div>
                 }
               <h1 className={styles.ImagesTitle}>Ven a la lucha de independencia <br/>15 de Septiembre en El Patron Bar & Grill</h1>
-            </div>
+            </div> */}
             <div className={styles.Branches}>
               <BranchComp 
                 Name={"Leamington"}

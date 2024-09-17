@@ -5,7 +5,7 @@
     gap: 3.5px;
     padding: 3px 2px;
     height: calc(100% - 35px);
-    background-color: black;
+    background-color: rgb(255,255,255,0.21);
     box-shadow: 0px 3.5px 3.5px rgb(255,255,255,0.21);
 }
 .EngTitle{

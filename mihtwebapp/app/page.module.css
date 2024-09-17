@@ -3,7 +3,7 @@
     display: grid;
     background: black;
     color: white;
-    grid-template-rows: repeat(8, auto);
+    grid-template-rows: repeat(10, auto);
     grid-template-columns: 1fr 1fr;
     gap: 0.35rem 0;
     grid-template-areas: 
@@ -179,7 +179,7 @@
     height: calc(100%);
 }
 .PhoneLink{
-    color: rgba(var(--htyellow),0.7);
+    color: rgba(var(--htyellow),1);
 }
 .Branches{
     display: flex;
