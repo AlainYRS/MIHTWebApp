@@ -1,0 +1,48 @@
+.CustomerExperience{
+    display: flex;
+    height: 100vh;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+}
+.CustExpCont{
+    display: flex;
+    flex-flow: column;
+    overflow: hidden;
+    margin: 1rem;
+    border-radius: 14px;
+    width: calc(100vw - 2rem);
+    height: calc(100vh - 4rem);
+    border: 1px solid white;
+    background-color: transparent;
+}
+.Stars, .Question{
+    margin: 1rem;
+    padding: 1rem;
+    /* border: 1px solid white; */
+    width: calc(100% - 2rem);
+    border-radius: 7px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+}
+.Question{
+    font-size: 1.4rem;
+}
+.IconFace{
+    width: 18%;
+    aspect-ratio: 1;
+    border: 1px solid white;
+    border-radius: 100%;
+    box-shadow: 0px 0px 7px black;
+}
+.IconFace:hover{
+    box-shadow: 0px 0px 14px white;
+}
+.comments{
+    width: 90%;
+    height: clamp(2rem, 5rem, auto);
+    color: black;
+    border-radius: 7px;
+    padding: 7px;
+    margin: 1rem auto;
+}
