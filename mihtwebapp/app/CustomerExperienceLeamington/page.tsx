@@ -8,12 +8,12 @@ import { FbDB } from "@/public/services/firebase";
 import { doc, setDoc } from "firebase/firestore"; 
 
 const LeamingtonQuestions = [
-  'SERVICIO?',
-  'AMBIENTE?',
-  'SABOR Y SASON?',
-  'EXPERIENCIA?',
-  'NOS RECOMENDARIA?',
-  'REGRESARA?',
+  'Servicio?',
+  'Ambiente?',
+  'Sabor?',
+  'Precios?',
+  'Regresará?',
+  'Nos Recomendará?',
 ];
 
 interface iQuestion {
@@ -79,9 +79,9 @@ export default function CustomerExperience() {
             <div className={styles.ProgressBarBorder}>
               <div className={styles.ProgressBarBackground} style={{width:`${index/LeamingtonQuestions.length*70}%`}}></div>
             </div>
-            
-            <div className={styles.ProgressBarBorder}>
-            Experiencia del Cliente<div className={styles.ProgressBarBackground} style={{width:`${UsrExpRate/(LeamingtonQuestions.length*5)*100*.7}%`}}></div>
+            Experiencia del Cliente
+            <div className={styles.ProgressBarBorder2}>
+              <div className={styles.ProgressBarBackground2} style={{width:`${UsrExpRate/(LeamingtonQuestions.length*5)*100*.7}%`}}></div>
             </div>
           </div>
           <div className={styles.Stars}>

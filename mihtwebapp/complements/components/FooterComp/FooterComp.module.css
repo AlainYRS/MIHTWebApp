@@ -56,6 +56,7 @@
     text-align: right;
     position: sticky;
     bottom: 0px;
+    padding: 0 1rem;
 }
 .SocialMed > a{
     margin: 1rem;

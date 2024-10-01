@@ -14,7 +14,7 @@
     margin: 1rem;
     border-radius: 14px;
     width: calc(100vw - 2rem);
-    /* height: calc(100vh - 4rem); */
+    height: calc(100vh - 4rem);
     border: 1px solid white;
     background-color: transparent;
 }
@@ -22,6 +22,7 @@
 .ProgressBarCont{
     display: block;
     position: relative;
+    text-align: center;
 }
 .ProgressBarBorder{
     width: 70%;
@@ -39,6 +40,21 @@
     background-color: rgba(var(--htyellow),1);;
     transition: 1s;
 }
+.ProgressBarBorder2{
+    width: 70%;
+    margin: auto;
+    border-radius: 7px;
+    height: 9px;
+}
+.ProgressBarBackground2{
+    position: absolute;
+    margin: auto;
+    border-radius: 3.5px;
+    height: 7px;
+    border: 1px solid white;
+    background-color: white;
+    transition: 1s;
+}
 
 .Stars, .Question{
     margin: 1rem;
@@ -51,7 +67,7 @@
     justify-content: space-around;
 }
 .Question{
-    font-size: 3.5rem;
+    font-size: 2.1rem;
 }
 .IconFace{
     width: 18%;
