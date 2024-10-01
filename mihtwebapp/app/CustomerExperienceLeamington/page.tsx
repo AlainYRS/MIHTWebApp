@@ -8,14 +8,12 @@ import { FbDB } from "@/public/services/firebase";
 import { doc, setDoc } from "firebase/firestore"; 
 
 const LeamingtonQuestions = [
-  'Me ubicaron en una mesa rápidamente',
-  'Los meseros me atendieron rápidamente',
-  'Me sirvieron mi orden con rapidez',
-  'La actitud del mesero fue buena',
-  'Me atendieron con amabilidad',
-  'Me sentí a gusto con el ambiente',
-  'Volvería a visitar este restaurant',
-  'Te gustaría que te atendiera de nuevo',
+  'SERVICIO?',
+  'AMBIENTE?',
+  'SABOR Y SASON?',
+  'EXPERIENCIA?',
+  'NOS RECOMENDARIA?',
+  'REGRESARA?',
 ];
 
 interface iQuestion {
@@ -27,12 +25,14 @@ export default function CustomerExperience() {
   const [stars, setStars] = useState<1 | 2 | 3 | 4 | 5 | undefined>(undefined);
   const [index, setIndex] = useState<number>(0);
   const [userExperience, setUserExperience] = useState<iQuestion[]>([]);
+  const [UsrExpRate, setUsrExpRate] = useState<number>(0);
   const [comments, setComments] = useState<string>("");
   const [showPopup, setShowPopup] = useState<boolean>(false);
 
   function resetForm() {
     setStars(undefined);
     setComments("");
+    setUsrExpRate(0);
     setIndex(0);
     setUserExperience([]);
   }
@@ -51,6 +51,7 @@ export default function CustomerExperience() {
   }
 
   function handleAnswers(starValue: number) {
+    console.log(starValue)
     const updatedExperience = [
       ...userExperience,
       { Question: LeamingtonQuestions[index], Stars: starValue }
@@ -62,6 +63,7 @@ export default function CustomerExperience() {
       handleSubmit();
     } else {
       setIndex(index + 1);
+      setUsrExpRate(UsrExpRate+starValue)
       setStars(undefined); // Reiniciar las estrellas para la siguiente pregunta
     }
     console.log(updatedExperience)
@@ -70,11 +72,20 @@ export default function CustomerExperience() {
   return (
     <main className={styles.CustomerExperience}>
       <div className={styles.CustExpCont}>
-        <img src="./media/Hot Tacos Banner Leamington.jpg" alt="" />
+        <img className={styles.Banner} src="./media/Hot Tacos Banner Leamington.jpg" alt="" />
         <div>
-          <p className={styles.Question}>{LeamingtonQuestions[index]} ( {index+1} / {LeamingtonQuestions.length} )</p>
+          <p className={styles.Question}>{LeamingtonQuestions[index]}</p>
+          <div className={styles.ProgressBarCont}>
+            <div className={styles.ProgressBarBorder}>
+              <div className={styles.ProgressBarBackground} style={{width:`${index/LeamingtonQuestions.length*70}%`}}></div>
+            </div>
+            
+            <div className={styles.ProgressBarBorder}>
+            Experiencia del Cliente<div className={styles.ProgressBarBackground} style={{width:`${UsrExpRate/(LeamingtonQuestions.length*5)*100*.7}%`}}></div>
+            </div>
+          </div>
           <div className={styles.Stars}>
-            {[5, 4, 3, 2, 1].map((star) => (
+            {[1, 2, 3, 4, 5].map((star) => (
               <img
                 key={star}
                 onClick={() => handleAnswers(star)}

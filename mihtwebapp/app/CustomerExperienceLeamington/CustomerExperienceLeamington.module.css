@@ -1,8 +1,11 @@
 .CustomerExperience{
     display: flex;
-    height: 100vh;
+    /* height: 100vh; */
     flex-flow: column nowrap;
     justify-content: space-between;
+}
+.Banner{
+    height: 7rem;
 }
 .CustExpCont{
     display: flex;
@@ -11,10 +14,32 @@
     margin: 1rem;
     border-radius: 14px;
     width: calc(100vw - 2rem);
-    height: calc(100vh - 4rem);
+    /* height: calc(100vh - 4rem); */
     border: 1px solid white;
     background-color: transparent;
 }
+
+.ProgressBarCont{
+    display: block;
+    position: relative;
+}
+.ProgressBarBorder{
+    width: 70%;
+    margin: auto;
+    border-radius: 7px;
+    height: 9px;
+    border: 1px solid rgba(var(--htred),1);
+}
+.ProgressBarBackground{
+    position: absolute;
+    margin: auto;
+    border-radius: 3.5px;
+    height: 7px;
+    border: 1px solid white;
+    background-color: rgba(var(--htyellow),1);;
+    transition: 1s;
+}
+
 .Stars, .Question{
     margin: 1rem;
     padding: 1rem;
@@ -26,7 +51,7 @@
     justify-content: space-around;
 }
 .Question{
-    font-size: 1.4rem;
+    font-size: 3.5rem;
 }
 .IconFace{
     width: 18%;
@@ -39,9 +64,12 @@
     box-shadow: 0px 0px 14px white;
 }
 .comments{
-    width: 90%;
+    width: 91%;
     height: clamp(2rem, 5rem, auto);
     color: black;
+    resize: none;
+    overflow: scroll;
+    word-wrap: break-word;
     border-radius: 7px;
     padding: 7px;
     margin: 1rem auto;
