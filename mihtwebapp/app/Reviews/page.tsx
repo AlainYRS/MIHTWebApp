@@ -246,8 +246,8 @@ export default function Reviews() {
                                                 setImg={setMiniEmp}
                                               />
                                               <EmployeeComp 
-                                                Name={"Gorethi"}
-                                                Image={""}
+                                                Name={"Martha"}
+                                                Image={"https://firebasestorage.googleapis.com/v0/b/mihottacoswebapp.appspot.com/o/Martha_350x350.webp?alt=media&token=02b4c886-685e-4bfa-b794-9df39e29f544"}
                                                 setState={setEmployee}
                                                 setImg={setMiniEmp}
                                               />
@@ -258,8 +258,8 @@ export default function Reviews() {
                                                 setImg={setMiniEmp}
                                               />
                                               <EmployeeComp 
-                                                Name={"Eduardo"}
-                                                Image={"https://firebasestorage.googleapis.com/v0/b/mihottacoswebapp.appspot.com/o/Eduardo%20Garnica_350x350.webp?alt=media&token=4d1d7794-33ed-4df0-aac0-fd1bcb88d3ed"}
+                                                Name={"Alondra"}
+                                                Image={"https://firebasestorage.googleapis.com/v0/b/mihottacoswebapp.appspot.com/o/Alondra_350x350.webp?alt=media&token=0de069ea-8178-4367-b076-fca8e1f9cdd8"}
                                                 setState={setEmployee}
                                                 setImg={setMiniEmp}
                                               />
@@ -296,6 +296,18 @@ export default function Reviews() {
                                               <EmployeeComp 
                                                 Name={"Dayana"}
                                                 Image={"https://firebasestorage.googleapis.com/v0/b/mihottacoswebapp.appspot.com/o/Dayana_350x350.webp?alt=media&token=1bce9f6a-1cc0-4ccc-afc5-15f962822efd"}
+                                                setState={setEmployee}
+                                                setImg={setMiniEmp}
+                                              />
+                                              <EmployeeComp 
+                                                Name={"Edith"}
+                                                Image={"https://firebasestorage.googleapis.com/v0/b/mihottacoswebapp.appspot.com/o/Edith_350x350.webp?alt=media&token=f5ccb960-12ec-4c97-b07d-a67a49aab057"}
+                                                setState={setEmployee}
+                                                setImg={setMiniEmp}
+                                              />
+                                              <EmployeeComp 
+                                                Name={"Diego"}
+                                                Image={"https://firebasestorage.googleapis.com/v0/b/mihottacoswebapp.appspot.com/o/Diego_350x350.webp?alt=media&token=b11425fa-f4da-4978-9010-ff266a331ddc"}
                                                 setState={setEmployee}
                                                 setImg={setMiniEmp}
                                               />
