@@ -3,52 +3,16 @@
     display: grid;
     background: black;
     color: white;
-    grid-template-rows: repeat(10, auto);
+    grid-template-rows: repeat(5, auto);
     grid-template-columns: 1fr 1fr;
     gap: 0.35rem 0;
     grid-template-areas: 
     'Header      Header'
-    'Branch      Branch'
     'Navbar      Navbar'
+    'Slider      Schedule'
+    'Menus       Menus'
     'Footer      Footer'
     ;
-}
-.ImgsContainer{
-    height: 210px;
-    overflow: hidden;
-}
-.ImagesTitle{
-    font-size: 2rem;
-    font-weight: 700;
-    text-shadow: 1px 1px 1px white;
-    color: rgba(var(--htyellow),1);
-    background-color: rgba(0,0,0,0.35);
-}
-.PlayerCont{
-    grid-area: Player;
-    text-align: center;
-}
-.PlayerImg{
-    margin: auto;
-    height: 210px;
-    width: 450px;
-    border-radius: 14px;
-}
-.PlayerPlay{
-    position: relative;
-    margin: auto;
-    top: -105px;
-}
-.PlayerLogo{
-    position: relative;
-    margin: auto;
-    top: -250px;
-    background-color: rgba(0,0,0,0.7);
-    padding: 0.5rem;
-    width: 6rem;
-    height: 6rem;
-    left: 180px;
-    border-radius: 7px;
 }
 #GridCont1{
     grid-area: Header;
@@ -60,12 +24,25 @@
     top: 0px;
     z-index: 3;
 }
-#GridCont8{
-    grid-area: Footer;
+#GridCont3{
+    grid-area: Slider;
+    width: max-content;
+    margin: auto;
+    overflow: hidden;
     z-index: 1;
 }
-#GridCont10{
-    grid-area: Branch;
+#GridCont4{
+    grid-area: Schedule;
+    width: calc(min-content, max-content, 100vw);
+    margin: auto;
+    z-index: 1;
+}
+#GridCont5{
+    grid-area: Menus;
+    z-index: 1;
+}
+#GridCont8{
+    grid-area: Footer;
     z-index: 1;
 }
 #GridCont11{
@@ -107,50 +84,8 @@
 .HeadParagraph2 > strong{
     color: red;
 }
-.HeadParagraph3{
-    color: white;
-    display: block;
-    text-align: center;
-    width: calc(100vw - 7px);
-}
-.HeadParagraph4{
-    color: rgba(var(--htyellow),1);
-    display: block;
-    margin: 3.5px auto;
-    float: right;
-    background-color: rgba(210,140,70,0.35);
-    font-size: 0.8rem;
-    text-align: center;
-    width: max-content;
-    border-bottom: 1px solid gray;
-    padding: 0 3px;
-    border-radius: 7px;
-}
-.HeadParagraph4 > strong{
-    color: yellow;
-    font-size: 1rem;
-    cursor: pointer;
-}
-.MI{
-    border: 2px solid red;
-    width: calc(100vw - 7px);
-    height: 700px;
-    margin: 1rem auto;
-    border-radius: 7px;
-    overflow: hidden;
-}
-.PowerBI{
-    width: calc(100vw - 7px);
-    height: calc(100%);
-}
 .PhoneLink{
     color: rgba(var(--htyellow),1);
-}
-.Branches{
-    display: flex;
-    flex-flow: row wrap;
-    width: 100vw;
-    justify-content: space-around;
 }
 .BusinessHours{
     margin: auto;
@@ -158,19 +93,13 @@
     width: calc(min-content, max-content, 100vw);
     background-color: rgba(0,0,0,0.7);
 }
-.SEOEspañol,
-.SEOEnglish{
+.SEOEspañol{
     text-align: center;
     padding: 1rem;
     width: auto;
     margin: auto;
     background-color: rgba(0,0,0,0.7);
-}
-.SEOEspañol{
     color: rgba(var(--white),1);
-}
-.SEOEnglish{
-    color: rgba(var(--htyellow),1);
 }
 .ScheduleDay,
 .ScheduleOpen,
@@ -201,14 +130,10 @@
         grid-template-columns: 1fr;
         grid-template-areas: 
         'Header     '
-        'Branch     '
         'Navbar     '
         'Slider     '
         'Schedule   '
-        'Player     '
         'Menus      '
-        'PowerBi    '
-        'Maps       '
         'Footer     '
         ;
     }
@@ -219,7 +144,6 @@
         display: flex;
     }
     .HeaderLogo{
-        /* width: 100vw; */
         height: 14vw;
     }
     .HeadParagraph2{

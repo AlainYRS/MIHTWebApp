@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import Script from "next/script";
+import { ContextProvider } from "@/context/AppContext";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -18,7 +20,26 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <head>
+        {/* <!-- Google Analytics tag (gtag.js) --> */}
+        <Script async src={"https://www.googletagmanager.com/gtag/js?id="+process.env.ANALYTICS_ID}></Script>
+        <Script id='google-analytics'>
+          {
+            `
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            
+            gtag('config', '${process.env.ANALYTICS_ID}');
+            `
+          }
+        </Script>
+      </head>
+      <ContextProvider>
+        <body className={inter.className}>
+          {children}
+        </body>
+      </ContextProvider>
     </html>
   );
 }

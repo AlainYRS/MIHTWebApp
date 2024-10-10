@@ -28,6 +28,7 @@
     border: 1px solid white;
     border-radius: 7px;
     padding: 3px;
+    background-color: black;
     box-shadow: 2px 2px 7px rgba(210,210,210,0.7);
 }
 .TitleNavBar{

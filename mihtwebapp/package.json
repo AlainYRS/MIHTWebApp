@@ -32,7 +32,7 @@
     "eslint": "^8",
     "eslint-config-next": "14.1.0",
     "postcss": "^8",
-    "react-intl": "^6.2.5",
+    "react-intl": "^6.6.8",
     "tailwindcss": "^3.3.0",
     "typescript": "^5",
     "webpack": "^5.90.0"

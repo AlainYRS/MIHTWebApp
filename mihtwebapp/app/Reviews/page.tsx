@@ -106,16 +106,6 @@ export default function Reviews() {
           {Coorporation == "" ? 
                 <>
                   <h2 className={styles.SubLeyends}>Donde te atendimos?</h2>
-                    {/* {CoorpsArray &&
-                       CoorpsArray.map((Corp:iCorporation)=>{
-                        <BranchComp 
-                          Name={Corp.Corporation}
-                          Address={Corp.Address}
-                          Image={Corp.Image}
-                          setState={setCoorporation}
-                        />
-                       })
-                    } */}
                   <BranchComp 
                     Name={"Hot Tacos Leamington"}
                     Address={"16 Talbot Street E"}
