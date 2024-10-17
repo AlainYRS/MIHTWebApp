@@ -136,7 +136,7 @@ export default function Home() {
               // onClickLink="http://localhost:3000/Leamington"
               onClickLink="https://hottacosrestaurant.com/Leamington"
               />
-            <BranchComp 
+            {/* <BranchComp 
               Name={"Street Food"}
               Address={"26 Erie St S, Leamington, ON N8H 1R6"}
               Location={"https://maps.app.goo.gl/1ie6ruZfKYL8YmHu9"}
@@ -146,7 +146,7 @@ export default function Home() {
               // setState={setBranch}
               // onClickLink="http://localhost:3000/StreetFood"
               onClickLink="https://hottacosrestaurant.com/StreetFood"
-            />
+            /> */}
             <BranchComp 
               Name={"Windsor"}
               Address={"325 Ouellette Ave, Windsor, ON N9A 4J1"}
