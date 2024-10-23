@@ -6,7 +6,7 @@ import FirestoreQueryComp from '@/complements/components/FirestoreQueryComp/Fire
 import TableComp from '@/complements/components/TableComp/TableComp';
 import styles from './StylesQueries.module.css'
 
-export default function (){
+export default function CloudQueries(){
     const [data, setData] = useState<any[]>([]); // Estado para almacenar los datos consultados
     const [FechaInicial, setFechaInicial] = useState<number>(0); // Estado para almacenar los datos consultados
     const [FechaFinal, setFechaFinal] = useState<number>(20501212); // Estado para almacenar los datos consultados
