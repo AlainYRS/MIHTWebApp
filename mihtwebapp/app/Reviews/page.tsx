@@ -112,12 +112,12 @@ export default function Reviews() {
                     Image={"https://firebasestorage.googleapis.com/v0/b/mihottacoswebapp.appspot.com/o/Hot%20Tacos_350x350.webp?alt=media&token=d9a53f57-d71f-4af0-a48a-f3453ef4392d"}
                     setState={setCoorporation}
                     />
-                  <BranchComp 
+                  {/*<BranchComp 
                     Name={"Hot Tacos Street Food"}
                     Address={"26 Erie St S"}
                     Image={"https://firebasestorage.googleapis.com/v0/b/mihottacoswebapp.appspot.com/o/Access%20Image%20SF_350x350.webp?alt=media&token=7d92c9ac-a29f-4838-92f8-7a35520c9b54"}
                     setState={setCoorporation}
-                  />
+                  />*/}
                   <BranchComp 
                     Name={"Hot Tacos Windsor"}
                     Address={"325 Ouellette Ave"}
