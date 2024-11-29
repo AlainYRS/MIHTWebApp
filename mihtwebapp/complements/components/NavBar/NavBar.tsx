@@ -12,7 +12,7 @@ interface INavBar{
     RafflesLink?: string,
     Eventlink?: string,
 }
-export default function NavMenu(props: INavBar){
+export default function NavBar(props: INavBar){
     const [MenuDisplay, setMenuDisplay] = useState<boolean>(true)
 
     return (
@@ -30,6 +30,16 @@ export default function NavMenu(props: INavBar){
             {props.Directions &&
                 <a target="_blank" rel="noopener noreferrer" className={styles.MenuButtom} href={props.Directions} >Ubicación<p className={styles.EngTitle}>Directions</p></a>
             }
+            {props.Eventlink &&
+                <a className={styles.MenuButtom} href={props.Eventlink}  target="_blank">
+                    {/* <img className={styles.MXNFlag} src="/Icons/MXNIcon.png" alt="" /> */}
+                    {/* Septiembre 15 */}
+                    {/* <p className={styles.EngTitle}>El Patron Bar & Grill</p> */}
+                    {/* <img className={styles.restaurantji} src="https://firebasestorage.googleapis.com/v0/b/mihottacoswebapp.appspot.com/o/Luchador_350x350.webp?alt=media&token=134cf8a5-10f0-40b6-957a-f142ba08c4dd" alt="Hot Tacos Mexican Restaurant is a must-visit at local restaurants"/> */}
+                    <p className={styles.EspTitle}>Programa de Puntos</p>
+                    <p className={styles.EngTitle}>Loyalty Program</p>
+                </a>
+            }
             {props.RafflesLink &&
                 <a className={styles.MenuButtom} href={props.RafflesLink}>
                     Rifas
@@ -44,14 +54,6 @@ export default function NavMenu(props: INavBar){
                     <img className={styles.restaurantji} src="https://www.restaurantji.com/badges/index.php?id=6182576&badge=badge-1-template.png" alt="Hot Tacos Mexican Restaurant is a must-visit at local restaurants"/>
                 </a>
             }
-            {/* {props.Eventlink &&
-                <a className={styles.MenuButtom} href={props.Eventlink}  target="_blank">
-                    <img className={styles.MXNFlag} src="/Icons/MXNIcon.png" alt="" />
-                    Septiembre 15
-                    <p className={styles.EngTitle}>El Patron Bar & Grill</p>
-                    <img className={styles.restaurantji} src="https://firebasestorage.googleapis.com/v0/b/mihottacoswebapp.appspot.com/o/Luchador_350x350.webp?alt=media&token=134cf8a5-10f0-40b6-957a-f142ba08c4dd" alt="Hot Tacos Mexican Restaurant is a must-visit at local restaurants"/>
-                </a>
-            } */}
        </nav>
     );
 }

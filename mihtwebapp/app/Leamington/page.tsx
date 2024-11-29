@@ -23,7 +23,6 @@ export default function Leamington(props: iBranch){
           const Logo = document.getElementById('HeaderLogo');
           const headerHeight = Logo?.offsetHeight;
           const scrollPosition = window.scrollY;
-        
             if(headerHeight && catrina){
               if (scrollPosition > headerHeight) {
                 // Si el usuario ha desplazado más allá de la altura del encabezado
@@ -38,7 +37,7 @@ export default function Leamington(props: iBranch){
           }
         )
       }
-    
+
       useEffect(() => {
     
         function handleScroll() {
@@ -77,7 +76,6 @@ export default function Leamington(props: iBranch){
                         <u><a href={"tel:+519 818 5129"}>519 818 5129</a></u>
                     </h2>
                 </div>     
-
                 <div id={styles.GridCont2}> {/* NavBar */}
                     <NavBar
                         ImageURL={"https://firebasestorage.googleapis.com/v0/b/mihottacoswebapp.appspot.com/o/Hot%20Tacos_350x350.webp?alt=media&token=d9a53f57-d71f-4af0-a48a-f3453ef4392d"}
@@ -85,11 +83,11 @@ export default function Leamington(props: iBranch){
                         OnlineOrderingURL={"https://order.tbdine.com/pickup/28824/menu"}
                         PhoneNumber={"1-519-329-1615"}
                         Directions={"https://www.google.com/maps/dir//Hot+Tacos+Mexican+Restaurant/@42.0529949,-82.6816491,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x883ac1874678d4cf:0xd04e2ab656c80fa2!2m2!1d-82.5992483!2d42.0530244?entry=ttu"}
+                        Eventlink={"https://app.tableup.com/r/6740/home"}
                         FeedBackLink={"http://www.hottacosrestaurant.com/Reviews"}
                         RafflesLink={"http://www.hottacosrestaurant.com/Raffles"}
                     />
                 </div>
-                
                 <div id={styles.GridCont3}> {/* Slider */}
                     <SliderCardComp
                     ImgSeconds={1} // Seconds for each image previos to be changed for the next one
@@ -251,7 +249,6 @@ export default function Leamington(props: iBranch){
                         ]}
                     />
                 </div>
-
                 <div id={styles.GridCont4}> {/* Schedule */}
                     <table className={styles.BusinessHours}>
                         <thead className={styles.TableHead}>
@@ -300,11 +297,9 @@ export default function Leamington(props: iBranch){
                         </tbody>
                     </table>
                 </div>
-
                 <div id={styles.GridCont5}> {/* Menus */}
                     <MenuLeamington />
                 </div>
-
                 <div id={styles.GridCont8}> {/* Footer */}
                     <Footer 
                         author= {'Alain Y. Rivera S.'}
@@ -343,7 +338,6 @@ export default function Leamington(props: iBranch){
                         ]}
                     />
                 </div>
-
                 <div id={styles.GridCont11}>
                     <img className={styles.ImgBackground} src="/media/AlPastor.jpg" alt="" />
                 </div>

@@ -85,6 +85,7 @@ export default function Windsor(props: iBranch){
                         OnlineOrderingURL={"https://order.tbdine.com/pickup/51513/menu"}
                         PhoneNumber={"1-519-818-5129"}
                         Directions={"https://www.google.com/maps/dir/42.3109168,-83.046867/hot+tacos+windsor+ontario/@42.3140328,-83.0539755,15z/data=!4m9!4m8!1m1!4e1!1m5!1m1!1s0x883b2dd18c2079f3:0x7c98cd6cc1c7cbea!2m2!1d-83.0391109!2d42.3170951?entry=ttu"}
+                        Eventlink={"https://app.tableup.com/r/6729/home"}
                         FeedBackLink={"http://www.hottacosrestaurant.com/Reviews"}
                         RafflesLink={"http://www.hottacosrestaurant.com/Raffles"}
                     />

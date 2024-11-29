@@ -2,7 +2,6 @@
 import React, { useState } from 'react';
 import { FbDB } from '@/public/services/firebase';
 import { collection, getDocs, query, where } from 'firebase/firestore';
-import FirestoreQueryComp from '@/complements/components/FirestoreQueryComp/FirestoreQueryComp';
 import TableComp from '@/complements/components/TableComp/TableComp';
 import styles from './StylesQueries.module.css'
 
@@ -61,7 +60,6 @@ export default function CloudQueries(){
             const querySnapshot = await getDocs(q);
             
             const documents = querySnapshot.docs.map((doc) => ({ ...doc.data() }));
-            // const documents = querySnapshot.docs.map((doc) => ({ id: doc.id, ...doc.data() }));
 
             const flattenedDocs = processDocuments(documents);
             setData(flattenedDocs); // Almacenar datos aplanados
