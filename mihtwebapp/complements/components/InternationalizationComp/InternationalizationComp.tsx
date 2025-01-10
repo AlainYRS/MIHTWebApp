@@ -44,7 +44,7 @@ export default function InterComp(props:iInternational){
                                         setLocale(props.Langs[LangIdx].locale!);
                                     }
                                 }} 
-                                src={props.Langs[LangIdx].icon} 
+                                src={props.Langs[LangIdx].icon!} 
                                 width={props.Langs[LangIdx].width} 
                                 height={props.Langs[LangIdx].height} 
                                 priority={props.Langs[LangIdx].prioritario} 
