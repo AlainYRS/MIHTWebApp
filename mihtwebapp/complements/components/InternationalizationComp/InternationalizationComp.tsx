@@ -41,7 +41,7 @@ export default function InterComp(props:iInternational){
                             <Image 
                                 onClick={() => { 
                                     if (props.Langs[LangIdx].locale) {
-                                        setLocale(props.Langs[LangIdx].locale!); // Use `!` to assert that locale is not undefined
+                                        setLocale(props.Langs[LangIdx].locale!);
                                     }
                                 }} 
                                 src={props.Langs[LangIdx].icon} 
