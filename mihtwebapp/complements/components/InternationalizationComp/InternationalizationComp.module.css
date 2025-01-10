@@ -1,0 +1,20 @@
+.LangsContainer{
+    display: flex;
+    flex-flow: row nowrap;
+    width: max-content;
+    border: 1px solid white;
+    border-radius: 14px;
+    padding: 7px;
+    z-index: 300;
+}
+.Lngdiv{
+    margin: 7px;
+    text-align: center;
+    border: 1px solid transparent;
+    transition: var(--fast);
+}
+.Lngdiv:hover{
+    border: 1px solid rgba(255,255,255,0.35);
+    border-radius: 14px;
+    background-color: rgba(var(--bluemateX),0.35);
+}

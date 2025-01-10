@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import Script from "next/script";
 import { ContextProvider } from "@/context/AppContext";
+import InterComp from "@/complements/components/InternationalizationComp/InternationalizationComp";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -37,6 +38,48 @@ export default function RootLayout({
       </head>
       <ContextProvider>
         <body className={inter.className}>
+          <InterComp 
+            Langs={[
+                {
+                language:'English',
+                locale:'en-US',
+                icon:'/icons/USAIcon.png',
+                country:'USA',
+                alt:'English',
+                prioritario:true,
+                width:70,
+                height:70,
+                fill:false,
+                },
+                {
+                language:'French',
+                locale:'fr-CA',
+                icon:'/icons/CADIcon.png',
+                country:'FR',
+                alt:'French',
+                prioritario:true,
+                width:70,
+                height:70,
+                fill:false,
+                },
+                {
+                language:'Español',
+                locale:'es-MX',
+                icon:'/icons/MXNIcon.png',
+                country:'MXN',
+                alt:'Español',
+                prioritario:true,
+                width:70,
+                height:70,
+                fill:false,
+                },
+            ]}
+            Position='fixed'
+            BackgroundColor='black'
+            Bottom="4rem"
+            Left="0px"
+            ShowLangs="oneBYone"
+          />
           {children}
         </body>
       </ContextProvider>

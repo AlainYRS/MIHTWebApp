@@ -40,7 +40,7 @@
     color: white;
 }
 .MenuButtom{
-    color: rgb(var(--htyellow));
+    color: white;
     background-color: rgb(var(--htred));
     border: 1px solid white;
     padding: 3px 7px;
@@ -55,13 +55,6 @@
     transition: var(--norm);
     height: 100%;
     align-content: center;
-}
-.MXNFlag{
-    position: absolute;
-    width: 18px;
-    height: 18px;
-    border: 1px solid white;
-    border-radius: 100%;
 }
 .MenuButtom:hover{
     color: darkred;
