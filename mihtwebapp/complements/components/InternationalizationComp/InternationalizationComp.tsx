@@ -34,7 +34,7 @@ export default function InterComp(props:iInternational){
     
     return (
         <div className={styles.LangsContainer} style={{position: props.Position, backgroundColor: props.BackgroundColor, top:props.Top, bottom:props.Bottom, left:props.Left, right:props.Right}}>
-            {props.ShowLangs!='all' && LangIdx != undefined ?
+            {props.ShowLangs=='oneBYone' && LangIdx != undefined ?
                 <div className={styles.Lngdiv} key={LangIdx+'lng'} onClick={() => setLangIdx((LangIdx + 1) % props.Langs.length)}>
                     {props.Langs.length > 0 && props.Langs[LangIdx] && props.Langs[LangIdx].icon &&
                             // <Image onClick={()=>{props.Langs[LangIdx].locale && setLocale(props.Langs[LangIdx].locale)}} src={props.Langs[LangIdx].icon} width={props.Langs[LangIdx].width} height={props.Langs[LangIdx].height} priority={props.Langs[LangIdx].prioritario} alt={props.Langs[LangIdx].alt ? props.Langs[LangIdx].alt : ""}/>
