@@ -48,7 +48,8 @@ export default function InterComp(props:iInternational){
                                 width={props.Langs[LangIdx].width} 
                                 height={props.Langs[LangIdx].height} 
                                 priority={props.Langs[LangIdx].prioritario} 
-                                alt={props.Langs[LangIdx].alt! ? props.Langs[LangIdx].alt : ""}
+                                alt={""}
+                                // alt={props.Langs[LangIdx].alt! ? props.Langs[LangIdx].alt : ""}
                             />
                     }
                     {props.Langs[LangIdx].language && <p className={styles.LngLgnd}>{props.Langs[LangIdx].language}</p>}
