@@ -43,7 +43,7 @@ export default function RootLayout({
                 {
                 language:'English',
                 locale:'en-US',
-                icon:'/icons/USAIcon.png',
+                icon:'https://firebasestorage.googleapis.com/v0/b/mihottacoswebapp.appspot.com/o/USAIcon_350x350.webp?alt=media&token=e8924924-a91f-4b0f-8263-82e9f42c58e9',
                 country:'USA',
                 alt:'English',
                 prioritario:true,
@@ -54,7 +54,7 @@ export default function RootLayout({
                 {
                 language:'French',
                 locale:'fr-CA',
-                icon:'/icons/CADIcon.png',
+                icon:'https://firebasestorage.googleapis.com/v0/b/mihottacoswebapp.appspot.com/o/CADIcon_350x350.webp?alt=media&token=deef3bae-14fd-403c-a7a4-3453da7ff33b',
                 country:'FR',
                 alt:'French',
                 prioritario:true,
@@ -65,7 +65,7 @@ export default function RootLayout({
                 {
                 language:'Español',
                 locale:'es-MX',
-                icon:'/icons/MXNIcon.png',
+                icon:'https://firebasestorage.googleapis.com/v0/b/mihottacoswebapp.appspot.com/o/MXNIcon_350x350.webp?alt=media&token=770ca68f-7880-408c-a450-e1ea0c37902d',
                 country:'MXN',
                 alt:'Español',
                 prioritario:true,
