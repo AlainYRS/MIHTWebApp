@@ -88,7 +88,7 @@ export default function Leamington(props: iBranch){
                         Directions={"https://www.google.com/maps/dir//Hot+Tacos+Street+Food,+Erie+Street+South,+Leamington,+ON/@42.0525494,-82.6820086,12z/data=!3m1!4b1!4m8!4m7!1m0!1m5!1m1!1s0x883ac1fb07467f03:0x562a0e9ef0c923a2!2m2!1d-82.5996073!2d42.0524514?entry=ttu"}
                         FeedBackLink={"http://www.hottacosrestaurant.com/Reviews"}
                         RafflesLink={"http://www.hottacosrestaurant.com/Raffles"}
-                        Eventlink={"https://www.eventbrite.com/e/ncg-wrestling-presents-lucha-libra-supreme-tickets-950830508647"}
+                        Loyalty={"https://www.eventbrite.com/e/ncg-wrestling-presents-lucha-libra-supreme-tickets-950830508647"}
                         // FeedBackLink={"https://www.google.com/search?gs_ssp=eJwFwTEOgCAMAMC4mji6szjTgiLwBH-BSHEwaZQOPN-7cdJVI0p_oL4dYYgLdO9tykgn7KvbCWyEvjmToIRCkIOxyRzzzaIkZW6qyVeKKGK-flrCF1E&q=hot+tacos+street+food&oq=hot+tacos+&gs_lcrp=EgZjaHJvbWUqDQgBEC4YrwEYxwEYgAQyBggAEEUYOzINCAEQLhivARjHARiABDINCAIQLhivARjHARiABDIHCAMQABiABDIHCAQQABiABDIGCAUQRRhAMgYIBhBFGDkyBwgHEAAYgATSAQk1MzYyajBqMTWoAgiwAgE&sourceid=chrome&ie=UTF-8"}
                     />
                 </div>
