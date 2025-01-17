@@ -40,7 +40,18 @@ export default function RootLayout({
         <body className={inter.className}>
           <InterComp 
             Langs={[
-                {
+              {
+                language:'Español',
+                locale:'es-MX',
+                icon:'https://firebasestorage.googleapis.com/v0/b/mihottacoswebapp.appspot.com/o/MXNIcon_350x350.webp?alt=media&token=770ca68f-7880-408c-a450-e1ea0c37902d',
+                country:'MXN',
+                alt:'Español',
+                prioritario:true,
+                width:70,
+                height:70,
+                fill:false,
+              },
+              {
                 language:'English',
                 locale:'en-US',
                 icon:'https://firebasestorage.googleapis.com/v0/b/mihottacoswebapp.appspot.com/o/USAIcon_350x350.webp?alt=media&token=e8924924-a91f-4b0f-8263-82e9f42c58e9',
@@ -50,7 +61,7 @@ export default function RootLayout({
                 width:70,
                 height:70,
                 fill:false,
-                },
+              },
                 // {
                 // language:'French',
                 // locale:'fr-CA',
@@ -62,17 +73,6 @@ export default function RootLayout({
                 // height:70,
                 // fill:false,
                 // },
-                {
-                language:'Español',
-                locale:'es-MX',
-                icon:'https://firebasestorage.googleapis.com/v0/b/mihottacoswebapp.appspot.com/o/MXNIcon_350x350.webp?alt=media&token=770ca68f-7880-408c-a450-e1ea0c37902d',
-                country:'MXN',
-                alt:'Español',
-                prioritario:true,
-                width:70,
-                height:70,
-                fill:false,
-                },
             ]}
             Position='fixed'
             BackgroundColor='black'
