@@ -73,8 +73,8 @@ export default function Leamington(props: iBranch){
                         <Image src="/media/Catrina.png" fill sizes='(max-width: 768px) 35vw, (max-width: 1200px) 35vw, 800px' alt="Hot Tacos"/>
                     </a>
                     <h2 className={styles.HeadParagraph2} >{Branch == "" && <FormattedMessage id='home.authentic' defaultMessage='Authentic Mexican Experience' />}
-                        <a target="_blank" rel="noopener noreferrer" className={styles.MenuButtom} href={"https://www.google.com/maps/dir//hot+tacos+windsor+ontario/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x883b2dd18c2079f3:0x7c98cd6cc1c7cbea?sa=X&ved=1t:3061&ictx=111"} ><strong>{Branch}</strong> - <u>325 Ouellette Ave</u> -</a> 
-                        <u><a href={"tel:+519 818 5129"}>519 818 5129</a></u>
+                        <a target="_blank" rel="noopener noreferrer" className={styles.MenuButtom} href={"https://www.google.com/maps/dir//Hot+Tacos+Mexican+Restaurant/@42.0529949,-82.6816491,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x883ac1874678d4cf:0xd04e2ab656c80fa2!2m2!1d-82.5992483!2d42.0530244?entry=ttu"} ><strong>{Branch}</strong> - <u>16 Talbot Street E</u> -</a> 
+                        <u><a href={"tel:+519 329 1615"}>519 329 1615</a></u>
                     </h2>
                 </div>     
                 <div id={styles.GridCont2}> {/* NavBar */}
