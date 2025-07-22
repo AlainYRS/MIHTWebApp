@@ -21,7 +21,7 @@
     "paths": {
       "@/*": ["./*"]
     },
-    "types": ["minimatch"]
+    "types": []
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "app/pageFunctions.tsx"],
   "exclude": ["node_modules"],
