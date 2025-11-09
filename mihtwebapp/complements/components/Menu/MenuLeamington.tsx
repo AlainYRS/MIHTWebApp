@@ -81,11 +81,6 @@ export default function Menu(){
                         ImagePath="https://firebasestorage.googleapis.com/v0/b/mihottacoswebapp.appspot.com/o/Sopes_350x350.webp?alt=media&token=68b5a574-2b4d-43e5-8f1c-ac4033f3db13"
                     />
                     <MenuItem 
-                        Title1={<FormattedMessage id='htlcuisine.MilanesaPollo' defaultMessage='MilanesaPollo'/>}
-                        Description1={<FormattedMessage id='htlcuisinedescr.MilanesaPollo' defaultMessage='MilanesaPollo'/>}
-                        ImagePath="https://firebasestorage.googleapis.com/v0/b/mihottacoswebapp.appspot.com/o/Milanesa%20de%20pollo_350x350.webp?alt=media&token=6182493d-5d68-4da3-9e57-9b81572cf0dd"
-                    />
-                    <MenuItem 
                         Title1={<FormattedMessage id='htlcuisine.Enchiladas' defaultMessage='Enchiladas'/>}
                         Description1={<FormattedMessage id='htlcuisinedescr.Enchiladas' defaultMessage='Enchiladas'/>}
                         ImagePath="https://firebasestorage.googleapis.com/v0/b/mihottacoswebapp.appspot.com/o/Enchiladas_350x350.webp?alt=media&token=f223b4e2-4f91-44d4-b60c-ffd519ac81eb"
