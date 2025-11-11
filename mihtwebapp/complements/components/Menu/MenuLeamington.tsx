@@ -129,11 +129,6 @@ export default function Menu(){
                         ImagePath="https://firebasestorage.googleapis.com/v0/b/mihottacoswebapp.appspot.com/o/Costillas%20de%20Puerco_350x350.webp?alt=media&token=5b4cd5d3-0c94-413b-983b-a508beccfe49"
                     />
                     <MenuItem 
-                        Title1={<FormattedMessage id='htlgrill.RibEye300' defaultMessage='RibEye300'/>}
-                        Description1={<FormattedMessage id='htlgrilldescr.RibEye300' defaultMessage='RibEye300'/>}
-                        ImagePath="https://firebasestorage.googleapis.com/v0/b/mihottacoswebapp.appspot.com/o/RibEye_350x350.webp?alt=media&token=13c77054-a15a-4ad6-abbd-ec194de06eeb"
-                    />
-                    <MenuItem 
                         Title1={<FormattedMessage id='htlgrill.ParrilladaMixta' defaultMessage='ParrilladaMixta'/>}
                         Description1={<FormattedMessage id='htlgrilldescr.ParrilladaMixta' defaultMessage='ParrilladaMixta'/>}
                         ImagePath="https://firebasestorage.googleapis.com/v0/b/mihottacoswebapp.appspot.com/o/ParrilladaMixta_350x350.webp?alt=media&token=70d39363-e9a3-4c30-9514-b5e8551d6a2d"
