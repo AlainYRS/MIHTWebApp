@@ -86,24 +86,9 @@ export default function Menu(){
                         ImagePath="https://firebasestorage.googleapis.com/v0/b/mihottacoswebapp.appspot.com/o/Enchiladas_350x350.webp?alt=media&token=f223b4e2-4f91-44d4-b60c-ffd519ac81eb"
                     />
                     <MenuItem 
-                        Title1={<FormattedMessage id='htlcuisine.EnchiladasSuizas' defaultMessage='EnchiladasSuizas'/>}
-                        Description1={<FormattedMessage id='htlcuisinedescr.EnchiladasSuizas' defaultMessage='EnchiladasSuizas'/>}
-                        ImagePath="https://firebasestorage.googleapis.com/v0/b/mihottacoswebapp.appspot.com/o/Enchiladas%20Suizas_350x350.webp?alt=media&token=ce90a664-f394-4a6e-b87e-10f01be0117b"
-                    />
-                    <MenuItem 
                         Title1={<FormattedMessage id='htlcuisine.Chilaquiles' defaultMessage='Chilaquiles'/>}
                         Description1={<FormattedMessage id='htlcuisinedescr.Chilaquiles' defaultMessage='Chilaquiles'/>}
                         ImagePath="https://firebasestorage.googleapis.com/v0/b/mihottacoswebapp.appspot.com/o/Chilaquiles_350x350.webp?alt=media&token=b0417840-474f-4f05-9162-240961cdfd86"
-                    />
-                    <MenuItem 
-                        Title1={<FormattedMessage id='htlcuisine.FlautasPollo' defaultMessage='FlautasPollo'/>}
-                        Description1={<FormattedMessage id='htlcuisinedescr.FlautasPollo' defaultMessage='FlautasPollo'/>}
-                        ImagePath="https://firebasestorage.googleapis.com/v0/b/mihottacoswebapp.appspot.com/o/Flautas_350x350.webp?alt=media&token=031d43d4-d8f7-4e7a-8f14-e3a2fb52ed51"
-                    />
-                    <MenuItem 
-                        Title1={<FormattedMessage id='htlcuisine.FlautasPapa' defaultMessage='FlautasPapa'/>}
-                        Description1={<FormattedMessage id='htlcuisinedescr.FlautasPapa' defaultMessage='FlautasPapa'/>}
-                        ImagePath="https://firebasestorage.googleapis.com/v0/b/mihottacoswebapp.appspot.com/o/Flautas_350x350.webp?alt=media&token=031d43d4-d8f7-4e7a-8f14-e3a2fb52ed51"
                     />
                 </div>
                 <p className={styles.SectionMenuTitle} id="DeLaParrilla"><strong><FormattedMessage id='leamington.grill' defaultMessage='grill' /></strong></p>
@@ -155,11 +140,6 @@ export default function Menu(){
                 <p className={styles.SectionMenuTitle} id="DelMar"><strong><FormattedMessage id='leamington.sea' defaultMessage='sea' /></strong></p>
                 <div className={styles.SectionMenu}>
                     <MenuItem 
-                        Title1={<FormattedMessage id='htlsea.CamaronesGusto' defaultMessage='CamaronesGusto'/>}
-                        Description1={<FormattedMessage id='htlseadescr.CamaronesGusto' defaultMessage='CamaronesGusto'/>}
-                        ImagePath="https://firebasestorage.googleapis.com/v0/b/mihottacoswebapp.appspot.com/o/Especial%20de%20Camaron_350x350.webp?alt=media&token=ef6b235f-0158-490c-bb75-0f63e68a10f0"
-                    />
-                    <MenuItem 
                         Title1={<FormattedMessage id='htlsea.CaldoCamarón' defaultMessage='CaldoCamarón'/>}
                         Description1={<FormattedMessage id='htlseadescr.CaldoCamarón' defaultMessage='CaldoCamarón'/>}
                         ImagePath="https://firebasestorage.googleapis.com/v0/b/mihottacoswebapp.appspot.com/o/Caldo%20de%20Camaron_350x350.webp?alt=media&token=523a47e9-c314-49ce-9749-13d2a3747b92"
@@ -168,11 +148,6 @@ export default function Menu(){
                         Title1={<FormattedMessage id='htlsea.CevicheCamarón' defaultMessage='CevicheCamarón'/>}
                         Description1={<FormattedMessage id='htlseadescr.CevicheCamarón' defaultMessage='CevicheCamarón'/>}
                         ImagePath="https://firebasestorage.googleapis.com/v0/b/mihottacoswebapp.appspot.com/o/Ceviche_350x350.webp?alt=media&token=b0181e55-7b93-4e5c-a9a2-c78f7f0720f4"
-                    />
-                    <MenuItem 
-                        Title1={<FormattedMessage id='htlsea.TostadasCamarón' defaultMessage='TostadasCamarón'/>}
-                        Description1={<FormattedMessage id='htlseadescr.TostadasCamarón' defaultMessage='TostadasCamarón'/>}
-                        ImagePath="https://firebasestorage.googleapis.com/v0/b/mihottacoswebapp.appspot.com/o/Tostadas%20De%20Camaron_350x350.webp?alt=media&token=7f9bb669-32c8-475a-a8d6-57a25dc99572"
                     />
                     <MenuItem 
                         Title1={<FormattedMessage id='htlsea.CoctelCamarón' defaultMessage='CoctelCamarón'/>}
@@ -253,11 +228,6 @@ export default function Menu(){
                         // ImagePath=""
                     />
                     <MenuItem 
-                        Title1={<FormattedMessage id='htltacos.TacoGobernador' defaultMessage='TacoGobernador'/>}
-                        Description1={<FormattedMessage id='htltacosdescr.TacoGobernador' defaultMessage='TacoGobernador'/>}
-                        ImagePath="https://firebasestorage.googleapis.com/v0/b/mihottacoswebapp.appspot.com/o/Taco%20Gobernador_350x350.webp?alt=media&token=ea68e358-54af-4c9f-94f0-ddcb8208aab2"
-                    />
-                    <MenuItem 
                         Title1={<FormattedMessage id='htltacos.Quesabirria' defaultMessage='Quesabirria'/>}
                         Description1={<FormattedMessage id='htltacosdescr.Quesabirria' defaultMessage='Quesabirria'/>}
                         ImagePath="https://firebasestorage.googleapis.com/v0/b/mihottacoswebapp.appspot.com/o/HotTacosStreetFood_Quesabirrias_350x350.webp?alt=media&token=7a46c229-7087-4082-9e31-1d3651f1c33f"
@@ -278,6 +248,7 @@ export default function Menu(){
                         // ImagePath=""
                     />
                 </div>
+                
                 <p className={styles.SectionMenuTitle} id="Extras"><strong><FormattedMessage id='leamington.sides' defaultMessage='sides' /></strong></p>
                 <div className={styles.SectionMenu}>
                     <MenuItem 
@@ -321,29 +292,6 @@ export default function Menu(){
                         ImagePath="https://firebasestorage.googleapis.com/v0/b/mihottacoswebapp.appspot.com/o/Cebollas_350x350.webp?alt=media&token=3ced1e43-f624-48a4-82f9-ca9db9702fa0"
                     />
                 </div>
-                <p className={styles.SectionMenuTitle} id="Postres"><strong><FormattedMessage id='leamington.deserts' defaultMessage='deserts' /></strong></p>
-                <div className={styles.SectionMenu}>
-                    <MenuItem 
-                        Title1={<FormattedMessage id='htldeserts.Flan' defaultMessage='Flan'/>}
-                        Description1={<FormattedMessage id='htldesertsdescr.Flan' defaultMessage='Flan'/>}
-                        // ImagePath=""
-                    />
-                    <MenuItem 
-                        Title1={<FormattedMessage id='htldeserts.Chocoflan' defaultMessage='Chocoflan'/>}
-                        Description1={<FormattedMessage id='htldesertsdescr.Chocoflan' defaultMessage='Chocoflan'/>}
-                        // ImagePath=""
-                    />
-                    <MenuItem 
-                        Title1={<FormattedMessage id='htldeserts.Pastel3Leches' defaultMessage='Pastel3Leches'/>}
-                        Description1={<FormattedMessage id='htldesertsdescr.Pastel3Leches' defaultMessage='Pastel3Leches'/>}
-                        // ImagePath=""
-                    />
-                    <MenuItem 
-                        Title1={<FormattedMessage id='htldeserts.CheeseCake' defaultMessage='CheeseCake'/>}
-                        Description1={<FormattedMessage id='htldesertsdescr.CheeseCake' defaultMessage='CheeseCake'/>}
-                        // ImagePath=""
-                    />
-                </div>
                 <p className={styles.SectionMenuTitle} id="Bebidas"><strong><FormattedMessage id='leamington.beverages' defaultMessage='beverages' /></strong></p>
                 <div className={styles.SectionMenu}>
                     <MenuItem 
@@ -356,6 +304,7 @@ export default function Menu(){
                         Description1={<FormattedMessage id='htlbeveragesdescr.AguaSabor' defaultMessage='AguaSabor'/>}
                         // ImagePath=""
                     />
+                    
                     <MenuItem 
                         Title1={<FormattedMessage id='htlbeverages.SodaLata' defaultMessage='SodaLata'/>}
                         Description1={<FormattedMessage id='htlbeveragesdescr.SodaLata' defaultMessage='SodaLata'/>}
