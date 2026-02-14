@@ -23,7 +23,7 @@ export default function RootLayout({
     <html lang="en">
       <head>
         {/* <!-- Google Analytics tag (gtag.js) --> */}
-        <Script async src={"https://www.googletagmanager.com/gtag/js?id="+process.env.ANALYTICS_ID}></Script>
+        <Script async src={"https://www.googletagmanager.com/gtag/js?id="+process.env.NEXT_PUBLIC_ANALYTICS_ID}></Script>
         <Script id='google-analytics'>
           {
             `
@@ -31,7 +31,7 @@ export default function RootLayout({
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
             
-            gtag('config', '${process.env.ANALYTICS_ID}');
+            gtag('config', '${process.env.NEXT_PUBLIC_ANALYTICS_ID}');
             `
           }
         </Script>
