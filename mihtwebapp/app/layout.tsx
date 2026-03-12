@@ -4,8 +4,10 @@ import "./globals.css";
 import Script from "next/script";
 import { ContextProvider } from "@/context/AppContext";
 import InterComp from "@/complements/components/InternationalizationComp/InternationalizationComp";
+import MetaPixelTracker from "@/app/MetaPixelTracker";
 
 const inter = Inter({ subsets: ["latin"] });
+const META_PIXEL_ID = process.env.NEXT_PUBLIC_META_PIXEL_ID;
 
 export const metadata: Metadata = {
   title: "Hot Tacos",
@@ -22,47 +24,45 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        {/* <!-- Google Analytics tag (gtag.js) --> */}
-        <Script async src={"https://www.googletagmanager.com/gtag/js?id="+process.env.NEXT_PUBLIC_ANALYTICS_ID}></Script>
-        <Script id='google-analytics'>
-          {
-            `
+        {/* Google Analytics tag (gtag.js) */}
+        <Script
+          async
+          src={
+            "https://www.googletagmanager.com/gtag/js?id=" +
+            process.env.NEXT_PUBLIC_ANALYTICS_ID
+          }
+        />
+        <Script id="google-analytics">
+          {`
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
-            
             gtag('config', '${process.env.NEXT_PUBLIC_ANALYTICS_ID}');
-            `
-          }
-        </Script>
-        {/* Meta Pixel Code */}
-        <Script id="meta-pixel" strategy="afterInteractive">
-          {`
-            !function(f,b,e,v,n,t,s)
-            {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-            n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-            if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-            n.queue=[];t=b.createElement(e);t.async=!0;
-            t.src=v;s=b.getElementsByTagName(e)[0];
-            s.parentNode.insertBefore(t,s)}(window, document,'script',
-            'https://connect.facebook.net/en_US/fbevents.js');
-            fbq('init', '942467655017174');
-            fbq('track', 'PageView');
           `}
         </Script>
-        <noscript>
-          <img
-            height="1"
-            width="1"
-            style={{ display: "none" }}
-            src="https://www.facebook.com/tr?id=942467655017174&ev=PageView&noscript=1"
-            alt=""
-          />
-        </noscript>
-        {/* End Meta Pixel Code */}
+
+        {/* Meta Pixel base */}
+        {META_PIXEL_ID ? (
+          <Script id="meta-pixel-base" strategy="afterInteractive">
+            {`
+              !function(f,b,e,v,n,t,s)
+              {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+              n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+              if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+              n.queue=[];t=b.createElement(e);t.async=!0;
+              t.src=v;s=b.getElementsByTagName(e)[0];
+              s.parentNode.insertBefore(t,s)}(window, document,'script',
+              'https://connect.facebook.net/en_US/fbevents.js');
+              fbq('init', '${META_PIXEL_ID}');
+            `}
+          </Script>
+        ) : null}
       </head>
-      <ContextProvider>
-        <body className={inter.className}>
+
+      <body className={inter.className}>
+        {META_PIXEL_ID ? <MetaPixelTracker pixelId={META_PIXEL_ID} /> : null}
+
+        <ContextProvider>
           <InterComp 
             Langs={[
               {
@@ -106,8 +106,20 @@ export default function RootLayout({
             ShowLangs="oneBYone"
           />
           {children}
-        </body>
-      </ContextProvider>
+        </ContextProvider>
+
+        {META_PIXEL_ID ? (
+          <noscript>
+            <img
+              height="1"
+              width="1"
+              style={{ display: "none" }}
+              src={`https://www.facebook.com/tr?id=${META_PIXEL_ID}&ev=PageView&noscript=1`}
+              alt=""
+            />
+          </noscript>
+        ) : null}
+      </body>
     </html>
   );
 }
