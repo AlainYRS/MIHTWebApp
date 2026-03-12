@@ -105,29 +105,29 @@ export default function Windsor(props: iBranch){
                         company={'Hot Tacos & Restaurant Inc.'}
                         platforms={[
                             {
-                              // PName: 'Doordash',
+                              PName: 'doordash',
                               PIcon: '/Icons/Doordash.png',
                               PUrl: 'https://www.doordash.com/es-US/store/hot-tacos-restaurant---windsor-windsor-28078584/?event_type=autocomplete&pickup=false',
                             },
                             {
-                              // PName: 'Skip the Dishes',
+                              PName: 'skip',
                               PIcon: '/Icons/SkipTheDishes.jpg',
                               PUrl: 'https://www.skipthedishes.com/hot-tacos-ouellette-ave',
                             },
                             {
-                              // PName: 'Uber Eats',
+                              PName: 'uber',
                               PIcon: '/Icons/Uber Eats.png',
                               PUrl: 'https://www.ubereats.com/store/hot-tacos-restaurant-windsor/lb8T3K1CW420ob1pafD7lw?utm_source=menu-maker',
                             }
                         ]}
                         socmed={[
                             {
-                              // PName: 'Facebook',
+                              PName: 'facebook',
                               PIcon: '/Icons/FacebookIcon.png',
                               PUrl: 'https://www.facebook.com/HotTacos?mibextid=LQQJ4d',
                             },
                             {
-                              // PName: 'Instagram',
+                              PName: 'instagram',
                               PIcon: '/Icons/InstaIcon.png',
                               PUrl: 'https://www.instagram.com/hottacosrestaurant?igsh=Y3hkMHBhNDk5M2Rl',
                             },

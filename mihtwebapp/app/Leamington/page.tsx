@@ -101,29 +101,29 @@ export default function Leamington(props: iBranch){
                         company={'Hot Tacos & Restaurant Inc.'}
                         platforms={[
                             {
-                            // PName: 'Doordash',
+                            PName: 'doordash',
                             PIcon: '/Icons/Doordash.png',
                             PUrl: 'https://www.doordash.com/es-US/store/hot-tacos-restaurant-leamington-2340887/?cursor=eyJzZWFyY2hfaXRlbV9jYXJvdXNlbF9jdXJzb3IiOnsicXVlcnkiOiJob3QgdGFjb3MgcmVzdGF1cmFudCIsIml0ZW1faWRzIjpbXSwic2VhcmNoX3Rlcm0iOiJob3QgdGFjbyByZXN0YXVyYW50IiwidmVydGljYWxfaWQiOi05OTksInZlcnRpY2FsX25hbWUiOiJhbGwifSwic3RvcmVfcHJpbWFyeV92ZXJ0aWNhbF9pZHMiOlsxXX0=&pickup=false',
                             },
                             {
-                            // PName: 'Skip the Dishes',
+                            PName: 'skip',
                             PIcon: '/Icons/SkipTheDishes.jpg',
                             PUrl: 'https://www.skipthedishes.com/hot-tacos-talbot-street-east',
                             },
                             {
-                            // PName: 'Uber Eats',
+                            PName: 'uber',
                             PIcon: '/Icons/Uber Eats.png',
                             PUrl: 'https://www.ubereats.com/ca/store/hot-tacos-restaurant/58HVtyoTVG6600eVmrKUjw?diningMode=DELIVERY&sc=SEARCH_SUGGESTION',
                             }
                         ]}
                         socmed={[
                             {
-                            // PName: 'Facebook',
+                            PName: 'facebook',
                             PIcon: '/Icons/FacebookIcon.png',
                             PUrl: 'https://www.facebook.com/HotTacos?mibextid=LQQJ4d',
                             },
                             {
-                            // PName: 'Instagram',
+                            PName: 'instagram',
                             PIcon: '/Icons/InstaIcon.png',
                             PUrl: 'https://www.instagram.com/hottacosrestaurant?igsh=Y3hkMHBhNDk5M2Rl',
                             },

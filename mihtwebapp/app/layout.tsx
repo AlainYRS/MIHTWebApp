@@ -22,7 +22,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <head>
         {/* Google Analytics tag (gtag.js) */}
         <Script
@@ -32,12 +32,16 @@ export default function RootLayout({
             process.env.NEXT_PUBLIC_ANALYTICS_ID
           }
         />
-        <Script id="google-analytics">
+        <Script id="google-analytics" strategy="afterInteractive">
           {`
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
+            window.gtag = gtag;
             gtag('js', new Date());
-            gtag('config', '${process.env.NEXT_PUBLIC_ANALYTICS_ID}');
+            gtag('set', 'debug_mode', true);
+            gtag('config', '${process.env.NEXT_PUBLIC_ANALYTICS_ID}', {
+              send_page_view: true
+            });
           `}
         </Script>
 

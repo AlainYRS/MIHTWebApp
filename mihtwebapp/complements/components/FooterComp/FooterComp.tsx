@@ -27,6 +27,7 @@ import styles from './FooterComp.module.css';
 import Image from 'next/image';
 import { useAppContext } from '@/context/AppContext';
 import {IntlProvider, FormattedMessage, FormattedNumber} from 'react-intl';
+import { trackEventAndThen } from "@/app/lib/analytics";
 
 interface iPlatforms{
     PName?: string,
@@ -100,7 +101,27 @@ function FooterComp(props:IFooter){
                 {props.socmed && 
                     props.socmed.map((socmed, index) => {
                         return(
-                            <a className={styles.Footeritem} href={socmed.PUrl} key={index+'sm'} target="_blank" rel="noopener noreferrer">
+                            <a
+                                className={styles.Footeritem}
+                                href={socmed.PUrl}
+                                key={index+'sm'}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                onClick={(e) => {
+                                    e.preventDefault();
+
+                                    trackEventAndThen(
+                                    "social_click",
+                                    {
+                                        platform: socmed.PName,
+                                        placement: "footer",
+                                    },
+                                    () => {
+                                        window.open(socmed.PUrl, "_blank", "noopener,noreferrer");
+                                    }
+                                    );
+                                }}
+                            >
                                 {socmed.PIcon && <Image src={socmed.PIcon} style={{ width: "auto", height: "auto", borderRadius: "7px" }} width={30} height={30} alt={'Social Media'}/>}
                                 {socmed.PName && socmed.PName}
                             </a>
@@ -110,7 +131,27 @@ function FooterComp(props:IFooter){
                 {props.platforms && 
                     props.platforms.map((plat, index) => {
                         return(
-                            <a className={styles.Footeritem} href={plat.PUrl} key={index+'pf'} target="_blank" rel="noopener noreferrer">
+                            <a
+                                className={styles.Footeritem}
+                                href={plat.PUrl}
+                                key={index+'pf'}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                onClick={(e) => {
+                                    e.preventDefault();
+
+                                    trackEventAndThen(
+                                    "delivery_click",
+                                    {
+                                        platform: plat.PName,
+                                        placement: "footer",
+                                    },
+                                    () => {
+                                        window.open(plat.PUrl, "_blank", "noopener,noreferrer");
+                                    }
+                                    );
+                                }}
+                            >
                                 {plat.PIcon && <Image src={plat.PIcon} style={{ width: "auto", height: "auto", borderRadius: "7px" }} width={30} height={30} alt={'Platforms'}/>}
                                 {plat.PName && plat.PName}
                             </a>

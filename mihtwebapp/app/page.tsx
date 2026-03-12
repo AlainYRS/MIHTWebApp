@@ -15,6 +15,7 @@ import { useAppContext } from "@/context/AppContext";
 import {IntlProvider, FormattedMessage, FormattedNumber} from 'react-intl';
 import FooterComp from "@/complements/components/FooterComp/FooterComp";
 import InterComp from "@/complements/components/InternationalizationComp/InternationalizationComp";
+import { trackEvent } from "@/app/lib/analytics";
 
 export default function Home() {
   const contextUsr = useAppContext().userState.User;
@@ -127,6 +128,7 @@ export default function Home() {
           <div className={styles.Branches}>
             <BranchComp 
               Name={"Leamington"}
+              analyticsLocationId="leamington"
               Address={"16 Talbot Street E, Leamington ON, N8H 1L2"}
               Location={"https://www.google.com/maps/dir//Hot+Tacos+Mexican+Restaurant/@42.0529949,-82.6816491,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x883ac1874678d4cf:0xd04e2ab656c80fa2!2m2!1d-82.5992483!2d42.0530244?entry=ttu"}
               Phone={"+1 519 329 1615"}
@@ -149,6 +151,7 @@ export default function Home() {
             /> */}
             <BranchComp 
               Name={"Windsor"}
+              analyticsLocationId="windsor"
               Address={"325 Ouellette Ave, Windsor, ON N9A 4J1"}
               Location={"https://maps.app.goo.gl/Li6UnVBbNbqhBed49"}
               Phone={"+1 519 818 5129"}
